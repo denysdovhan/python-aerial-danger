@@ -1,0 +1,40 @@
+name-template: v$RESOLVED_VERSION
+tag-template: v$RESOLVED_VERSION
+categories:
+  - title: Breaking changes
+    when:
+      - conventional:
+          breaking: true
+      - labels: [breaking]
+  - title: Features
+    when:
+      - conventional:
+          type: feat
+      - labels: [feature, enhancement]
+  - title: Fixes
+    when:
+      - conventional:
+          type: fix
+      - labels: [bug, fix]
+  - title: Dependencies
+    when:
+      - labels: [dependencies]
+  - type: version-resolver
+    semver-increment: major
+    when:
+      - conventional:
+          breaking: true
+      - labels: [major, breaking]
+  - type: version-resolver
+    semver-increment: minor
+    when:
+      - conventional:
+          type: feat
+      - labels: [minor, feature, enhancement]
+  - type: version-resolver
+    semver-increment: patch
+change-template: '- $TITLE (#$NUMBER)'
+template: |
+  ## Changes
+
+  $CHANGES
