@@ -1,0 +1,46 @@
+[build-system]
+requires = ["uv_build>=0.9.12,<0.13"]
+build-backend = "uv_build"
+
+[project]
+name = "aerial-danger"
+version = "0.1.0"
+description = "Match Ukrainian aerial danger messages"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE.md"]
+authors = [{ name = "Denys Dovhan", email = "denysdovhan@gmail.com" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+]
+
+[project.urls]
+Repository = "https://github.com/denysdovhan/python-aerial-danger"
+Issues = "https://github.com/denysdovhan/python-aerial-danger/issues"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.1",
+    "pytest>=8.3.0",
+    "ruff==0.16.5",
+]
+
+[tool.ruff]
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["D203", "D212", "COM812", "CPY001", "ISC001", "ISC004", "FIX002", "TD003", "RUF001"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 25
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
