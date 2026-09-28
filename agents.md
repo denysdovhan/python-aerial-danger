@@ -32,6 +32,7 @@
 
 ## Research and regexes
 
+- Never invent or alter messages for test fixtures, including negative cases and punctuation variants. Always research real Telegram channel posts before adding message fixtures; use only exact existing messages.
 - Reproduce mistakes with the exact message before changing patterns. Fix the owning domain rather than a downstream symptom.
 - Search public histories with `https://telegram.me/s/<channel>?q=<term>`. Use `operinform`, `war_monitor`, `AerisRimor`, and `kpszsu`; for Kyiv, also use `nebo_raketa`, `kyiv_airdef`, and `kyiv_monit0ring`.
 - Read neighboring posts. Separate active alerts from forecasts, analysis, aftermath, and all-clear messages. Search abbreviations, inflections, slang, and location stems.

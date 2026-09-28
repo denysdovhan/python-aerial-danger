@@ -9,6 +9,7 @@ _GUIDED_BOMB = (
 
 # Wording that marks explicit safety and vetoes broader danger matches.
 SAFETY = [
+    r"^мінус[.!]*$",
     r"^[^\w\n]*відбій\b",
     r"^[^\w\n]*балістика\W+відбій\b",
     r"\bдорозвідка\b",
@@ -50,6 +51,7 @@ SAFETY = [
 
 # Generic danger phrases that refine specific danger types.
 GENERIC_DANGER = [
+    r"^у бік {area}!+$",
     r"\b(?:буде|може бути|бути) гучно\b",
     r"^[🔴🟡🚀❗‼️ \t]*{area}[^\w\n]+(?:в|до) укритт[яі][!.]*$",
     r"\bперебува(?:йте|ємо) в укритт[яі]\b",
@@ -95,9 +97,14 @@ GENERIC_DANGER = [
         r"{area}(?:(?:[ \t]*[/,][ \t]*|[ \t]+-[ \t]+)[\w'’ʼ-]+)+[!.]*$"
     ),
     r"^(?:[\w'’ʼ-]+[ \t]*-[ \t]*){2,}{area}[!.]*$",
+    (
+        r"^(?:[а-яіїєґ'’ʼ -]{1,64} - )?{area}"
+        r"(?: - [а-яіїєґ'’ʼ -]{1,64})?[!.]*$"
+    ),
     r"^[🔴️ \t]*🚀[️ \t]*[\w'’ʼ-]+/{area}[!.]*$",
     r"^\w+ськ\w*[^\w\n]+на[^\w\n]+{area}/\w+[!.]*$",
     r"^[🔴🟡🚀❗‼️ \t]*{area}[ \t]*[.!]*$",
+    r"^(?:[а-яіїєґ'’ʼ-]+\n)*{area}(?:\n[а-яіїєґ'’ʼ-]+)*$",
 ]
 
 # Zircon missile phrases shared by ballistic and cruise detection.
@@ -309,6 +316,10 @@ DRONE_DANGER = [
     r"\b(?:новий|наступний|група) реактивн\w* (?:бпла|дрон).{0,48}{area}",
     r"\bреактивн\w* бпла\b.{0,64}(?:на|до|(у|в) (?:напрямку|бік)) {area}",
     r"{area} йде",
+    r"🔻[ \t]*зниження(?:\*\*)?[ \t]+{area}",
+    r"^\d+х на зниження {area}[.!]*$",
+    r"^{area}, падає[.!]*$",
+    r"^падає {area}(?:\n\d+м)?[.!]*$",
 ]
 
 __all__ = [

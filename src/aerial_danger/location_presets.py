@@ -45,6 +45,10 @@ LOCATION_PRESETS: Final = {
                 id="chernihiv_oblast_chernihiv",
                 patterns=(r"\bчерніг(ів|ова|ову|овом|ові)\b",),
             ),
+            "chernihiv_oblast_semenivka": LocalityPreset(
+                id="chernihiv_oblast_semenivka",
+                patterns=(r"\bсеменів(ка|ки|ку|кою|ці)\b",),
+            ),
         },
     ),
     "chernivtsi_oblast": RegionPreset(
@@ -95,6 +99,10 @@ LOCATION_PRESETS: Final = {
             "donetsk_oblast_donetsk": LocalityPreset(
                 id="donetsk_oblast_donetsk",
                 patterns=(r"\bдонецьк(у|ом|і)?\b",),
+            ),
+            "donetsk_oblast_sloviansk": LocalityPreset(
+                id="donetsk_oblast_sloviansk",
+                patterns=(r"\bслов['ʼ’]?янськ(а|у|ом|і)?\b",),
             ),
         },
     ),
@@ -156,6 +164,10 @@ LOCATION_PRESETS: Final = {
                 id="kharkiv_oblast_saltivka",
                 patterns=(r"\bсалтівк(а|и|і|у|ою|о)\b",),
             ),
+            "kharkiv_oblast_vokzal": LocalityPreset(
+                id="kharkiv_oblast_vokzal",
+                patterns=(r"\bвокзал(у|а|ом|і)?\b",),
+            ),
         },
     ),
     "kherson_oblast": RegionPreset(
@@ -209,6 +221,10 @@ LOCATION_PRESETS: Final = {
             ),
             "kyiv_antonov": LocalityPreset(
                 id="kyiv_antonov", patterns=(r"\bантонов(а)?\b",)
+            ),
+            "kyiv_beresteiska": LocalityPreset(
+                id="kyiv_beresteiska",
+                patterns=(r"\bберестейськ(а|ої|ій|у|ою)\b",),
             ),
             "kyiv_berezniaky": LocalityPreset(
                 id="kyiv_berezniaky", patterns=(r"\bберезняк(и|ів|ах|ами)\b",)
@@ -352,6 +368,9 @@ LOCATION_PRESETS: Final = {
             "kyiv_osokorky": LocalityPreset(
                 id="kyiv_osokorky", patterns=(r"\bосокорк(и|ів|ах|ами)\b",)
             ),
+            "kyiv_pasazhyrskyi": LocalityPreset(
+                id="kyiv_pasazhyrskyi", patterns=(r"\bкиїв[ -]пасажирський\b",)
+            ),
             "kyiv_pechersk": LocalityPreset(
                 id="kyiv_pechersk", patterns=(r"\bпечерськ(ий|ого|ому|им)?\b",)
             ),
@@ -394,6 +413,12 @@ LOCATION_PRESETS: Final = {
                 id="kyiv_rusanivski_sady",
                 patterns=(r"\bрусанівськ(і|их|им|ими) сад(и|ів|ах|ами)\b",),
             ),
+            "kyiv_rybalskyi_ostriv": LocalityPreset(
+                id="kyiv_rybalskyi_ostriv",
+                patterns=(
+                    r"\bрибальськ(ий|ого|ому|им)(?: остр(ів|ова|ову|ові|овом))?\b",
+                ),
+            ),
             "kyiv_shuliavka": LocalityPreset(
                 id="kyiv_shuliavka",
                 patterns=(r"\bшулявк(а|и|у|ою|ці)\b", r"\bшул(я|і|ю|ею|ьою|е)\b"),
@@ -421,6 +446,9 @@ LOCATION_PRESETS: Final = {
             "kyiv_teremky": LocalityPreset(
                 id="kyiv_teremky", patterns=(r"\bтеремк(и|ів|ах|ами)\b",)
             ),
+            "kyiv_tovarnyi": LocalityPreset(
+                id="kyiv_tovarnyi", patterns=(r"\bкиїв[ -]товарний\b",)
+            ),
             "kyiv_troieshchyna": LocalityPreset(
                 id="kyiv_troieshchyna",
                 patterns=(
@@ -442,7 +470,7 @@ LOCATION_PRESETS: Final = {
                 id="kyiv_vydubychi", patterns=(r"\bвидубич(і|ів|ах|ами)\b",)
             ),
             "kyiv_vynohradar": LocalityPreset(
-                id="kyiv_vynohradar", patterns=(r"\bвиноградар(а|і|ем)?\b",)
+                id="kyiv_vynohradar", patterns=(r"\bвиноградар(а|я|і|ем)?\b",)
             ),
             "kyiv_zhuliany": LocalityPreset(
                 id="kyiv_zhuliany", patterns=(r"\bжулян(и|ах|ами)?\b",)
@@ -465,6 +493,10 @@ LOCATION_PRESETS: Final = {
                     r"\bбіл(а|ої|ій|у|ою) церкв(а|и|і|у|ою)\b",
                     r"\bбц\b",
                 ),
+            ),
+            "kyiv_oblast_bilohorodka": LocalityPreset(
+                id="kyiv_oblast_bilohorodka",
+                patterns=(r"\bбілогород(ка|ки|ку|кою|ці)\b",),
             ),
             "kyiv_oblast_boryspil": LocalityPreset(
                 id="kyiv_oblast_boryspil",
@@ -588,6 +620,10 @@ LOCATION_PRESETS: Final = {
                 id="mykolaiv_oblast_mykolaiv",
                 patterns=(r"\bмикола(їв|єва|єві|єву|євом)\b",),
             ),
+            "mykolaiv_oblast_ochakiv": LocalityPreset(
+                id="mykolaiv_oblast_ochakiv",
+                patterns=(r"\bочак(ів|ова|ову|ові|овом)\b",),
+            ),
         },
     ),
     "odesa_oblast": RegionPreset(
@@ -614,6 +650,10 @@ LOCATION_PRESETS: Final = {
             "odesa_oblast_khadzhybeiskyi_raion": LocalityPreset(
                 id="odesa_oblast_khadzhybeiskyi_raion",
                 patterns=(r"\bхаджибейськ(ий|ого|ому|им|ім) район(у|і|ом)?\b",),
+            ),
+            "odesa_oblast_novi_biliari": LocalityPreset(
+                id="odesa_oblast_novi_biliari",
+                patterns=(r"\bнов(і|их|им|ими) біляр(і|ів|ям|ями|ях)\b",),
             ),
             "odesa_oblast_odesa": LocalityPreset(
                 id="odesa_oblast_odesa", patterns=(r"\bодес(а|и|і|у|ою)\b",)
@@ -667,8 +707,24 @@ LOCATION_PRESETS: Final = {
             r"\bсумськ(а|ої|ій|у|ою) област(ь|і|ю)\b",
         ),
         localities={
+            "sumy_oblast_myropillia": LocalityPreset(
+                id="sumy_oblast_myropillia",
+                patterns=(r"\bмиропілл(я|ю|і|ям)\b",),
+            ),
+            "sumy_oblast_shostka": LocalityPreset(
+                id="sumy_oblast_shostka",
+                patterns=(r"\bшост(ка|ки|ку|кою|ці)\b",),
+            ),
+            "sumy_oblast_shostkynskyi_raion": LocalityPreset(
+                id="sumy_oblast_shostkynskyi_raion",
+                patterns=(r"\bшосткинськ(ий|ого|ому|им) район(у|і|ом)?\b",),
+            ),
             "sumy_oblast_sumy": LocalityPreset(
                 id="sumy_oblast_sumy", patterns=(r"\bсум(и|ах|ами)?\b",)
+            ),
+            "sumy_oblast_varachyne": LocalityPreset(
+                id="sumy_oblast_varachyne",
+                patterns=(r"\bварачин(е|ого|ому|им)\b",),
             ),
         },
     ),
