@@ -96,7 +96,7 @@ PRESET_EXAMPLES = {
     "kyiv_oblast_kozyn": ("Козин",),
     "kyiv_oblast_kriukivshchyna": ("Крюківщину",),
     "kyiv_oblast_krushynka": ("Крушинку",),
-    "kyiv_oblast_liutizh": ("Лютожі",),
+    "kyiv_oblast_liutizh": ("Лютежі", "Лютежа", "Лютежу", "Лютежем", "Лютожі"),
     "kyiv_oblast_makariv": ("Макарів",),
     "kyiv_oblast_motyzhyn": ("Мотижин",),
     "kyiv_oblast_muzychi": ("Музичі",),

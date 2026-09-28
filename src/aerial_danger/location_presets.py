@@ -541,7 +541,7 @@ LOCATION_PRESETS: Final = {
                 id="kyiv_oblast_krushynka", patterns=(r"\bкрушинк(а|и|у|ою|ці)\b",)
             ),
             "kyiv_oblast_liutizh": LocalityPreset(
-                id="kyiv_oblast_liutizh", patterns=(r"\bлют(іж|ожа|ожу|ожем|ожі)\b",)
+                id="kyiv_oblast_liutizh", patterns=(r"\bлют(іж|[ео]ж(а|у|ем|і))\b",)
             ),
             "kyiv_oblast_makariv": LocalityPreset(
                 id="kyiv_oblast_makariv", patterns=(r"\bмакар(ів|ова|ову|овом|ові)\b",)
