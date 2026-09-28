@@ -105,6 +105,8 @@ GENERIC_DANGER = [
     r"^\w+ськ\w*[^\w\n]+на[^\w\n]+{area}/\w+[!.]*$",
     r"^[🔴🟡🚀❗‼️ \t]*{area}[ \t]*[.!]*$",
     r"^(?:[а-яіїєґ'’ʼ-]+\n)*{area}(?:\n[а-яіїєґ'’ʼ-]+)*$",
+    r"^[🔴🟡🚀❗‼️ \t]*(?:на|до)[ \t]+{area}[ \t]+підлітає[!.]*$",
+    r"^[🔴🟡🚀❗‼️ \t]*{area}[ \t]*(?:,[ \t]*)?над[ \t]+містом[!.]*$",
 ]
 
 # Zircon missile phrases shared by ballistic and cruise detection.

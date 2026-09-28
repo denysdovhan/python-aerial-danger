@@ -498,6 +498,12 @@ LOCATION_PRESETS: Final = {
                 id="kyiv_oblast_bilohorodka",
                 patterns=(r"\bбілогород(ка|ки|ку|кою|ці)\b",),
             ),
+            "kyiv_oblast_boiarka": LocalityPreset(
+                id="kyiv_oblast_boiarka", patterns=(r"\bбоярк(а|и|у|ою|ці)\b",)
+            ),
+            "kyiv_oblast_borodianka": LocalityPreset(
+                id="kyiv_oblast_borodianka", patterns=(r"\bбородянк(а|и|у|ою|ці)\b",)
+            ),
             "kyiv_oblast_boryspil": LocalityPreset(
                 id="kyiv_oblast_boryspil",
                 patterns=(
@@ -515,8 +521,14 @@ LOCATION_PRESETS: Final = {
             "kyiv_oblast_chaiky": LocalityPreset(
                 id="kyiv_oblast_chaiky", patterns=(r"\bчайк(и|ів|ам|ами|ах)\b",)
             ),
+            "kyiv_oblast_demydiv": LocalityPreset(
+                id="kyiv_oblast_demydiv", patterns=(r"\bдемид(ів|ова|ову|овом|ові)\b",)
+            ),
             "kyiv_oblast_dymer": LocalityPreset(
                 id="kyiv_oblast_dymer", patterns=(r"\bдимер(а|у|ом|і)?\b",)
+            ),
+            "kyiv_oblast_hlevakha": LocalityPreset(
+                id="kyiv_oblast_hlevakha", patterns=(r"\bглевах(а|и|у|ою|і)\b",)
             ),
             "kyiv_oblast_hnidyn": LocalityPreset(
                 id="kyiv_oblast_hnidyn", patterns=(r"\bгнідин(а|у|ом|і)?\b",)
@@ -530,6 +542,20 @@ LOCATION_PRESETS: Final = {
             "kyiv_oblast_irpin": LocalityPreset(
                 id="kyiv_oblast_irpin", patterns=(r"\bірп(інь|еня|еню|енем|ені)\b",)
             ),
+            "kyiv_oblast_ivankiv": LocalityPreset(
+                id="kyiv_oblast_ivankiv", patterns=(r"\bіванк(ів|ова|ову|овом|ові)\b",)
+            ),
+            "kyiv_oblast_ivankovychi": LocalityPreset(
+                id="kyiv_oblast_ivankovychi",
+                patterns=(r"\bіванкович(і|ів|ам|ами|ах)\b",),
+            ),
+            "kyiv_oblast_katiuzhanka": LocalityPreset(
+                id="kyiv_oblast_katiuzhanka",
+                patterns=(r"\bкатюжан(ка|ки|ці|ку|кою)\b",),
+            ),
+            "kyiv_oblast_kniazhychi": LocalityPreset(
+                id="kyiv_oblast_kniazhychi", patterns=(r"\bкняжич(і|ів|ам|ами|ах)\b",)
+            ),
             "kyiv_oblast_kotsiubynske": LocalityPreset(
                 id="kyiv_oblast_kotsiubynske",
                 patterns=(r"\bкоцюбинськ(е|ого|ому|им|ім)\b",),
@@ -537,11 +563,35 @@ LOCATION_PRESETS: Final = {
             "kyiv_oblast_kozyn": LocalityPreset(
                 id="kyiv_oblast_kozyn", patterns=(r"\bкозин(а|у|ом|і)?\b",)
             ),
+            "kyiv_oblast_kriukivshchyna": LocalityPreset(
+                id="kyiv_oblast_kriukivshchyna",
+                patterns=(r"\bкрюківщин(а|и|у|ою|і)\b",),
+            ),
+            "kyiv_oblast_krushynka": LocalityPreset(
+                id="kyiv_oblast_krushynka", patterns=(r"\bкрушинк(а|и|у|ою|ці)\b",)
+            ),
+            "kyiv_oblast_liutizh": LocalityPreset(
+                id="kyiv_oblast_liutizh", patterns=(r"\bлют(іж|[ео]ж(а|у|ем|і))\b",)
+            ),
+            "kyiv_oblast_makariv": LocalityPreset(
+                id="kyiv_oblast_makariv", patterns=(r"\bмакар(ів|ова|ову|овом|ові)\b",)
+            ),
+            "kyiv_oblast_motyzhyn": LocalityPreset(
+                id="kyiv_oblast_motyzhyn", patterns=(r"\bмотижин(а|у|ом|і)?\b",)
+            ),
+            "kyiv_oblast_muzychi": LocalityPreset(
+                id="kyiv_oblast_muzychi", patterns=(r"\bмузич(і|ів|ам|ами|ах)\b",)
+            ),
+            "kyiv_oblast_novi_petrivtsi": LocalityPreset(
+                id="kyiv_oblast_novi_petrivtsi",
+                patterns=(r"\bнов(і|их|ім|ими) петрівц(і|ів|ям|ями|ях)\b",),
+            ),
             "kyiv_oblast_obukhiv": LocalityPreset(
                 id="kyiv_oblast_obukhiv", patterns=(r"\bобух(ів|ова|ову|овом|ові)\b",)
             ),
-            "kyiv_oblast_petrivtsi": LocalityPreset(
-                id="kyiv_oblast_petrivtsi", patterns=(r"\bпетрівц(і|ів|ям|ями|ях)\b",)
+            "kyiv_oblast_oseshchyna": LocalityPreset(
+                id="kyiv_oblast_oseshchyna",
+                patterns=(r"\bосещин(а|и|і|у|ою)\b",),
             ),
             "kyiv_oblast_petropavlivska_borshchahivka": LocalityPreset(
                 id="kyiv_oblast_petropavlivska_borshchahivka",
@@ -556,15 +606,33 @@ LOCATION_PRESETS: Final = {
                 id="kyiv_oblast_prolisky",
                 patterns=(r"\bпроліс(ки|ків|кам|ками|ках)\b",),
             ),
+            "kyiv_oblast_revne": LocalityPreset(
+                id="kyiv_oblast_revne", patterns=(r"\bревн(е|ого|ому|им|ім)\b",)
+            ),
+            "kyiv_oblast_slavutych": LocalityPreset(
+                id="kyiv_oblast_slavutych", patterns=(r"\bславутич(а|у|ом|і)?\b",)
+            ),
             "kyiv_oblast_sofiivska_borshchahivka": LocalityPreset(
                 id="kyiv_oblast_sofiivska_borshchahivka",
                 patterns=(r"\bсофіївськ(а|ої|ій|у|ою) борщагівк(а|и|і|у|ою|ці)\b",),
+            ),
+            "kyiv_oblast_stari_petrivtsi": LocalityPreset(
+                id="kyiv_oblast_stari_petrivtsi",
+                patterns=(r"\bстар(і|их|ім|ими) петрівц(і|ів|ям|ями|ях)\b",),
             ),
             "kyiv_oblast_ukrainka": LocalityPreset(
                 id="kyiv_oblast_ukrainka", patterns=(r"\bукраїнк(а|и|у|ою|ці)\b",)
             ),
             "kyiv_oblast_vasylkiv": LocalityPreset(
-                id="kyiv_oblast_vasylkiv", patterns=(r"\bвасильков(а|у|ом|і)?\b",)
+                id="kyiv_oblast_vasylkiv",
+                patterns=(
+                    r"\bвасильк(ів|ова|ову|овом|ові)\b",
+                    r"\bвасік\b",
+                ),
+            ),
+            "kyiv_oblast_vita_poshtova": LocalityPreset(
+                id="kyiv_oblast_vita_poshtova",
+                patterns=(r"\bвіта[ -]поштов(а|ої|ій|у|ою|і)\b",),
             ),
             "kyiv_oblast_vorzel": LocalityPreset(
                 id="kyiv_oblast_vorzel", patterns=(r"\bворзел(ь|я|ю|ем|і)\b",)
@@ -574,6 +642,9 @@ LOCATION_PRESETS: Final = {
             ),
             "kyiv_oblast_vyshneve": LocalityPreset(
                 id="kyiv_oblast_vyshneve", patterns=(r"\bвишнев(е|ого|ому|им|ім)\b",)
+            ),
+            "kyiv_oblast_zabiria": LocalityPreset(
+                id="kyiv_oblast_zabiria", patterns=(r"\bзабір['’ʼ]?(я|ї|ю|ям)\b",)
             ),
             "kyiv_oblast_zazyma": LocalityPreset(
                 id="kyiv_oblast_zazyma", patterns=(r"\bзазим['’ʼ]?(я|ї|ям)\b",)

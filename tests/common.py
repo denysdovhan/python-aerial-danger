@@ -47,6 +47,7 @@ LOCALITY_PATTERNS = resolve_locality_patterns(
         "kyiv_oblast_bila_tserkva",
         "kyiv_oblast_bilohorodka",
         "kyiv_oblast_brovary",
+        "kyiv_oblast_vasylkiv",
         "kyiv_obolon",
         "kyiv_shuliavka",
         "kyiv_solomianka",
