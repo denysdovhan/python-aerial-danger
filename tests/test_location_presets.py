@@ -4,7 +4,7 @@
 
 import re
 
-from aerial_danger import DangerDetector
+from aerial_danger import DangerDetector, DangerType
 from aerial_danger.location_presets import LOCATION_PRESETS
 from aerial_danger.pattern_utils import (
     locality_ids,
@@ -177,6 +177,18 @@ def test_boundaries_and_safe_location_text() -> None:
         re.search(pattern, "академія", re.IGNORECASE) for pattern in localities
     )
     assert not detector.danger("Станція метро Академмістечко відкрита").danger
+
+
+def test_shuliavka_slang_alert() -> None:
+    """Match the observed slang alert through the selected locality preset."""
+    localities = resolve_locality_patterns([], ["kyiv"], ["kyiv_shuliavka"])
+    detector = DangerDetector([], localities)
+    detection = detector.danger("Шуля увага")
+    assert detection.danger
+    assert detection.type is DangerType.GENERIC
+    assert detection.matched_area == "Шуля"
+    assert not detector.danger("Шуляк увага").danger
+    assert not DangerDetector([], []).danger("Шуля увага").danger
 
 
 def test_resolve_custom_first_deduplicates_and_ignores_unknown_ids() -> None:
