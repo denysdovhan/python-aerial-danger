@@ -7,6 +7,10 @@ from aerial_danger import DangerDetector, DangerType
 from .common import LOCALITY_PATTERNS, REGION_PATTERNS
 
 GENERIC_CASES: list[str] = [
+    "На Васильків підлітає",
+    "Васильків, над містом",
+    "Васильків увага",
+    "Васік увага",
     "🔴🚀Нивки.",
     "🔴❗️Вектор Київ!",
     "🔴❗️Київ!",
@@ -73,6 +77,7 @@ GENERIC_CASES: list[str] = [
 ]
 
 REGION_ONLY_INCOMING_WEAPON_CASES: list[tuple[str, str]] = [
+    (r"\bкиїв\b", "Шахед на Київ підлітає"),
     (r"\bки(ї|є)в(а|у|ом|е|і)?\b", "🟡💣 Київ!"),
     (r"\bхарків(а|у|ом|і)?\b", "🔴❗️ РСЗВ на Харків!"),
     (
