@@ -33,7 +33,7 @@ categories:
       - labels: [minor, feature, enhancement]
   - type: version-resolver
     semver-increment: patch
-change-template: '- $TITLE (#$NUMBER)'
+change-template: "- $TITLE (#$NUMBER)"
 template: |
   ## Changes
 

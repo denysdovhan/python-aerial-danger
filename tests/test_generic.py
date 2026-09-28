@@ -3,10 +3,12 @@
 # ruff: noqa: S101
 
 from aerial_danger import DangerDetector, DangerType
+from aerial_danger.location_presets import LOCATION_PRESETS
 
 from .common import LOCALITY_PATTERNS, REGION_PATTERNS
 
 GENERIC_CASES: list[str] = [
+    "У бік Києва!!!!",
     "На Васильків підлітає",
     "Васильків, над містом",
     "Васильків увага",
@@ -91,6 +93,8 @@ REGION_ONLY_INCOMING_WEAPON_CASES: list[tuple[str, str]] = [
 ]
 
 GENERIC_WHOLE_MESSAGE_CASES: list[str] = [
+    "Нивки\nЖуляни",
+    "У бік Києва!!!!",
     "КИЇВ!",
     "НИВКИ!",
     "❗️На Нивки!",
@@ -148,6 +152,24 @@ def test_terse_generic_matches_complete_message() -> None:
         assert detection.danger is True, text
         assert detection.type == DangerType.GENERIC, text
         assert detection.matched_danger == text, text
+
+
+def test_area_list_matches_each_selected_locality() -> None:
+    """Each selected locality in a bare area list should independently match."""
+    cases = [
+        ("Нивки\nЖуляни", ("kyiv_nyvky", "kyiv_zhuliany")),
+        (
+            "Рибальський острів - Поділ - Почайна",
+            ("kyiv_rybalskyi_ostriv", "kyiv_podil", "kyiv_pochaiana"),
+        ),
+    ]
+    for text, locality_ids in cases:
+        for locality_id in locality_ids:
+            patterns = LOCATION_PRESETS["kyiv"].localities[locality_id].patterns
+            detection = DangerDetector([], patterns).danger(text)
+
+            assert detection.type == DangerType.GENERIC, locality_id
+            assert detection.matched_danger == text, locality_id
 
 
 def test_generic_does_not_match() -> None:

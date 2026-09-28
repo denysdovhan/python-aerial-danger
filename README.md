@@ -108,7 +108,7 @@ uv run ruff format --check .
 uv build --no-sources
 ```
 
-After installation, pre-commit runs Ruff linting and formatting on changed Python files before each commit.
+After installation, pre-commit runs Ruff on Python files, checks JSON/YAML/TOML, and formats Markdown and configuration files before each commit.
 See [contribution guidelines](CONTRIBUTING.md) for local integration setup.
 
 ## License
