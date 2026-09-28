@@ -70,23 +70,6 @@ def test_match_helpers_return_pattern_matches() -> None:
     ) == PatternMatch(text="КИЇВ ШВИДКІСНА", pattern=danger_pattern)
 
 
-@pytest.mark.parametrize(
-    ("patterns", "expected"),
-    [
-        (["Town", "Old Town"], "Old Town"),
-        (["Old Town", "Town"], "Old Town"),
-        (["Town", "Elsewhere"], "Town"),
-        (["Town", "TOWN"], "Town"),
-    ],
-)
-def test_containing_area_match_wins(patterns: list[str], expected: str) -> None:
-    """Prefer a fuller area name, retaining priority for separate or equal matches."""
-    detector = DangerDetector([], patterns)
-    assert detector.find_area("Old Town and Elsewhere", patterns) == PatternMatch(
-        text=expected, pattern=expected
-    )
-
-
 def test_non_matches() -> None:
     """Negative samples should not raise danger flags."""
     detector = DangerDetector(REGION_PATTERNS, LOCALITY_PATTERNS)

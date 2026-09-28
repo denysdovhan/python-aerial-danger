@@ -564,7 +564,12 @@ LOCATION_PRESETS: Final = {
                 patterns=(r"\bосещин(а|и|і|у|ою)\b",),
             ),
             "kyiv_oblast_petrivtsi": LocalityPreset(
-                id="kyiv_oblast_petrivtsi", patterns=(r"\bпетрівц(і|ів|ям|ями|ях)\b",)
+                id="kyiv_oblast_petrivtsi",
+                patterns=(
+                    r"(?<!\bнові\s)(?<!\bнових\s)(?<!\bновім\s)(?<!\bновими\s)"
+                    r"(?<!\bстарі\s)(?<!\bстарих\s)(?<!\bстарім\s)(?<!\bстарими\s)"
+                    r"\bпетрівц(і|ів|ям|ями|ях)\b",
+                ),
             ),
             "kyiv_oblast_petropavlivska_borshchahivka": LocalityPreset(
                 id="kyiv_oblast_petropavlivska_borshchahivka",
