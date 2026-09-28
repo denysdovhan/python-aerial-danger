@@ -77,11 +77,22 @@ class DangerDetector:
         return [re.compile(phrase, RE_FLAGS) for phrase in phrases]
 
     def find_area(self, message: str, areas: Sequence[str]) -> PatternMatch | None:
-        """Find the first area mentioned in the message."""
+        """Find the first matching area, preferring a fuller containing match."""
+        best = None
         for pattern in areas:
-            if match := re.search(pattern, message, RE_FLAGS):
-                return PatternMatch(text=match.group(0), pattern=pattern)
-        return None
+            match = re.search(pattern, message, RE_FLAGS)
+            if match and (
+                best is None
+                or (
+                    match.start() <= best.start()
+                    and match.end() >= best.end()
+                    and match.span() != best.span()
+                )
+            ):
+                best = match
+        return (
+            PatternMatch(text=best.group(0), pattern=best.re.pattern) if best else None
+        )
 
     def match_first(
         self, patterns: Sequence[re.Pattern[str]], message: str
