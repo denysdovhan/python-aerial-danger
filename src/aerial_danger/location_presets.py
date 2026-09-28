@@ -395,7 +395,8 @@ LOCATION_PRESETS: Final = {
                 patterns=(r"\bрусанівськ(і|их|им|ими) сад(и|ів|ах|ами)\b",),
             ),
             "kyiv_shuliavka": LocalityPreset(
-                id="kyiv_shuliavka", patterns=(r"\bшулявк(а|и|у|ою|ці)\b",)
+                id="kyiv_shuliavka",
+                patterns=(r"\bшулявк(а|и|у|ою|ці)\b", r"\bшул(я|і|ю|ею|ьою|е)\b"),
             ),
             "kyiv_solomianka": LocalityPreset(
                 id="kyiv_solomianka",
