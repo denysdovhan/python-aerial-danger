@@ -116,6 +116,13 @@ PRESET_EXAMPLES = {
     "kyiv_oblast_sofiivska_borshchahivka": ("Софіївська Борщагівка",),
     "kyiv_oblast_slavutych": ("Славутич",),
     "kyiv_oblast_stari_petrivtsi": ("Старих Петрівцях",),
+    "kyiv_oblast_stoianka": (
+        "Стоянка",
+        "Стоянки",
+        "Стоянці",
+        "Стоянку",
+        "Стоянкою",
+    ),
     "kyiv_oblast_vasylkiv": ("Василькова", "Васильків", "Васік"),
     "kyiv_oblast_vyshneve": ("Вишневе",),
     "kyiv_oblast_vita_poshtova": ("Віта-Поштова",),
