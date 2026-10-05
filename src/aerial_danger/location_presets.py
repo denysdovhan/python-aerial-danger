@@ -620,6 +620,10 @@ LOCATION_PRESETS: Final = {
                 id="kyiv_oblast_stari_petrivtsi",
                 patterns=(r"\bстар(і|их|ім|ими) петрівц(і|ів|ям|ями|ях)\b",),
             ),
+            "kyiv_oblast_stoianka": LocalityPreset(
+                id="kyiv_oblast_stoianka",
+                patterns=(r"\bстоянк(а|и|у|ою)\b", r"\bстоянці\b"),
+            ),
             "kyiv_oblast_ukrainka": LocalityPreset(
                 id="kyiv_oblast_ukrainka", patterns=(r"\bукраїнк(а|и|у|ою|ці)\b",)
             ),

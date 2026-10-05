@@ -5,6 +5,7 @@
 from aerial_danger import DangerDetector, DangerType
 from aerial_danger.keywords import DRONE_DANGER
 from aerial_danger.location_presets import LOCATION_PRESETS
+from aerial_danger.pattern_utils import resolve_locality_patterns
 
 from .common import LOCALITY_PATTERNS, REGION_PATTERNS
 
@@ -185,6 +186,23 @@ def test_drone_messages() -> None:
     detector = DangerDetector(REGION_PATTERNS, LOCALITY_PATTERNS)
     for text in DRONE_MESSAGE_CASES:
         detection = detector.drone_danger(text)
+        assert detection.danger is True, text
+        assert detection.type == DangerType.DRONE, text
+        assert detector.danger(text).type == DangerType.DRONE, text
+
+
+def test_falling_drone_messages_match_selected_localities() -> None:
+    """Falling alerts should match each selected area in the message."""
+    cases = [
+        ("kyiv_oblast", "kyiv_oblast_stoianka", "1х падає Стоянка."),
+        ("kyiv", "kyiv_center", "1х падає Центр\n1.2 км"),
+        ("kyiv", "kyiv_antonov", "1х падає Антонов\n1.2 км"),
+    ]
+    for region_id, locality_id, text in cases:
+        localities = resolve_locality_patterns([], [region_id], [locality_id])
+        detector = DangerDetector([], localities)
+        detection = detector.drone_danger(text)
+
         assert detection.danger is True, text
         assert detection.type == DangerType.DRONE, text
         assert detector.danger(text).type == DangerType.DRONE, text
