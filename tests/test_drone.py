@@ -4,6 +4,7 @@
 
 from aerial_danger import DangerDetector, DangerType
 from aerial_danger.keywords import DRONE_DANGER
+from aerial_danger.location_presets import LOCATION_PRESETS
 
 from .common import LOCALITY_PATTERNS, REGION_PATTERNS
 
@@ -220,6 +221,27 @@ def test_drone_route_requires_selected_locality() -> None:
     assert detection.danger is False
     assert detection.type is None
     assert detector.is_safe(text) is False
+
+
+def test_drone_attention_requires_selected_locality() -> None:
+    """A drone attention alert must not fall back to the configured city."""
+    text = "Київ Виноградар увага по БПЛА"
+    kyiv = LOCATION_PRESETS["kyiv"]
+    for locality_id, expected_type in (
+        (None, None),
+        ("kyiv_nyvky", None),
+        ("kyiv_vynohradar", DangerType.DRONE),
+    ):
+        localities = kyiv.localities[locality_id].patterns if locality_id else []
+        detector = DangerDetector(kyiv.patterns, localities)
+
+        detection = detector.danger(text)
+
+        assert detection.danger is (expected_type is not None), locality_id
+        assert detection.type == expected_type, locality_id
+        assert detection.message == text
+        assert detector.generic_danger(text).danger is False, locality_id
+        assert detector.is_safe(text) is False
 
 
 def test_reactive_drone_danger() -> None:
