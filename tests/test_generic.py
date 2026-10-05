@@ -172,6 +172,30 @@ def test_area_list_matches_each_selected_locality() -> None:
             assert detection.matched_danger == text, locality_id
 
 
+def test_station_attention_requires_selected_locality() -> None:
+    """A station name must not trigger an attention alert for its city."""
+    text = "Київ-Товарний увага!"
+    kyiv = LOCATION_PRESETS["kyiv"]
+    for locality_id, expected_type in (
+        (None, None),
+        ("kyiv_nyvky", None),
+        ("kyiv_tovarnyi", DangerType.GENERIC),
+    ):
+        localities = kyiv.localities[locality_id].patterns if locality_id else []
+        detector = DangerDetector(kyiv.patterns, localities)
+
+        detection = detector.danger(text)
+
+        assert detection.danger is (expected_type is not None), locality_id
+        assert detection.type == expected_type, locality_id
+        assert detection.message == text
+        assert detector.is_safe(text) is False
+        if expected_type is not None:
+            assert detection.matched_danger == text
+            assert detection.danger_pattern is not None
+            assert any(pattern in detection.danger_pattern for pattern in localities)
+
+
 def test_generic_does_not_match() -> None:
     """Non-alert explanations should not raise danger flags."""
     detector = DangerDetector([*REGION_PATTERNS, r"\bкурськ\w*\b"], LOCALITY_PATTERNS)
