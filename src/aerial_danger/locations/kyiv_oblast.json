@@ -128,13 +128,6 @@
       },
       "patterns": ["\\bборисп(іль|оля|олю|олем|олі)\\b", "\\bборік\\b"]
     },
-    "kyiv_oblast_boyarka": {
-      "names": {
-        "uk": "Боярка",
-        "en": "Boiarka"
-      },
-      "patterns": ["\\bбоярк(у|а|и|ою)\\b"]
-    },
     "kyiv_oblast_brovary": {
       "names": {
         "uk": "Бровари",

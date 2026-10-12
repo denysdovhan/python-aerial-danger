@@ -44,22 +44,3 @@ class Detection:
     area_pattern: str | None = None
     danger_pattern: str | None = None
     status: DetectionStatus = field(default=DetectionStatus.IGNORED, kw_only=True)
-
-
-@dataclass(frozen=True)
-class LocalityPreset:
-    """Locality preset definition."""
-
-    id: str
-    patterns: tuple[str, ...]
-    names: dict[str, str] = field(default_factory=dict)
-
-
-@dataclass(frozen=True)
-class RegionPreset:
-    """Region preset definition and its localities."""
-
-    id: str
-    patterns: tuple[str, ...]
-    localities: dict[str, LocalityPreset]
-    names: dict[str, str] = field(default_factory=dict)

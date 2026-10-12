@@ -344,7 +344,7 @@ PRESET_EXAMPLES = {
     "kyiv_oblast_bobrytsia": ("Бобриця",),
     "kyiv_oblast_bodenky": ("Боденьки",),
     "kyiv_oblast_bohuslav": ("Богуслав", "Богуслава"),
-    "kyiv_oblast_boiarka": ("Боярку",),
+    "kyiv_oblast_boiarka": ("Боярку", "Боярка"),
     "kyiv_oblast_borodianka": ("Бородянку",),
     "kyiv_oblast_borova": ("Борова",),
     "kyiv_oblast_boryspil": (
@@ -354,7 +354,6 @@ PRESET_EXAMPLES = {
         "Борисполі",
         "Борік",
     ),
-    "kyiv_oblast_boyarka": ("Боярка",),
     "kyiv_oblast_brovary": ("Бровари",),
     "kyiv_oblast_bucha": ("Буча",),
     "kyiv_oblast_buzova": ("Бузова",),
@@ -931,6 +930,11 @@ def test_registry_ids_ownership_and_compilation() -> None:
             assert set(locality.names) == {"uk", "en"}
             assert re.fullmatch(r"[a-z]+(?:_[a-z]+)*", locality.id)
         assert region.localities
+        for language in ("uk", "en"):
+            names = [
+                locality.names[language] for locality in region.localities.values()
+            ]
+            assert len(names) == len(set(names)), (region_id, language)
         assert locality_ids([region_id]) == list(region.localities)
     for region in LOCATION_PRESETS.values():
         assert list(region.localities) == sorted(region.localities)

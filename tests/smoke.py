@@ -9,7 +9,11 @@ from aerial_danger import (
     DetectionStatus,
     PatternMatch,
 )
-from aerial_danger.location_presets import LOCATION_PRESETS
+from aerial_danger.location_presets import (
+    LOCATION_PRESETS,
+    LocalityPreset,
+    RegionPreset,
+)
 from aerial_danger.pattern_utils import (
     resolve_locality_patterns,
     resolve_region_patterns,
@@ -24,6 +28,8 @@ assert result.type == DangerType.BALLISTIC
 assert result.matched_area == "КИЇВ"
 assert PatternMatch("КИЇВ", r"\bкиїв\b").text == result.matched_area
 assert LOCATION_PRESETS["kyiv"].patterns
+assert isinstance(LOCATION_PRESETS["kyiv"], RegionPreset)
+assert isinstance(LOCATION_PRESETS["kyiv"].localities["kyiv_nyvky"], LocalityPreset)
 assert LOCATION_PRESETS["kyiv"].localities["kyiv_nyvky"].names == {
     "uk": "Нивки",
     "en": "Nyvky",

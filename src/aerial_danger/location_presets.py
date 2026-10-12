@@ -1,12 +1,30 @@
 """Area pattern presets for Aerial Danger."""
 
 import json
+from dataclasses import dataclass, field
 from importlib.resources import files
 from typing import Final
 
-from .models import LocalityPreset, RegionPreset
-
 __all__ = ["LOCATION_PRESETS", "LocalityPreset", "RegionPreset"]
+
+
+@dataclass(frozen=True)
+class LocalityPreset:
+    """Locality preset definition."""
+
+    id: str
+    patterns: tuple[str, ...]
+    names: dict[str, str] = field(default_factory=dict)
+
+
+@dataclass(frozen=True)
+class RegionPreset:
+    """Region preset definition and its localities."""
+
+    id: str
+    patterns: tuple[str, ...]
+    localities: dict[str, LocalityPreset]
+    names: dict[str, str] = field(default_factory=dict)
 
 
 def _load_presets() -> dict[str, RegionPreset]:
