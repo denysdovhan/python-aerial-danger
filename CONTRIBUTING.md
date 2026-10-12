@@ -15,7 +15,7 @@ field. Keep IDs stable for saved application selections.
 
 Every region and locality needs a `names` object with nonempty `uk` and `en`
 strings. Preserve established labels and use verified Ukrainian names with English
-transliteration for missing settlements. See [name sources](docs/location-names.md).
+transliteration for missing settlements.
 
 JSON regexes escape each backslash: write `"\\bкиїв\\b"`, not `"\bкиїв\b"`.
 Use an optional `notes` string on a locality for matching rationale; the loader

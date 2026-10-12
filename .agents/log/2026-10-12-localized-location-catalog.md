@@ -6,7 +6,6 @@ related_paths:
   - src/aerial_danger/locations/
   - src/aerial_danger/location_presets.py
   - src/aerial_danger/models.py
-  - docs/location-names.md
 ---
 
 # Localized location catalog
@@ -22,8 +21,7 @@ Preserve IDs and matcher patterns independently of display labels.
 
 All existing HA labels are retained. Missing settlement names were checked against
 the 2026-07-07 KATOTTG workbook within their region; neighbourhoods and landmarks
-use city/owner sources. Provenance and legacy ID spelling exceptions are documented
-in `docs/location-names.md`. Coordinates, radii, and government IDs are deferred.
+use city/owner sources. Coordinates, radii, and government IDs are deferred.
 
 ## Release coordination
 
