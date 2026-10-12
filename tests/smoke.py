@@ -9,7 +9,15 @@ from aerial_danger import (
     DetectionStatus,
     PatternMatch,
 )
-from aerial_danger.location_presets import LOCATION_PRESETS
+from aerial_danger.location_presets import (
+    LOCATION_PRESETS,
+    LocalityPreset,
+    RegionPreset,
+)
+from aerial_danger.pattern_utils import (
+    resolve_locality_patterns,
+    resolve_region_patterns,
+)
 
 detector = DangerDetector(regions=[r"\bкиїв\b"], localities=[])
 result = detector.danger("КИЇВ ШВИДКІСНА!")
@@ -20,6 +28,18 @@ assert result.type == DangerType.BALLISTIC
 assert result.matched_area == "КИЇВ"
 assert PatternMatch("КИЇВ", r"\bкиїв\b").text == result.matched_area
 assert LOCATION_PRESETS["kyiv"].patterns
+assert isinstance(LOCATION_PRESETS["kyiv"], RegionPreset)
+assert isinstance(LOCATION_PRESETS["kyiv"].localities["kyiv_nyvky"], LocalityPreset)
+assert LOCATION_PRESETS["kyiv"].localities["kyiv_nyvky"].names == {
+    "uk": "Нивки",
+    "en": "Nyvky",
+}
 assert not detector.danger("Привіт").danger
+
+preset_detector = DangerDetector(
+    regions=resolve_region_patterns([], ["kyiv"]),
+    localities=resolve_locality_patterns([], ["kyiv"], ["kyiv_nyvky"]),
+)
+assert preset_detector.drone_danger("Шахед на Нивки!").danger
 assert detector.danger("Привіт").status is DetectionStatus.IGNORED
 assert detector.danger("Все тихо").status is DetectionStatus.SAFE

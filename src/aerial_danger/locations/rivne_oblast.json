@@ -1,0 +1,108 @@
+{
+  "id": "rivne_oblast",
+  "names": {
+    "uk": "Рівненська область",
+    "en": "Rivne Oblast"
+  },
+  "patterns": ["\\bрівненщин(а|и|і|у|ою)\\b", "\\bрівненськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "rivne_oblast_berezne": {
+      "names": {
+        "uk": "Березне",
+        "en": "Berezne"
+      },
+      "patterns": ["\\bберезн(е|ого|ому|им|ім)\\b"]
+    },
+    "rivne_oblast_dubno": {
+      "names": {
+        "uk": "Дубно",
+        "en": "Dubno"
+      },
+      "patterns": ["\\bдубн(о|а|у|ом|і)\\b"]
+    },
+    "rivne_oblast_dubrovytsia": {
+      "names": {
+        "uk": "Дубровиця",
+        "en": "Dubrovytsia"
+      },
+      "patterns": ["\\bдубровиц(я|і|ю|ею)\\b"]
+    },
+    "rivne_oblast_hoshcha": {
+      "names": {
+        "uk": "Гоща",
+        "en": "Hoshcha"
+      },
+      "patterns": ["\\bгощ(а|і|у|ею)\\b"]
+    },
+    "rivne_oblast_klevan": {
+      "names": {
+        "uk": "Клевань",
+        "en": "Klevan"
+      },
+      "patterns": ["\\bклеван(ь|я|ю|ем|і)\\b"]
+    },
+    "rivne_oblast_korets": {
+      "names": {
+        "uk": "Корець",
+        "en": "Korets"
+      },
+      "patterns": ["\\bкор(ець|ця|цю|цем|ці)\\b"]
+    },
+    "rivne_oblast_kostopil": {
+      "names": {
+        "uk": "Костопіль",
+        "en": "Kostopil"
+      },
+      "patterns": ["\\bкостоп(іль|оля|олю|олем|олі)\\b"]
+    },
+    "rivne_oblast_mizoch": {
+      "names": {
+        "uk": "Мізоч",
+        "en": "Mizoch"
+      },
+      "patterns": ["\\bмізоч(а|у|ем|і)?\\b"]
+    },
+    "rivne_oblast_rivne": {
+      "names": {
+        "uk": "Рівне",
+        "en": "Rivne"
+      },
+      "patterns": ["\\bрівне\\b"]
+    },
+    "rivne_oblast_sarny": {
+      "names": {
+        "uk": "Сарни",
+        "en": "Sarny"
+      },
+      "patterns": ["\\bсарн(и|ам|ами|ах)?\\b"]
+    },
+    "rivne_oblast_stepan": {
+      "names": {
+        "uk": "Степань",
+        "en": "Stepan"
+      },
+      "patterns": ["\\bстепан(ь|я|ю|ем|і)\\b"]
+    },
+    "rivne_oblast_tomashhorod": {
+      "names": {
+        "uk": "Томашгород",
+        "en": "Tomashhorod"
+      },
+      "patterns": ["\\bтомашгород(а|у|ом|і)?\\b"]
+    },
+    "rivne_oblast_varash": {
+      "names": {
+        "uk": "Вараш",
+        "en": "Varash"
+      },
+      "patterns": ["\\bвараш(а|у|ем|і)?\\b"]
+    },
+    "rivne_oblast_zdolbuniv": {
+      "names": {
+        "uk": "Здолбунів",
+        "en": "Zdolbuniv"
+      },
+      "patterns": ["\\bздолбун(ів|ова|ову|овом|ові)\\b"]
+    }
+  }
+}

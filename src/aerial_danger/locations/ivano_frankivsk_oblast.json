@@ -1,0 +1,49 @@
+{
+  "id": "ivano_frankivsk_oblast",
+  "names": {
+    "uk": "Івано-Франківська область",
+    "en": "Ivano-Frankivsk Oblast"
+  },
+  "patterns": [
+    "\\bфранківщин(а|и|і|у|ою)\\b",
+    "\\bівано-франківщин(а|и|і|у|ою)\\b",
+    "\\bівано-франківськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"
+  ],
+  "localities": {
+    "ivano_frankivsk_oblast_burshtyn": {
+      "names": {
+        "uk": "Бурштин",
+        "en": "Burshtyn"
+      },
+      "patterns": ["\\bбурштин(а|у|ом|і)?\\b"]
+    },
+    "ivano_frankivsk_oblast_ivano_frankivsk": {
+      "names": {
+        "uk": "Івано-Франківськ",
+        "en": "Ivano-Frankivsk"
+      },
+      "patterns": ["\\bівано-франківськ(у|ом|і)?\\b"]
+    },
+    "ivano_frankivsk_oblast_kalush": {
+      "names": {
+        "uk": "Калуш",
+        "en": "Kalush"
+      },
+      "patterns": ["\\bкалуш(а|у|ем|і)?\\b"]
+    },
+    "ivano_frankivsk_oblast_kolomyia": {
+      "names": {
+        "uk": "Коломия",
+        "en": "Kolomyia"
+      },
+      "patterns": ["\\bколоми(я|ї|ю|єю)\\b"]
+    },
+    "ivano_frankivsk_oblast_rohatyn": {
+      "names": {
+        "uk": "Рогатин",
+        "en": "Rohatyn"
+      },
+      "patterns": ["\\bрогатин(а|у|ом|і)?\\b"]
+    }
+  }
+}

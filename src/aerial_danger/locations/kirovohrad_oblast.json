@@ -1,0 +1,223 @@
+{
+  "id": "kirovohrad_oblast",
+  "names": {
+    "uk": "Кіровоградська область",
+    "en": "Kirovohrad Oblast"
+  },
+  "patterns": [
+    "\\bкіровоградщин(а|и|і|у|ою)\\b",
+    "\\bкіровоградськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"
+  ],
+  "localities": {
+    "kirovohrad_oblast_adzhamka": {
+      "names": {
+        "uk": "Аджамка",
+        "en": "Adzhamka"
+      },
+      "patterns": ["\\bаджам(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_blahovishchenske": {
+      "names": {
+        "uk": "Благовіщенське",
+        "en": "Blahovishchenske"
+      },
+      "patterns": ["\\bблаговіщенськ(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_bobrynets": {
+      "names": {
+        "uk": "Бобринець",
+        "en": "Bobrynets"
+      },
+      "patterns": ["\\bбобрин(ець|ця|цю|цем|ці)\\b"]
+    },
+    "kirovohrad_oblast_dolynska": {
+      "names": {
+        "uk": "Долинська",
+        "en": "Dolynska"
+      },
+      "patterns": ["\\bдолинськ(а|ої|ій|у|ою)\\b"]
+    },
+    "kirovohrad_oblast_haivoron": {
+      "names": {
+        "uk": "Гайворон",
+        "en": "Haivoron"
+      },
+      "patterns": ["\\bгайворон(а|у|ом|і)?\\b"]
+    },
+    "kirovohrad_oblast_holovanivsk": {
+      "names": {
+        "uk": "Голованівськ",
+        "en": "Holovanivsk"
+      },
+      "patterns": ["\\bголованівськ(а|у|ом|і)?\\b"]
+    },
+    "kirovohrad_oblast_kamianets": {
+      "names": {
+        "uk": "Кам’янець",
+        "en": "Kamianets"
+      },
+      "patterns": ["\\bкам['’ʼ]ян(ець|ця|цю|цем|ці)\\b"]
+    },
+    "kirovohrad_oblast_khmelove": {
+      "names": {
+        "uk": "Хмельове",
+        "en": "Khmelove"
+      },
+      "patterns": ["\\bхмельов(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_kompaniivka": {
+      "names": {
+        "uk": "Компаніївка",
+        "en": "Kompaniivka"
+      },
+      "patterns": ["\\bкомпаніїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_kropyvnytskyi": {
+      "names": {
+        "uk": "Кропивницький",
+        "en": "Kropyvnytskyi"
+      },
+      "patterns": ["\\bкропивницьк(ий|ого|ому|им|ім)\\b", "\\bкроп\\b"]
+    },
+    "kirovohrad_oblast_lisove": {
+      "names": {
+        "uk": "Лісове",
+        "en": "Lisove"
+      },
+      "patterns": ["\\bлісов(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_mala_vyska": {
+      "names": {
+        "uk": "Мала Виска",
+        "en": "Mala Vyska"
+      },
+      "patterns": ["\\bмал(а|ої|ій|у|ою)\\s+вис(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_nova_praha": {
+      "names": {
+        "uk": "Нова Прага",
+        "en": "Nova Praha"
+      },
+      "patterns": ["\\bнов(а|ої|ій|у|ою)\\s+пра(га|ги|зі|гу|гою)\\b"]
+    },
+    "kirovohrad_oblast_novoarkhanhelsk": {
+      "names": {
+        "uk": "Новоархангельськ",
+        "en": "Novoarkhanhelsk"
+      },
+      "patterns": ["\\bновоархангельськ(а|у|ом|і)?\\b"]
+    },
+    "kirovohrad_oblast_novomyrhorod": {
+      "names": {
+        "uk": "Новомиргород",
+        "en": "Novomyrhorod"
+      },
+      "patterns": ["\\bновомиргород(а|у|ом|і)?\\b"]
+    },
+    "kirovohrad_oblast_novoukrainka": {
+      "names": {
+        "uk": "Новоукраїнка",
+        "en": "Novoukrainka"
+      },
+      "patterns": ["\\bновоукраїн(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_oleksandriia": {
+      "names": {
+        "uk": "Олександрія",
+        "en": "Oleksandriia"
+      },
+      "patterns": ["\\bолександрі(я|ї|ю|єю)\\b"]
+    },
+    "kirovohrad_oblast_oleksandriiske": {
+      "names": {
+        "uk": "Олександрійське",
+        "en": "Oleksandriiske"
+      },
+      "patterns": ["\\bолександрійськ(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_onufriivka": {
+      "names": {
+        "uk": "Онуфріївка",
+        "en": "Onufriivka"
+      },
+      "patterns": ["\\bонуфріїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_pantaivka": {
+      "names": {
+        "uk": "Пантаївка",
+        "en": "Pantaivka"
+      },
+      "patterns": ["\\bпантаїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_pavlysh": {
+      "names": {
+        "uk": "Павлиш",
+        "en": "Pavlysh"
+      },
+      "patterns": ["\\bпавлиш(а|у|ем|і)?\\b"]
+    },
+    "kirovohrad_oblast_petrove": {
+      "names": {
+        "uk": "Петрове",
+        "en": "Petrove"
+      },
+      "patterns": ["\\bпетров(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_pomichna": {
+      "names": {
+        "uk": "Помічна",
+        "en": "Pomichna"
+      },
+      "patterns": ["\\bпомічн(а|ої|ій|у|ою)\\b"]
+    },
+    "kirovohrad_oblast_smoline": {
+      "names": {
+        "uk": "Смоліне",
+        "en": "Smoline"
+      },
+      "patterns": ["\\bсмолін(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_sozonivka": {
+      "names": {
+        "uk": "Созонівка",
+        "en": "Sozonivka"
+      },
+      "patterns": ["\\bсозонів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_svitlovodsk": {
+      "names": {
+        "uk": "Світловодськ",
+        "en": "Svitlovodsk"
+      },
+      "patterns": ["\\bсвітловодськ(а|у|ом|і)?\\b"]
+    },
+    "kirovohrad_oblast_tsybuleve": {
+      "names": {
+        "uk": "Цибулеве",
+        "en": "Tsybuleve"
+      },
+      "patterns": ["\\bцибулев(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_ustynivka": {
+      "names": {
+        "uk": "Устинівка",
+        "en": "Ustynivka"
+      },
+      "patterns": ["\\bустинів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_velyka_vyska": {
+      "names": {
+        "uk": "Велика Виска",
+        "en": "Velyka Vyska"
+      },
+      "patterns": ["\\bвелик(а|ої|ій|у|ою)\\s+вис(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_vilshanka": {
+      "names": {
+        "uk": "Вільшанка",
+        "en": "Vilshanka"
+      },
+      "patterns": ["\\bвільшан(ка|ки|ці|ку|кою)\\b"]
+    }
+  }
+}

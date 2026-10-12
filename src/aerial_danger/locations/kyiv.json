@@ -1,0 +1,595 @@
+{
+  "id": "kyiv",
+  "names": {
+    "uk": "Київ",
+    "en": "Kyiv"
+  },
+  "patterns": ["\\bки(їв|єва|єві|єву|євом)\\b", "\\bстолиц(я|і|ю|ею)\\b"],
+  "localities": {
+    "kyiv_akademmistechko": {
+      "names": {
+        "uk": "Академмістечко",
+        "en": "Akademmistechko"
+      },
+      "patterns": ["\\bакадем\\b", "\\bакадеммістечк(о|а|у|ом)\\b"]
+    },
+    "kyiv_antonov": {
+      "names": {
+        "uk": "Антонов",
+        "en": "Antonov"
+      },
+      "patterns": ["\\bантонов(а)?\\b"]
+    },
+    "kyiv_beresteiska": {
+      "names": {
+        "uk": "Берестейська",
+        "en": "Beresteiska"
+      },
+      "patterns": ["\\bберестейськ(а|ої|ій|у|ою)\\b"]
+    },
+    "kyiv_berezniaky": {
+      "names": {
+        "uk": "Березняки",
+        "en": "Berezniaky"
+      },
+      "patterns": ["\\bберезняк(и|ів|ах|ами)\\b"]
+    },
+    "kyiv_berkovets": {
+      "names": {
+        "uk": "Берковець",
+        "en": "Berkovets"
+      },
+      "patterns": ["\\bберков(ець|ця|ці|цем)\\b"]
+    },
+    "kyiv_bilychi": {
+      "names": {
+        "uk": "Біличі",
+        "en": "Bilychi"
+      },
+      "patterns": ["\\bбілич(і|ів|ах|ами)\\b"]
+    },
+    "kyiv_borshchahivka": {
+      "names": {
+        "uk": "Борщагівка",
+        "en": "Borshchahivka"
+      },
+      "patterns": ["\\bборщаг(а|и|у|ою|івк(а|и|у|ою|ці)|івок)\\b"]
+    },
+    "kyiv_bortnychi": {
+      "names": {
+        "uk": "Бортничі",
+        "en": "Bortnychi"
+      },
+      "patterns": ["\\bбортнич(і|ів|ах|ами)\\b"]
+    },
+    "kyiv_bykivnia": {
+      "names": {
+        "uk": "Биківня",
+        "en": "Bykivnia"
+      },
+      "patterns": ["\\bбиківн(я|і|ю|ею)\\b"]
+    },
+    "kyiv_center": {
+      "names": {
+        "uk": "Центр",
+        "en": "Center"
+      },
+      "patterns": ["\\bцентр(у|і|ом|а)?\\b"]
+    },
+    "kyiv_chokolivka": {
+      "names": {
+        "uk": "Чоколівка",
+        "en": "Chokolivka"
+      },
+      "patterns": ["\\bчоколівк(а|и|у|ою|ці)\\b"]
+    },
+    "kyiv_comfort_town": {
+      "names": {
+        "uk": "Комфорт Таун",
+        "en": "Comfort Town"
+      },
+      "patterns": ["\\bкомфорт[\\s-]?таун(а|у|ом|і)?\\b"]
+    },
+    "kyiv_darnytsia": {
+      "names": {
+        "uk": "Дарниця",
+        "en": "Darnytsia"
+      },
+      "patterns": ["\\bдарниц(я|і|ю|ею)\\b", "\\bдарницьк(ий|ого|ому|им)(?: масив(у|і|ом|а)?)?\\b"]
+    },
+    "kyiv_demiivka": {
+      "names": {
+        "uk": "Деміївка",
+        "en": "Demiivka"
+      },
+      "patterns": ["\\bдеміївк(а|и|у|ою|ці)\\b"]
+    },
+    "kyiv_desnianskyi_district": {
+      "names": {
+        "uk": "Деснянський район",
+        "en": "Desnianskyi District"
+      },
+      "patterns": ["\\bдеснянськ(ий|ого|ому|им|ім) район(у|і|ом|а)?\\b"]
+    },
+    "kyiv_dniprovskyi_district": {
+      "names": {
+        "uk": "Дніпровський район",
+        "en": "Dniprovskyi District"
+      },
+      "patterns": ["\\bдніпровськ(ий|ого|ому|им|ім) район(у|і|ом|а)?\\b"]
+    },
+    "kyiv_dorohzhychi": {
+      "names": {
+        "uk": "Дорогожичі",
+        "en": "Dorohzhychi"
+      },
+      "patterns": ["\\bдорогожич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_dvrz": {
+      "names": {
+        "uk": "ДВРЗ",
+        "en": "DVRZ"
+      },
+      "patterns": ["\\bдврз\\b"]
+    },
+    "kyiv_faina_town": {
+      "names": {
+        "uk": "Файна Таун",
+        "en": "Fayna Town"
+      },
+      "patterns": ["\\bфайна[\\s-]?таун(а|у|ом|і)?\\b", "\\bfa(i|y)na[\\s-]?town\\b"]
+    },
+    "kyiv_feofaniia": {
+      "names": {
+        "uk": "Феофанія",
+        "en": "Feofaniia"
+      },
+      "patterns": ["\\bфеофан(ія|ії|ію|ією)\\b"]
+    },
+    "kyiv_halahany": {
+      "names": {
+        "uk": "Галагани",
+        "en": "Halahany"
+      },
+      "patterns": ["\\bгалаган(и|ів|ам|ами|ах)?\\b"]
+    },
+    "kyiv_hidropark": {
+      "names": {
+        "uk": "Гідропарк",
+        "en": "Hidropark"
+      },
+      "patterns": ["\\bгідропарк(у|і|ом|а)?\\b"]
+    },
+    "kyiv_holosiiv": {
+      "names": {
+        "uk": "Голосіїв",
+        "en": "Holosiiv"
+      },
+      "patterns": [
+        "\\bголосі(їв|єва|єві|єву|євом)\\b",
+        "\\bголосіївськ(ий|ого|ому|им)\\b",
+        "\\bголос\\b"
+      ]
+    },
+    "kyiv_ipodrom": {
+      "names": {
+        "uk": "Іподром",
+        "en": "Ipodrom"
+      },
+      "patterns": ["\\bіподром(у|і|ом|а)?\\b"]
+    },
+    "kyiv_karavaievi_dachi": {
+      "names": {
+        "uk": "Караваєві Дачі",
+        "en": "Karavaievi Dachi"
+      },
+      "patterns": [
+        "\\bкараваєв(і дачі|их дач|им дачам|ими дачами|их дачах)\\b",
+        "\\bкардач(і|ів|ам|ами|ах)\\b"
+      ]
+    },
+    "kyiv_kharkivskyi_masyv": {
+      "names": {
+        "uk": "Харківський масив",
+        "en": "Kharkivskyi Masyv"
+      },
+      "patterns": ["\\bхарківськ(ий|ого|ому|им)(?: масив(у|і|ом|а)?)?\\b"]
+    },
+    "kyiv_khutir": {
+      "names": {
+        "uk": "Червоний Хутір",
+        "en": "Chervonyi Khutir"
+      },
+      "patterns": ["\\bчервон(ий|ого|ому|им) хут(ір|ор(а|у|і|ом|е))\\b", "\\bхутір\\b"]
+    },
+    "kyiv_klov": {
+      "names": {
+        "uk": "Клов",
+        "en": "Klov"
+      },
+      "patterns": ["\\bклов(у|і|ом|а)?\\b", "\\bкловськ(а|ої|ій|у|ою)\\b"]
+    },
+    "kyiv_koncha_zaspa": {
+      "names": {
+        "uk": "Конча-Заспа",
+        "en": "Koncha-Zaspa"
+      },
+      "patterns": ["\\bконч(а|і)[ -]засп(а|и|і|у|ою)\\b", "\\bзасп(а|и|і|у|ою)\\b"]
+    },
+    "kyiv_korchuvate": {
+      "names": {
+        "uk": "Корчувате",
+        "en": "Korchuvate"
+      },
+      "patterns": ["\\bкорчуват(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_kpi": {
+      "names": {
+        "uk": "КПІ",
+        "en": "KPI"
+      },
+      "patterns": ["\\bкпі\\b"]
+    },
+    "kyiv_kurenivka": {
+      "names": {
+        "uk": "Куренівка",
+        "en": "Kurenivka"
+      },
+      "patterns": ["\\bкуренівк(а|и|у|ою|ці)\\b"]
+    },
+    "kyiv_left_bank": {
+      "names": {
+        "uk": "Лівий берег",
+        "en": "Left Bank"
+      },
+      "patterns": ["\\bлів(ий|ого|ому|им) берег(а|у|ом|і)?\\b", "\\bлівобережж(я|і|ю|ям)\\b"]
+    },
+    "kyiv_lisovyi_masyv": {
+      "names": {
+        "uk": "Лісовий масив",
+        "en": "Lisovyi Masyv"
+      },
+      "patterns": ["\\bлісов(ий|ого|ому|им)(?: масив(у|і|ом|а)?)?\\b"]
+    },
+    "kyiv_livoberezhnyi_masyv": {
+      "names": {
+        "uk": "Лівобережний масив",
+        "en": "Livoberezhnyi Masyv"
+      },
+      "patterns": ["\\bлівобережн(ий|ого|ому|им)(?: масив(у|і|ом|а)?)?\\b"]
+    },
+    "kyiv_lukianivka": {
+      "names": {
+        "uk": "Лукʼянівка",
+        "en": "Lukianivka"
+      },
+      "patterns": ["\\bлук['’ʼ]?янів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_lypky": {
+      "names": {
+        "uk": "Липки",
+        "en": "Lypky"
+      },
+      "patterns": ["\\bлип(ки|ок|ках|ками)\\b"]
+    },
+    "kyiv_minskyi_masyv": {
+      "names": {
+        "uk": "Мінський масив",
+        "en": "Minskyi Masyv"
+      },
+      "patterns": ["\\bмінськ(ий|ого|ому|им)(?: масив(у|і|ом|а)?)?\\b"]
+    },
+    "kyiv_muromets": {
+      "names": {
+        "uk": "Острів Муромець",
+        "en": "Muromets Island"
+      },
+      "patterns": ["\\b(острів )?муром(ець|ця|ці|цем)\\b"]
+    },
+    "kyiv_mysholovka": {
+      "names": {
+        "uk": "Мишоловка",
+        "en": "Mysholovka"
+      },
+      "patterns": ["\\bмишоловк(а|и|у|ою|ці)\\b"]
+    },
+    "kyiv_nova_zabudova": {
+      "names": {
+        "uk": "Нова Забудова",
+        "en": "Nova Zabudova"
+      },
+      "patterns": ["\\bнов(а|ої|ій|у|ою) забудов(а|и|і|у|ою)\\b"]
+    },
+    "kyiv_nyvky": {
+      "names": {
+        "uk": "Нивки",
+        "en": "Nyvky"
+      },
+      "patterns": ["\\bнив(ки|ках|ками|ок)\\b"]
+    },
+    "kyiv_nyzhni_sady": {
+      "names": {
+        "uk": "Нижні Сади",
+        "en": "Nyzhni Sady"
+      },
+      "patterns": ["\\bнижн(і|іх|ім|ими) сад(и|ів|ах|ами)\\b"]
+    },
+    "kyiv_obolon": {
+      "names": {
+        "uk": "Оболонь",
+        "en": "Obolon"
+      },
+      "patterns": ["\\bоболон(ь|і|ню)\\b", "\\bоболонськ(ий|ого|ому|им)\\b"]
+    },
+    "kyiv_osokorky": {
+      "names": {
+        "uk": "Осокорки",
+        "en": "Osokorky"
+      },
+      "patterns": ["\\bосокорк(и|ів|ах|ами)\\b"]
+    },
+    "kyiv_pasazhyrskyi": {
+      "names": {
+        "uk": "Київ-Пасажирський",
+        "en": "Kyiv-Pasazhyrskyi"
+      },
+      "patterns": ["\\bкиїв[ -]пасажирський\\b"]
+    },
+    "kyiv_pechersk": {
+      "names": {
+        "uk": "Печерськ",
+        "en": "Pechersk"
+      },
+      "patterns": ["\\bпечерськ(ий|ого|ому|им)?\\b"]
+    },
+    "kyiv_pochaiana": {
+      "names": {
+        "uk": "Почайна",
+        "en": "Pochaiana"
+      },
+      "patterns": ["\\bпочайн(а|и|і|у|ою|ої)\\b"]
+    },
+    "kyiv_podil": {
+      "names": {
+        "uk": "Поділ",
+        "en": "Podil"
+      },
+      "patterns": ["\\bпод(іл|олу|олі|олом)\\b", "\\bподільськ(ий|ого|ому|им)\\b"]
+    },
+    "kyiv_pozniaky": {
+      "names": {
+        "uk": "Позняки",
+        "en": "Pozniaky"
+      },
+      "patterns": ["\\bпозняк(и|ів|ах|ами)\\b"]
+    },
+    "kyiv_priorka": {
+      "names": {
+        "uk": "Пріорка",
+        "en": "Priorka"
+      },
+      "patterns": ["\\bпріорк(а|и|у|ою|ці)\\b"]
+    },
+    "kyiv_pushcha_vodytsia": {
+      "names": {
+        "uk": "Пуща-Водиця",
+        "en": "Pushcha-Vodytsia"
+      },
+      "patterns": [
+        "\\bпущ(а|і)\\b",
+        "(?<=на )пущу\\b",
+        "(?<=в )пущу\\b",
+        "(?<=у )пущу\\b",
+        "(?<=до )пущу\\b",
+        "\\bпущ(а|і|у|ею)[ -]водиц(я|і|ю|ею)\\b"
+      ],
+      "notes": "Short forms are corpus-backed Kyiv locality names."
+    },
+    "kyiv_pyrohiv": {
+      "names": {
+        "uk": "Пирогів",
+        "en": "Pyrohiv"
+      },
+      "patterns": ["\\bпирог(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_rembaza": {
+      "names": {
+        "uk": "Рембаза",
+        "en": "Rembaza"
+      },
+      "patterns": ["\\bрембаз(а|и|і|у|ою)\\b"]
+    },
+    "kyiv_respublika": {
+      "names": {
+        "uk": "Республіка",
+        "en": "Respublika"
+      },
+      "patterns": ["\\bреспублік(а|и|і|у|ою)\\b", "\\brespublika\\b"]
+    },
+    "kyiv_retroville": {
+      "names": {
+        "uk": "Ретровіль",
+        "en": "Retroville"
+      },
+      "patterns": ["\\bретровіл(ь|я|ю|ем|і)\\b", "\\bretroville\\b"]
+    },
+    "kyiv_right_bank": {
+      "names": {
+        "uk": "Правий берег",
+        "en": "Right Bank"
+      },
+      "patterns": ["\\bправ(ий|ого|ому|им) берег(а|у|ом|і)?\\b", "\\bправобережж(я|і|ю|ям)\\b"]
+    },
+    "kyiv_rusanivka": {
+      "names": {
+        "uk": "Русанівка",
+        "en": "Rusanivka"
+      },
+      "patterns": ["\\bрусанів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_rusanivski_sady": {
+      "names": {
+        "uk": "Русанівські Сади",
+        "en": "Rusanivski Sady"
+      },
+      "patterns": ["\\bрусанівськ(і|их|им|ими) сад(и|ів|ах|ами)\\b"]
+    },
+    "kyiv_rybalskyi_ostriv": {
+      "names": {
+        "uk": "Рибальський острів",
+        "en": "Rybalskyi Island"
+      },
+      "patterns": ["\\bрибальськ(ий|ого|ому|им)(?: остр(ів|ова|ову|ові|овом))?\\b"]
+    },
+    "kyiv_shevchenkivskyi_district": {
+      "names": {
+        "uk": "Шевченківський район",
+        "en": "Shevchenkivskyi District"
+      },
+      "patterns": ["\\bшевченківськ(ий|ого|ому|им|ім) район(у|і|ом|а)?\\b"]
+    },
+    "kyiv_shuliavka": {
+      "names": {
+        "uk": "Шулявка",
+        "en": "Shuliavka"
+      },
+      "patterns": ["\\bшулявк(а|и|у|ою|ці)\\b", "\\bшул(я|і|ю|ею|ьою|е)\\b"]
+    },
+    "kyiv_solomianka": {
+      "names": {
+        "uk": "Солом'янка",
+        "en": "Solomianka"
+      },
+      "patterns": [
+        "\\bсолом(а|['’ʼ]?янк(а|и|у|ою|ці))\\b",
+        "\\bсолом(у|и|і|ою)\\b",
+        "\\bсолом['’ʼ]?янськ(ий|ого|ому|им)\\b"
+      ]
+    },
+    "kyiv_sotsmisto": {
+      "names": {
+        "uk": "Соцмісто",
+        "en": "Sotsmisto"
+      },
+      "patterns": ["\\bсоцміст(о|ом|т)\\b"]
+    },
+    "kyiv_sovky": {
+      "names": {
+        "uk": "Совки",
+        "en": "Sovky"
+      },
+      "patterns": ["\\bсов(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_sviatoshyn": {
+      "names": {
+        "uk": "Святошин",
+        "en": "Sviatoshyn"
+      },
+      "patterns": ["\\bсвятошин(о|а|і)?\\b", "\\bсвятошинськ(ий|ого|ому|им)\\b"]
+    },
+    "kyiv_syrets": {
+      "names": {
+        "uk": "Сирець",
+        "en": "Syrets"
+      },
+      "patterns": ["\\bсир(ець|ця|ці|цем)\\b"]
+    },
+    "kyiv_telychka": {
+      "names": {
+        "uk": "Теличка",
+        "en": "Telychka"
+      },
+      "patterns": ["\\bтеличк(а|и|у|ою|ці)\\b"]
+    },
+    "kyiv_teremky": {
+      "names": {
+        "uk": "Теремки",
+        "en": "Teremky"
+      },
+      "patterns": ["\\bтеремк(и|ів|ах|ами)\\b"]
+    },
+    "kyiv_tovarnyi": {
+      "names": {
+        "uk": "Київ Товарний",
+        "en": "Kyiv Tovarnyi"
+      },
+      "patterns": ["\\bкиїв[ -]товарний\\b"]
+    },
+    "kyiv_troieshchyna": {
+      "names": {
+        "uk": "Троєщина",
+        "en": "Troieshchyna"
+      },
+      "patterns": ["\\bтроєщин(а|и|і|у|ою)\\b", "\\bтро(я|ї|ю)\\b"]
+    },
+    "kyiv_trukhaniv_island": {
+      "names": {
+        "uk": "Труханів острів",
+        "en": "Trukhaniv Island"
+      },
+      "patterns": [
+        "\\bтрухан(ів|ова|ову|овом|ові)\\b",
+        "\\bтруханів\\s+остр(ів|ова|ову|овом|ові)\\b"
+      ]
+    },
+    "kyiv_varshavskyi": {
+      "names": {
+        "uk": "Варшавський масив",
+        "en": "Varshavskyi Residential Area"
+      },
+      "patterns": [
+        "\\bваршавськ(ий|ого|ому|им|ім) масив(у|а|ом|і)?\\b",
+        "\\bжк\\s*[«\\\"„“]?\\s*варшавськ(ий|ого|ому|им|ім)(\\s+плюс)?\\b"
+      ]
+    },
+    "kyiv_vidradnyi": {
+      "names": {
+        "uk": "Відрадний",
+        "en": "Vidradnyi"
+      },
+      "patterns": ["\\bвідра(д|нд)н(ий|ого|ому|им)\\b"]
+    },
+    "kyiv_vita_lytovska": {
+      "names": {
+        "uk": "Віта-Литовська",
+        "en": "Vita-Lytovska"
+      },
+      "patterns": ["\\bвіта[ -]литовськ(а|ої|ій|у|ою)\\b"]
+    },
+    "kyiv_voskresenka": {
+      "names": {
+        "uk": "Воскресенка",
+        "en": "Voskresenka"
+      },
+      "patterns": ["\\bвос(к)?ресенк(а|и|у|ою|ці)\\b"]
+    },
+    "kyiv_vydubychi": {
+      "names": {
+        "uk": "Видубичі",
+        "en": "Vydubychi"
+      },
+      "patterns": ["\\bвидубич(і|ів|ах|ами)\\b"]
+    },
+    "kyiv_vynohradar": {
+      "names": {
+        "uk": "Виноградар",
+        "en": "Vynohradar"
+      },
+      "patterns": ["\\bвиноградар(а|я|і|ем)?\\b"]
+    },
+    "kyiv_zhuliany": {
+      "names": {
+        "uk": "Жуляни",
+        "en": "Zhuliany"
+      },
+      "patterns": ["\\bжулян(и|ах|ами)?\\b"]
+    },
+    "kyiv_zvirynets": {
+      "names": {
+        "uk": "Звіринець",
+        "en": "Zvirynets"
+      },
+      "patterns": ["\\bзвірин(ець|ця|ці|цем)\\b"]
+    }
+  }
+}

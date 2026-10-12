@@ -1,0 +1,248 @@
+{
+  "id": "vinnytsia_oblast",
+  "names": {
+    "uk": "Вінницька область",
+    "en": "Vinnytsia Oblast"
+  },
+  "patterns": ["\\bвінниччин(а|и|і|у|ою)\\b", "\\bвінницьк(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "vinnytsia_oblast_bar": {
+      "names": {
+        "uk": "Бар",
+        "en": "Bar"
+      },
+      "patterns": ["\\bбар(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_bershad": {
+      "names": {
+        "uk": "Бершадь",
+        "en": "Bershad"
+      },
+      "patterns": ["\\bбершад(ь|і|дю)\\b"]
+    },
+    "vinnytsia_oblast_bratslav": {
+      "names": {
+        "uk": "Брацлав",
+        "en": "Bratslav"
+      },
+      "patterns": ["\\bбрацлав(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_chechelnyk": {
+      "names": {
+        "uk": "Чечельник",
+        "en": "Chechelnyk"
+      },
+      "patterns": ["\\bчечельник(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_dashiv": {
+      "names": {
+        "uk": "Дашів",
+        "en": "Dashiv"
+      },
+      "patterns": ["\\bдаш(ів|ова|ову|овом|ові)\\b"]
+    },
+    "vinnytsia_oblast_haisyn": {
+      "names": {
+        "uk": "Гайсин",
+        "en": "Haisyn"
+      },
+      "patterns": ["\\bгайсин(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_hlukhivtsi": {
+      "names": {
+        "uk": "Глухівці",
+        "en": "Hlukhivtsi"
+      },
+      "patterns": ["\\bглухівц(і|ів|ям|ями|ях)\\b"]
+    },
+    "vinnytsia_oblast_hnivan": {
+      "names": {
+        "uk": "Гнівань",
+        "en": "Hnivan"
+      },
+      "patterns": ["\\bгніван(ь|і|ню)\\b"]
+    },
+    "vinnytsia_oblast_illintsi": {
+      "names": {
+        "uk": "Іллінці",
+        "en": "Illintsi"
+      },
+      "patterns": ["\\bіллін(ці|ців|цям|цями|цях)\\b"]
+    },
+    "vinnytsia_oblast_khmilnyk": {
+      "names": {
+        "uk": "Хмільник",
+        "en": "Khmilnyk"
+      },
+      "patterns": ["\\bхмільник(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_kopaihorod": {
+      "names": {
+        "uk": "Копайгород",
+        "en": "Kopaihorod"
+      },
+      "patterns": ["\\bкопайгород(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_koziatyn": {
+      "names": {
+        "uk": "Козятин",
+        "en": "Koziatyn"
+      },
+      "patterns": ["\\bкозятин(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_kryzhopil": {
+      "names": {
+        "uk": "Крижопіль",
+        "en": "Kryzhopil"
+      },
+      "patterns": ["\\bкрижоп(іль|оля|олю|олем|олі)\\b"]
+    },
+    "vinnytsia_oblast_ladyzhyn": {
+      "names": {
+        "uk": "Ладижин",
+        "en": "Ladyzhyn"
+      },
+      "patterns": ["\\bладижин(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_lypovets": {
+      "names": {
+        "uk": "Липовець",
+        "en": "Lypovets"
+      },
+      "patterns": ["\\bлипов(ець|ця|цю|цем|ці)\\b"]
+    },
+    "vinnytsia_oblast_murovani_kurylivtsi": {
+      "names": {
+        "uk": "Муровані Курилівці",
+        "en": "Murovani Kurylivtsi"
+      },
+      "patterns": ["\\bмурован(і|их|им|ими)\\s+курилівц(і|ів|ям|ями|ях)\\b"]
+    },
+    "vinnytsia_oblast_nemyriv": {
+      "names": {
+        "uk": "Немирів",
+        "en": "Nemyriv"
+      },
+      "patterns": ["\\bнемир(ів|ова|ову|овом|ові)\\b"]
+    },
+    "vinnytsia_oblast_orativ": {
+      "names": {
+        "uk": "Оратів",
+        "en": "Orativ"
+      },
+      "patterns": ["\\bорат(ів|ова|ову|овом|ові)\\b"]
+    },
+    "vinnytsia_oblast_pohrebyshche": {
+      "names": {
+        "uk": "Погребище",
+        "en": "Pohrebyshche"
+      },
+      "patterns": ["\\bпогребищ(е|а|у|ем|і)\\b"]
+    },
+    "vinnytsia_oblast_rakhny_lisovi": {
+      "names": {
+        "uk": "Рахни-Лісові",
+        "en": "Rakhny-Lisovi"
+      },
+      "patterns": ["\\bрахн(и|ів|ам|ами|ах)[ -]лісов(і|их|им|ими)\\b"]
+    },
+    "vinnytsia_oblast_sharhorod": {
+      "names": {
+        "uk": "Шаргород",
+        "en": "Sharhorod"
+      },
+      "patterns": ["\\bшаргород(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_shpykiv": {
+      "names": {
+        "uk": "Шпиків",
+        "en": "Shpykiv"
+      },
+      "patterns": ["\\bшпик(ів|ова|ову|овом|ові)\\b"]
+    },
+    "vinnytsia_oblast_sytkivtsi": {
+      "names": {
+        "uk": "Ситківці",
+        "en": "Sytkivtsi"
+      },
+      "patterns": ["\\bситківц(і|ів|ям|ями|ях)\\b"]
+    },
+    "vinnytsia_oblast_teplyk": {
+      "names": {
+        "uk": "Теплик",
+        "en": "Teplyk"
+      },
+      "patterns": ["\\bтеплик(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_tomashpil": {
+      "names": {
+        "uk": "Томашпіль",
+        "en": "Tomashpil"
+      },
+      "patterns": ["\\bтомашп(іль|оля|олю|олем|олі)\\b"]
+    },
+    "vinnytsia_oblast_trostianets": {
+      "names": {
+        "uk": "Тростянець",
+        "en": "Trostianets"
+      },
+      "patterns": ["\\bтростянець\\b"]
+    },
+    "vinnytsia_oblast_tulchyn": {
+      "names": {
+        "uk": "Тульчин",
+        "en": "Tulchyn"
+      },
+      "patterns": ["\\bтульчин(а|у|ом|і)?\\b"]
+    },
+    "vinnytsia_oblast_turbiv": {
+      "names": {
+        "uk": "Турбів",
+        "en": "Turbiv"
+      },
+      "patterns": ["\\bтурб(ів|ова|ову|овом|ові)\\b"]
+    },
+    "vinnytsia_oblast_tyvriv": {
+      "names": {
+        "uk": "Тиврів",
+        "en": "Tyvriv"
+      },
+      "patterns": ["\\bтивр(ів|ова|ову|овом|ові)\\b"]
+    },
+    "vinnytsia_oblast_ulaniv": {
+      "names": {
+        "uk": "Уланів",
+        "en": "Ulaniv"
+      },
+      "patterns": ["\\bулан(ів|ова|ову|овом|ові)\\b"]
+    },
+    "vinnytsia_oblast_vapniarka": {
+      "names": {
+        "uk": "Вапнярка",
+        "en": "Vapniarka"
+      },
+      "patterns": ["\\bвапнярку\\b"]
+    },
+    "vinnytsia_oblast_vinnytsia": {
+      "names": {
+        "uk": "Вінниця",
+        "en": "Vinnytsia"
+      },
+      "patterns": ["\\bвінниц(я|і|ю|ею)\\b"]
+    },
+    "vinnytsia_oblast_voronovytsia": {
+      "names": {
+        "uk": "Вороновиця",
+        "en": "Voronovytsia"
+      },
+      "patterns": ["\\bвороновиц(я|і|ю|ею)\\b"]
+    },
+    "vinnytsia_oblast_zhmerynka": {
+      "names": {
+        "uk": "Жмеринка",
+        "en": "Zhmerynka"
+      },
+      "patterns": ["\\bжмеринк(а|и|у)\\b"]
+    }
+  }
+}

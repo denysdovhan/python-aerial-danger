@@ -8,3 +8,4 @@ build/
 .coverage
 coverage.xml
 .DS_Store
+data

@@ -1,0 +1,80 @@
+{
+  "id": "ternopil_oblast",
+  "names": {
+    "uk": "Тернопільська область",
+    "en": "Ternopil Oblast"
+  },
+  "patterns": ["\\bтернопільщин(а|и|і|у|ою)\\b", "\\bтернопільськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "ternopil_oblast_chortkiv": {
+      "names": {
+        "uk": "Чортків",
+        "en": "Chortkiv"
+      },
+      "patterns": ["\\bчортк(ів|ова|ову|овом|ові)\\b"]
+    },
+    "ternopil_oblast_hrymailiv": {
+      "names": {
+        "uk": "Гримайлів",
+        "en": "Hrymailiv"
+      },
+      "patterns": ["\\bгримайл(ів|ова|ову|овом|ові)\\b"]
+    },
+    "ternopil_oblast_khorostkiv": {
+      "names": {
+        "uk": "Хоростків",
+        "en": "Khorostkiv"
+      },
+      "patterns": ["\\bхоростк(ів|ова|ову|овом|ові)\\b"]
+    },
+    "ternopil_oblast_kozova": {
+      "names": {
+        "uk": "Козова",
+        "en": "Kozova"
+      },
+      "patterns": ["\\bкозов(а|и|і|у|ою)\\b"]
+    },
+    "ternopil_oblast_kremenets": {
+      "names": {
+        "uk": "Кременець",
+        "en": "Kremenets"
+      },
+      "patterns": ["\\bкремен(ець|ця|цю|цем|ці)\\b"]
+    },
+    "ternopil_oblast_lanivtsi": {
+      "names": {
+        "uk": "Ланівці",
+        "en": "Lanivtsi"
+      },
+      "patterns": ["\\bланівц(і|ів|ям|ями|ях)\\b"]
+    },
+    "ternopil_oblast_terebovlia": {
+      "names": {
+        "uk": "Теребовля",
+        "en": "Terebovlia"
+      },
+      "patterns": ["\\bтеребовл(я|і|ю|ею)\\b"]
+    },
+    "ternopil_oblast_ternopil": {
+      "names": {
+        "uk": "Тернопіль",
+        "en": "Ternopil"
+      },
+      "patterns": ["\\bтерноп(іль|оля|олю|олем|олі)\\b"]
+    },
+    "ternopil_oblast_velyki_birky": {
+      "names": {
+        "uk": "Великі Бірки",
+        "en": "Velyki Birky"
+      },
+      "patterns": ["\\bвелик(і|их|им|ими)\\s+бір(ки|ок|кам|ками|ках)\\b"]
+    },
+    "ternopil_oblast_vyshnivets": {
+      "names": {
+        "uk": "Вишнівець",
+        "en": "Vyshnivets"
+      },
+      "patterns": ["\\bвишнів(ець|ця|цю|цем|ці)\\b"]
+    }
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "id": "kharkiv_oblast",
+  "names": {
+    "uk": "Харківська область",
+    "en": "Kharkiv Oblast"
+  },
+  "patterns": ["\\bхарківщин(а|и|і|у|ою)\\b", "\\bхарківськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "kharkiv_oblast_andriivka": {
+      "names": {
+        "uk": "Андріївка",
+        "en": "Andriivka"
+      },
+      "patterns": ["\\bандріїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kharkiv_oblast_balakliia": {
+      "names": {
+        "uk": "Балаклія",
+        "en": "Balakliia"
+      },
+      "patterns": ["\\bбалаклі(я|ї|ю|єю)\\b"]
+    },
+    "kharkiv_oblast_barvinkove": {
+      "names": {
+        "uk": "Барвінкове",
+        "en": "Barvinkove"
+      },
+      "patterns": ["\\bбарвінкове\\b"]
+    },
+    "kharkiv_oblast_berestyn": {
+      "names": {
+        "uk": "Берестин",
+        "en": "Berestyn"
+      },
+      "patterns": ["\\bберестин(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_bezliudivka": {
+      "names": {
+        "uk": "Безлюдівка",
+        "en": "Bezliudivka"
+      },
+      "patterns": ["\\bбезлюдів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kharkiv_oblast_blyzniuky": {
+      "names": {
+        "uk": "Близнюки",
+        "en": "Blyzniuky"
+      },
+      "patterns": ["\\bблизнюк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kharkiv_oblast_bohodukhiv": {
+      "names": {
+        "uk": "Богодухів",
+        "en": "Bohodukhiv"
+      },
+      "patterns": ["\\bбогодух(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kharkiv_oblast_chuhuiv": {
+      "names": {
+        "uk": "Чугуїв",
+        "en": "Chuhuiv"
+      },
+      "patterns": ["\\bчуг(уїв|уєва|уєву|уєвом|уєві)\\b"]
+    },
+    "kharkiv_oblast_derhachi": {
+      "names": {
+        "uk": "Дергачі",
+        "en": "Derhachi"
+      },
+      "patterns": ["\\bдергач(і|ів|ам|ами|ах)\\b"]
+    },
+    "kharkiv_oblast_derzhprom": {
+      "names": {
+        "uk": "Держпром",
+        "en": "Derzhprom"
+      },
+      "patterns": ["\\bдержпром(у|і|ом|а)?\\b"]
+    },
+    "kharkiv_oblast_donets": {
+      "names": {
+        "uk": "Донець",
+        "en": "Donets"
+      },
+      "patterns": ["\\bдон(ець|ця|цю|цем|ці)\\b"]
+    },
+    "kharkiv_oblast_huty": {
+      "names": {
+        "uk": "Гути",
+        "en": "Huty"
+      },
+      "patterns": ["\\bгут(и|ам|ами|ах)?\\b"]
+    },
+    "kharkiv_oblast_izium": {
+      "names": {
+        "uk": "Ізюм",
+        "en": "Izium"
+      },
+      "patterns": ["\\bізюм(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_kehychivka": {
+      "names": {
+        "uk": "Кегичівка",
+        "en": "Kehychivka"
+      },
+      "patterns": ["\\bкегичів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kharkiv_oblast_kharkiv": {
+      "names": {
+        "uk": "Харків",
+        "en": "Kharkiv"
+      },
+      "patterns": ["\\bхарк(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kharkiv_oblast_khtz": {
+      "names": {
+        "uk": "ХТЗ",
+        "en": "KhTZ"
+      },
+      "patterns": ["\\bхтз\\b"]
+    },
+    "kharkiv_oblast_kolomak": {
+      "names": {
+        "uk": "Коломак",
+        "en": "Kolomak"
+      },
+      "patterns": ["\\bколомак(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_koviahy": {
+      "names": {
+        "uk": "Ков’яги",
+        "en": "Koviahy"
+      },
+      "patterns": ["\\bков['’ʼ]я(ги|г|гам|гами|гах)\\b"]
+    },
+    "kharkiv_oblast_kozacha_lopan": {
+      "names": {
+        "uk": "Козача Лопань",
+        "en": "Kozacha Lopan"
+      },
+      "patterns": ["\\bкозач(а|у|ою) лопан(ь|і|ню|ью)\\b"]
+    },
+    "kharkiv_oblast_krasnokutsk": {
+      "names": {
+        "uk": "Краснокутськ",
+        "en": "Krasnokutsk"
+      },
+      "patterns": ["\\bкраснокутськ(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_krasnopavlivka": {
+      "names": {
+        "uk": "Краснопавлівка",
+        "en": "Krasnopavlivka"
+      },
+      "patterns": ["\\bкраснопавлівк(а|и|у|ою|і)\\b"]
+    },
+    "kharkiv_oblast_kulynychi": {
+      "names": {
+        "uk": "Кулиничі",
+        "en": "Kulynychi"
+      },
+      "patterns": ["\\bкулинич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kharkiv_oblast_kupiansk": {
+      "names": {
+        "uk": "Купʼянськ",
+        "en": "Kupiansk"
+      },
+      "patterns": ["\\bкуп['’ʼ]?янськ(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_liubotyn": {
+      "names": {
+        "uk": "Люботин",
+        "en": "Liubotyn"
+      },
+      "patterns": ["\\bлюботин(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_lozova": {
+      "names": {
+        "uk": "Лозова",
+        "en": "Lozova"
+      },
+      "patterns": ["\\bлозов(у|ої|а|ою)\\b"]
+    },
+    "kharkiv_oblast_mala_danylivka": {
+      "names": {
+        "uk": "Мала Данилівка",
+        "en": "Mala Danylivka"
+      },
+      "patterns": ["\\bмал(а|ої|ій|у|ою)\\s+данилів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kharkiv_oblast_merefa": {
+      "names": {
+        "uk": "Мерефа",
+        "en": "Merefa"
+      },
+      "patterns": ["\\bмереф(а|и|і|у|ою)\\b"]
+    },
+    "kharkiv_oblast_nova_vodolaha": {
+      "names": {
+        "uk": "Нова Водолага",
+        "en": "Nova Vodolaha"
+      },
+      "patterns": ["\\bнов(а|ої|ій|у|ою)\\s+водола(га|ги|зі|гу|гою)\\b"]
+    },
+    "kharkiv_oblast_pechenihy": {
+      "names": {
+        "uk": "Печеніги",
+        "en": "Pechenihy"
+      },
+      "patterns": ["\\bпеченіг(и|ів|ам|ами|ах)\\b"]
+    },
+    "kharkiv_oblast_peresichne": {
+      "names": {
+        "uk": "Пересічне",
+        "en": "Peresichne"
+      },
+      "patterns": ["\\bпересічн(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_piatykhatky": {
+      "names": {
+        "uk": "Пʼятихатки",
+        "en": "Piatykhatky"
+      },
+      "patterns": ["\\bп['’ʼ]?ятихатк(и|ах|ам|ами)\\b"]
+    },
+    "kharkiv_oblast_pisochyn": {
+      "names": {
+        "uk": "Пісочин",
+        "en": "Pisochyn"
+      },
+      "patterns": ["\\bпісочин(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_prolisne": {
+      "names": {
+        "uk": "Пролісне",
+        "en": "Prolisne"
+      },
+      "patterns": ["\\bпролісн(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_prykolotne": {
+      "names": {
+        "uk": "Приколотне",
+        "en": "Prykolotne"
+      },
+      "patterns": ["\\bприколотн(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_rohan": {
+      "names": {
+        "uk": "Рогань",
+        "en": "Rohan"
+      },
+      "patterns": ["\\bроган(ь|і|ню)\\b"]
+    },
+    "kharkiv_oblast_sakhnovshchyna": {
+      "names": {
+        "uk": "Сахновщина",
+        "en": "Sakhnovshchyna"
+      },
+      "patterns": ["\\bсахновщин(а|и|і|у|ою)\\b"]
+    },
+    "kharkiv_oblast_saltivka": {
+      "names": {
+        "uk": "Салтівка",
+        "en": "Saltivka"
+      },
+      "patterns": ["\\bсалтівк(а|и|і|у|ою|о)\\b"]
+    },
+    "kharkiv_oblast_savyntsi": {
+      "names": {
+        "uk": "Савинці",
+        "en": "Savyntsi"
+      },
+      "patterns": ["\\bсавин(ці|ців|цям|цями|цях)\\b"]
+    },
+    "kharkiv_oblast_sharivka": {
+      "names": {
+        "uk": "Шарівка",
+        "en": "Sharivka"
+      },
+      "patterns": ["\\bшарів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kharkiv_oblast_shevchenkove": {
+      "names": {
+        "uk": "Шевченкове",
+        "en": "Shevchenkove"
+      },
+      "patterns": ["\\bшевченкове\\b"]
+    },
+    "kharkiv_oblast_slatyne": {
+      "names": {
+        "uk": "Слатине",
+        "en": "Slatyne"
+      },
+      "patterns": ["\\bслатин(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_slobozhanske": {
+      "names": {
+        "uk": "Слобожанське",
+        "en": "Slobozhanske"
+      },
+      "patterns": ["\\bслобожанськ(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_staryi_merchyk": {
+      "names": {
+        "uk": "Старий Мерчик",
+        "en": "Staryi Merchyk"
+      },
+      "patterns": ["\\bстар(ий|ого|ому|им|ім)\\s+мерчик(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_staryy_saltiv": {
+      "names": {
+        "uk": "Старий Салтів",
+        "en": "Staryi Saltiv"
+      },
+      "patterns": ["\\bстар(ий|ого|ому|им|ім) салт(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kharkiv_oblast_valky": {
+      "names": {
+        "uk": "Валки",
+        "en": "Valky"
+      },
+      "patterns": ["\\bвалк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kharkiv_oblast_vasyshcheve": {
+      "names": {
+        "uk": "Васищеве",
+        "en": "Vasyshcheve"
+      },
+      "patterns": ["\\bвасищев(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_velykyi_burluk": {
+      "names": {
+        "uk": "Великий Бурлук",
+        "en": "Velykyi Burluk"
+      },
+      "patterns": ["\\bвелик(ий|ого|ому|им|ім)\\s+бурлук(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_vilshany": {
+      "names": {
+        "uk": "Вільшани",
+        "en": "Vilshany"
+      },
+      "patterns": ["\\bвільшан(и|ам|ами|ах)?\\b"]
+    },
+    "kharkiv_oblast_vokzal": {
+      "names": {
+        "uk": "Харківський залізничний вокзал",
+        "en": "Kharkiv Railway Station"
+      },
+      "patterns": ["\\bвокзал(у|а|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_vysokyi": {
+      "names": {
+        "uk": "Високий",
+        "en": "Vysokyi"
+      },
+      "patterns": ["\\bвисок(ий|ого|ому|им|ім)\\b(?=\\s*([.!?,/—–-]|$))"]
+    },
+    "kharkiv_oblast_zlatopil": {
+      "names": {
+        "uk": "Златопіль",
+        "en": "Zlatopil"
+      },
+      "patterns": ["\\bзлатопіль\\b"]
+    },
+    "kharkiv_oblast_zmiiv": {
+      "names": {
+        "uk": "Зміїв",
+        "en": "Zmiiv"
+      },
+      "patterns": ["\\bзмі(їв|єва|єву|євом|єві)\\b"]
+    },
+    "kharkiv_oblast_zolochiv": {
+      "names": {
+        "uk": "Золочів",
+        "en": "Zolochiv"
+      },
+      "patterns": ["\\bзолоч(ів|ова|ову|овом|ові)\\b"]
+    }
+  }
+}

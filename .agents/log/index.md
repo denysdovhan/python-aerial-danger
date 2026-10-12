@@ -1,5 +1,6 @@
 # Agent Log Index
 
+| 2026-10-12 | [Localized location catalog](2026-10-12-localized-location-catalog.md) | done |
 Copied unchanged from `ha-aerial-danger/.agents/log` on 2026-09-28.
 Start with [the index](index.md) and [the extraction decision](2026-09-18-extract-danger-library.md).
 Newer decisions supersede older ones. Completed entries remain frozen.
