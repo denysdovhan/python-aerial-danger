@@ -1,0 +1,26 @@
+{
+  "id": "donetsk_oblast",
+  "patterns": ["\\bдонеччин(а|и|і|у|ою)\\b", "\\bдонецьк(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "donetsk_oblast_dobropillia": {
+      "id": "donetsk_oblast_dobropillia",
+      "patterns": ["\\bдобропілл(я|ю|ям|і)\\b"]
+    },
+    "donetsk_oblast_donetsk": {
+      "id": "donetsk_oblast_donetsk",
+      "patterns": ["\\bдонецьк(у|ом|і)?\\b"]
+    },
+    "donetsk_oblast_kramatorsk": {
+      "id": "donetsk_oblast_kramatorsk",
+      "patterns": ["\\bкраматорськ(а|у|ом|і)?\\b"]
+    },
+    "donetsk_oblast_novodonetske": {
+      "id": "donetsk_oblast_novodonetske",
+      "patterns": ["\\bноводонецьк(е|ого|ому|им|ім)\\b"]
+    },
+    "donetsk_oblast_sloviansk": {
+      "id": "donetsk_oblast_sloviansk",
+      "patterns": ["\\bслов['’ʼ]янськ(а|у|ом|і)?\\b"]
+    }
+  }
+}

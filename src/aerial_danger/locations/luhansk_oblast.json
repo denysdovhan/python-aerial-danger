@@ -1,0 +1,10 @@
+{
+  "id": "luhansk_oblast",
+  "patterns": ["\\bлуганщин(а|и|і|у|ою)\\b", "\\bлуганськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "luhansk_oblast_luhansk": {
+      "id": "luhansk_oblast_luhansk",
+      "patterns": ["\\bлуганськ(у|ом|і)?\\b"]
+    }
+  }
+}

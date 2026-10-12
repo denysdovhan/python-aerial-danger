@@ -1,0 +1,214 @@
+{
+  "id": "kharkiv_oblast",
+  "patterns": ["\\bхарківщин(а|и|і|у|ою)\\b", "\\bхарківськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "kharkiv_oblast_andriivka": {
+      "id": "kharkiv_oblast_andriivka",
+      "patterns": ["\\bандріїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kharkiv_oblast_balakliia": {
+      "id": "kharkiv_oblast_balakliia",
+      "patterns": ["\\bбалаклі(я|ї|ю|єю)\\b"]
+    },
+    "kharkiv_oblast_barvinkove": {
+      "id": "kharkiv_oblast_barvinkove",
+      "patterns": ["\\bбарвінкове\\b"]
+    },
+    "kharkiv_oblast_berestyn": {
+      "id": "kharkiv_oblast_berestyn",
+      "patterns": ["\\bберестин(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_bezliudivka": {
+      "id": "kharkiv_oblast_bezliudivka",
+      "patterns": ["\\bбезлюдів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kharkiv_oblast_blyzniuky": {
+      "id": "kharkiv_oblast_blyzniuky",
+      "patterns": ["\\bблизнюк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kharkiv_oblast_bohodukhiv": {
+      "id": "kharkiv_oblast_bohodukhiv",
+      "patterns": ["\\bбогодух(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kharkiv_oblast_chuhuiv": {
+      "id": "kharkiv_oblast_chuhuiv",
+      "patterns": ["\\bчуг(уїв|уєва|уєву|уєвом|уєві)\\b"]
+    },
+    "kharkiv_oblast_derhachi": {
+      "id": "kharkiv_oblast_derhachi",
+      "patterns": ["\\bдергач(і|ів|ам|ами|ах)\\b"]
+    },
+    "kharkiv_oblast_derzhprom": {
+      "id": "kharkiv_oblast_derzhprom",
+      "patterns": ["\\bдержпром(у|і|ом|а)?\\b"]
+    },
+    "kharkiv_oblast_donets": {
+      "id": "kharkiv_oblast_donets",
+      "patterns": ["\\bдон(ець|ця|цю|цем|ці)\\b"]
+    },
+    "kharkiv_oblast_huty": {
+      "id": "kharkiv_oblast_huty",
+      "patterns": ["\\bгут(и|ам|ами|ах)?\\b"]
+    },
+    "kharkiv_oblast_izium": {
+      "id": "kharkiv_oblast_izium",
+      "patterns": ["\\bізюм(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_kehychivka": {
+      "id": "kharkiv_oblast_kehychivka",
+      "patterns": ["\\bкегичів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kharkiv_oblast_kharkiv": {
+      "id": "kharkiv_oblast_kharkiv",
+      "patterns": ["\\bхарк(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kharkiv_oblast_khtz": {
+      "id": "kharkiv_oblast_khtz",
+      "patterns": ["\\bхтз\\b"]
+    },
+    "kharkiv_oblast_kolomak": {
+      "id": "kharkiv_oblast_kolomak",
+      "patterns": ["\\bколомак(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_koviahy": {
+      "id": "kharkiv_oblast_koviahy",
+      "patterns": ["\\bков['’ʼ]я(ги|г|гам|гами|гах)\\b"]
+    },
+    "kharkiv_oblast_kozacha_lopan": {
+      "id": "kharkiv_oblast_kozacha_lopan",
+      "patterns": ["\\bкозач(а|у|ою) лопан(ь|і|ню|ью)\\b"]
+    },
+    "kharkiv_oblast_krasnokutsk": {
+      "id": "kharkiv_oblast_krasnokutsk",
+      "patterns": ["\\bкраснокутськ(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_krasnopavlivka": {
+      "id": "kharkiv_oblast_krasnopavlivka",
+      "patterns": ["\\bкраснопавлівк(а|и|у|ою|і)\\b"]
+    },
+    "kharkiv_oblast_kulynychi": {
+      "id": "kharkiv_oblast_kulynychi",
+      "patterns": ["\\bкулинич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kharkiv_oblast_kupiansk": {
+      "id": "kharkiv_oblast_kupiansk",
+      "patterns": ["\\bкуп['’ʼ]?янськ(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_liubotyn": {
+      "id": "kharkiv_oblast_liubotyn",
+      "patterns": ["\\bлюботин(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_lozova": {
+      "id": "kharkiv_oblast_lozova",
+      "patterns": ["\\bлозов(у|ої|а|ою)\\b"]
+    },
+    "kharkiv_oblast_mala_danylivka": {
+      "id": "kharkiv_oblast_mala_danylivka",
+      "patterns": ["\\bмал(а|ої|ій|у|ою)\\s+данилів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kharkiv_oblast_merefa": {
+      "id": "kharkiv_oblast_merefa",
+      "patterns": ["\\bмереф(а|и|і|у|ою)\\b"]
+    },
+    "kharkiv_oblast_nova_vodolaha": {
+      "id": "kharkiv_oblast_nova_vodolaha",
+      "patterns": ["\\bнов(а|ої|ій|у|ою)\\s+водола(га|ги|зі|гу|гою)\\b"]
+    },
+    "kharkiv_oblast_pechenihy": {
+      "id": "kharkiv_oblast_pechenihy",
+      "patterns": ["\\bпеченіг(и|ів|ам|ами|ах)\\b"]
+    },
+    "kharkiv_oblast_peresichne": {
+      "id": "kharkiv_oblast_peresichne",
+      "patterns": ["\\bпересічн(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_piatykhatky": {
+      "id": "kharkiv_oblast_piatykhatky",
+      "patterns": ["\\bп['’ʼ]?ятихатк(и|ах|ам|ами)\\b"]
+    },
+    "kharkiv_oblast_pisochyn": {
+      "id": "kharkiv_oblast_pisochyn",
+      "patterns": ["\\bпісочин(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_prolisne": {
+      "id": "kharkiv_oblast_prolisne",
+      "patterns": ["\\bпролісн(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_prykolotne": {
+      "id": "kharkiv_oblast_prykolotne",
+      "patterns": ["\\bприколотн(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_rohan": {
+      "id": "kharkiv_oblast_rohan",
+      "patterns": ["\\bроган(ь|і|ню)\\b"]
+    },
+    "kharkiv_oblast_sakhnovshchyna": {
+      "id": "kharkiv_oblast_sakhnovshchyna",
+      "patterns": ["\\bсахновщин(а|и|і|у|ою)\\b"]
+    },
+    "kharkiv_oblast_saltivka": {
+      "id": "kharkiv_oblast_saltivka",
+      "patterns": ["\\bсалтівк(а|и|і|у|ою|о)\\b"]
+    },
+    "kharkiv_oblast_savyntsi": {
+      "id": "kharkiv_oblast_savyntsi",
+      "patterns": ["\\bсавин(ці|ців|цям|цями|цях)\\b"]
+    },
+    "kharkiv_oblast_sharivka": {
+      "id": "kharkiv_oblast_sharivka",
+      "patterns": ["\\bшарів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kharkiv_oblast_shevchenkove": {
+      "id": "kharkiv_oblast_shevchenkove",
+      "patterns": ["\\bшевченкове\\b"]
+    },
+    "kharkiv_oblast_slatyne": {
+      "id": "kharkiv_oblast_slatyne",
+      "patterns": ["\\bслатин(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_slobozhanske": {
+      "id": "kharkiv_oblast_slobozhanske",
+      "patterns": ["\\bслобожанськ(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_staryi_merchyk": {
+      "id": "kharkiv_oblast_staryi_merchyk",
+      "patterns": ["\\bстар(ий|ого|ому|им|ім)\\s+мерчик(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_staryy_saltiv": {
+      "id": "kharkiv_oblast_staryy_saltiv",
+      "patterns": ["\\bстар(ий|ого|ому|им|ім) салт(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kharkiv_oblast_valky": {
+      "id": "kharkiv_oblast_valky",
+      "patterns": ["\\bвалк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kharkiv_oblast_vasyshcheve": {
+      "id": "kharkiv_oblast_vasyshcheve",
+      "patterns": ["\\bвасищев(е|ого|ому|им|ім)\\b"]
+    },
+    "kharkiv_oblast_velykyi_burluk": {
+      "id": "kharkiv_oblast_velykyi_burluk",
+      "patterns": ["\\bвелик(ий|ого|ому|им|ім)\\s+бурлук(а|у|ом|і)?\\b"]
+    },
+    "kharkiv_oblast_vilshany": {
+      "id": "kharkiv_oblast_vilshany",
+      "patterns": ["\\bвільшан(и|ам|ами|ах)?\\b"]
+    },
+    "kharkiv_oblast_vysokyi": {
+      "id": "kharkiv_oblast_vysokyi",
+      "patterns": ["\\bвисок(ий|ого|ому|им|ім)\\b(?=\\s*([.!?,/—–-]|$))"]
+    },
+    "kharkiv_oblast_zlatopil": {
+      "id": "kharkiv_oblast_zlatopil",
+      "patterns": ["\\bзлатопіль\\b"]
+    },
+    "kharkiv_oblast_zmiiv": {
+      "id": "kharkiv_oblast_zmiiv",
+      "patterns": ["\\bзмі(їв|єва|єву|євом|єві)\\b"]
+    },
+    "kharkiv_oblast_zolochiv": {
+      "id": "kharkiv_oblast_zolochiv",
+      "patterns": ["\\bзолоч(ів|ова|ову|овом|ові)\\b"]
+    }
+  }
+}

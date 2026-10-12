@@ -1,0 +1,129 @@
+{
+  "id": "kirovohrad_oblast",
+  "patterns": [
+    "\\bкіровоградщин(а|и|і|у|ою)\\b",
+    "\\bкіровоградськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"
+  ],
+  "localities": {
+    "kirovohrad_oblast_adzhamka": {
+      "id": "kirovohrad_oblast_adzhamka",
+      "patterns": ["\\bаджам(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_blahovishchenske": {
+      "id": "kirovohrad_oblast_blahovishchenske",
+      "patterns": ["\\bблаговіщенськ(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_bobrynets": {
+      "id": "kirovohrad_oblast_bobrynets",
+      "patterns": ["\\bбобрин(ець|ця|цю|цем|ці)\\b"]
+    },
+    "kirovohrad_oblast_dolynska": {
+      "id": "kirovohrad_oblast_dolynska",
+      "patterns": ["\\bдолинськ(а|ої|ій|у|ою)\\b"]
+    },
+    "kirovohrad_oblast_haivoron": {
+      "id": "kirovohrad_oblast_haivoron",
+      "patterns": ["\\bгайворон(а|у|ом|і)?\\b"]
+    },
+    "kirovohrad_oblast_holovanivsk": {
+      "id": "kirovohrad_oblast_holovanivsk",
+      "patterns": ["\\bголованівськ(а|у|ом|і)?\\b"]
+    },
+    "kirovohrad_oblast_kamianets": {
+      "id": "kirovohrad_oblast_kamianets",
+      "patterns": ["\\bкам['’ʼ]ян(ець|ця|цю|цем|ці)\\b"]
+    },
+    "kirovohrad_oblast_khmelove": {
+      "id": "kirovohrad_oblast_khmelove",
+      "patterns": ["\\bхмельов(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_kompaniivka": {
+      "id": "kirovohrad_oblast_kompaniivka",
+      "patterns": ["\\bкомпаніїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_kropyvnytskyi": {
+      "id": "kirovohrad_oblast_kropyvnytskyi",
+      "patterns": ["\\bкропивницьк(ий|ого|ому|им|ім)\\b", "\\bкроп\\b"]
+    },
+    "kirovohrad_oblast_lisove": {
+      "id": "kirovohrad_oblast_lisove",
+      "patterns": ["\\bлісов(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_mala_vyska": {
+      "id": "kirovohrad_oblast_mala_vyska",
+      "patterns": ["\\bмал(а|ої|ій|у|ою)\\s+вис(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_nova_praha": {
+      "id": "kirovohrad_oblast_nova_praha",
+      "patterns": ["\\bнов(а|ої|ій|у|ою)\\s+пра(га|ги|зі|гу|гою)\\b"]
+    },
+    "kirovohrad_oblast_novoarkhanhelsk": {
+      "id": "kirovohrad_oblast_novoarkhanhelsk",
+      "patterns": ["\\bновоархангельськ(а|у|ом|і)?\\b"]
+    },
+    "kirovohrad_oblast_novomyrhorod": {
+      "id": "kirovohrad_oblast_novomyrhorod",
+      "patterns": ["\\bновомиргород(а|у|ом|і)?\\b"]
+    },
+    "kirovohrad_oblast_novoukrainka": {
+      "id": "kirovohrad_oblast_novoukrainka",
+      "patterns": ["\\bновоукраїн(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_oleksandriia": {
+      "id": "kirovohrad_oblast_oleksandriia",
+      "patterns": ["\\bолександрі(я|ї|ю|єю)\\b"]
+    },
+    "kirovohrad_oblast_oleksandriiske": {
+      "id": "kirovohrad_oblast_oleksandriiske",
+      "patterns": ["\\bолександрійськ(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_onufriivka": {
+      "id": "kirovohrad_oblast_onufriivka",
+      "patterns": ["\\bонуфріїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_pantaivka": {
+      "id": "kirovohrad_oblast_pantaivka",
+      "patterns": ["\\bпантаїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_pavlysh": {
+      "id": "kirovohrad_oblast_pavlysh",
+      "patterns": ["\\bпавлиш(а|у|ем|і)?\\b"]
+    },
+    "kirovohrad_oblast_petrove": {
+      "id": "kirovohrad_oblast_petrove",
+      "patterns": ["\\bпетров(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_pomichna": {
+      "id": "kirovohrad_oblast_pomichna",
+      "patterns": ["\\bпомічн(а|ої|ій|у|ою)\\b"]
+    },
+    "kirovohrad_oblast_smoline": {
+      "id": "kirovohrad_oblast_smoline",
+      "patterns": ["\\bсмолін(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_sozonivka": {
+      "id": "kirovohrad_oblast_sozonivka",
+      "patterns": ["\\bсозонів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_svitlovodsk": {
+      "id": "kirovohrad_oblast_svitlovodsk",
+      "patterns": ["\\bсвітловодськ(а|у|ом|і)?\\b"]
+    },
+    "kirovohrad_oblast_tsybuleve": {
+      "id": "kirovohrad_oblast_tsybuleve",
+      "patterns": ["\\bцибулев(е|ого|ому|им|ім)\\b"]
+    },
+    "kirovohrad_oblast_ustynivka": {
+      "id": "kirovohrad_oblast_ustynivka",
+      "patterns": ["\\bустинів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_velyka_vyska": {
+      "id": "kirovohrad_oblast_velyka_vyska",
+      "patterns": ["\\bвелик(а|ої|ій|у|ою)\\s+вис(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kirovohrad_oblast_vilshanka": {
+      "id": "kirovohrad_oblast_vilshanka",
+      "patterns": ["\\bвільшан(ка|ки|ці|ку|кою)\\b"]
+    }
+  }
+}

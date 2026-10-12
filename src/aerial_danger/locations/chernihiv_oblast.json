@@ -1,0 +1,186 @@
+{
+  "id": "chernihiv_oblast",
+  "patterns": ["\\bчернігівщин(а|и|і|у|ою)\\b", "\\bчернігівськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "chernihiv_oblast_bakhmach": {
+      "id": "chernihiv_oblast_bakhmach",
+      "patterns": ["\\bбахмач(а|у|ем|і)?\\b"]
+    },
+    "chernihiv_oblast_baturyn": {
+      "id": "chernihiv_oblast_baturyn",
+      "patterns": ["\\bбатурин(а|у|ом|і)?\\b"]
+    },
+    "chernihiv_oblast_berezna": {
+      "id": "chernihiv_oblast_berezna",
+      "patterns": ["\\bберезн(а|и|і|у|ою)\\b"]
+    },
+    "chernihiv_oblast_bobrovytsia": {
+      "id": "chernihiv_oblast_bobrovytsia",
+      "patterns": ["\\bбобровиц(я|і|ю|ею)\\b"]
+    },
+    "chernihiv_oblast_borzna": {
+      "id": "chernihiv_oblast_borzna",
+      "patterns": ["\\bборзн(а|и|ої|у|ою|і)\\b"]
+    },
+    "chernihiv_oblast_chernihiv": {
+      "id": "chernihiv_oblast_chernihiv",
+      "patterns": ["\\bчерніг(ів|ова|ову|овом|ові)\\b"]
+    },
+    "chernihiv_oblast_desna": {
+      "id": "chernihiv_oblast_desna",
+      "patterns": ["\\bдесн(у|и|і)\\b"]
+    },
+    "chernihiv_oblast_dihtiari": {
+      "id": "chernihiv_oblast_dihtiari",
+      "patterns": ["\\bдігтяр(і|ів|ям|ями|ях)\\b"]
+    },
+    "chernihiv_oblast_dobrianka": {
+      "id": "chernihiv_oblast_dobrianka",
+      "patterns": ["\\bдобрян(ка|ки|ці|ку|кою)\\b"]
+    },
+    "chernihiv_oblast_honcharivske": {
+      "id": "chernihiv_oblast_honcharivske",
+      "patterns": ["\\bгончарівськ(е|ого|ому|им|ім)\\b"]
+    },
+    "chernihiv_oblast_horodnia": {
+      "id": "chernihiv_oblast_horodnia",
+      "patterns": ["\\bгородн(я|і|ю|ею)\\b"]
+    },
+    "chernihiv_oblast_ichnia": {
+      "id": "chernihiv_oblast_ichnia",
+      "patterns": ["\\bічн(я|і|ю|ею)\\b"]
+    },
+    "chernihiv_oblast_kholmy": {
+      "id": "chernihiv_oblast_kholmy",
+      "patterns": ["\\bхолм(и|ів|ам|ами|ах)\\b"]
+    },
+    "chernihiv_oblast_kipti": {
+      "id": "chernihiv_oblast_kipti",
+      "patterns": ["\\bкіпт(і|ів|ями)\\b"]
+    },
+    "chernihiv_oblast_koriukivka": {
+      "id": "chernihiv_oblast_koriukivka",
+      "patterns": ["\\bкорюківк(а|и|у|ою|і)\\b"]
+    },
+    "chernihiv_oblast_korop": {
+      "id": "chernihiv_oblast_korop",
+      "patterns": ["\\bкороп(а|у|ом|і)?\\b"]
+    },
+    "chernihiv_oblast_kozelets": {
+      "id": "chernihiv_oblast_kozelets",
+      "patterns": ["\\b(козелець|козельц(я|ю|ем|і))\\b"]
+    },
+    "chernihiv_oblast_kulykivka": {
+      "id": "chernihiv_oblast_kulykivka",
+      "patterns": ["\\bкуликів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "chernihiv_oblast_ladan": {
+      "id": "chernihiv_oblast_ladan",
+      "patterns": ["\\bладан(а|у|ом|і)?\\b"]
+    },
+    "chernihiv_oblast_lebedyn": {
+      "id": "chernihiv_oblast_lebedyn",
+      "patterns": ["\\bлебедин\\b"]
+    },
+    "chernihiv_oblast_liubech": {
+      "id": "chernihiv_oblast_liubech",
+      "patterns": ["\\bлюбеч(а|у|ем|і)?\\b"]
+    },
+    "chernihiv_oblast_losynivka": {
+      "id": "chernihiv_oblast_losynivka",
+      "patterns": ["\\bлосинів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "chernihiv_oblast_lynovytsia": {
+      "id": "chernihiv_oblast_lynovytsia",
+      "patterns": ["\\bлиновиц(я|і|ю|ею)\\b"]
+    },
+    "chernihiv_oblast_makoshyne": {
+      "id": "chernihiv_oblast_makoshyne",
+      "patterns": ["\\bмакошин(е|ого|ому|им|ім)\\b"]
+    },
+    "chernihiv_oblast_mala_divytsia": {
+      "id": "chernihiv_oblast_mala_divytsia",
+      "patterns": ["\\bмал(а|ої|ій|у|ою)\\s+дівиц(я|і|ю|ею)\\b"]
+    },
+    "chernihiv_oblast_mena": {
+      "id": "chernihiv_oblast_mena",
+      "patterns": ["\\bмен(а|и|у|і|ою)\\b"]
+    },
+    "chernihiv_oblast_mryn": {
+      "id": "chernihiv_oblast_mryn",
+      "patterns": ["\\bмрин(а|у|ом|і)?\\b"]
+    },
+    "chernihiv_oblast_nizhyn": {
+      "id": "chernihiv_oblast_nizhyn",
+      "patterns": ["\\bніжин(а|у|ом|і)?\\b"]
+    },
+    "chernihiv_oblast_nosivka": {
+      "id": "chernihiv_oblast_nosivka",
+      "patterns": ["\\bносів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "chernihiv_oblast_nova_basan": {
+      "id": "chernihiv_oblast_nova_basan",
+      "patterns": ["\\bнов(а|ої|ій|у|ою)\\s+басан(ь|і|ню)\\b"]
+    },
+    "chernihiv_oblast_novhorod_siverskyy": {
+      "id": "chernihiv_oblast_novhorod_siverskyy",
+      "patterns": ["\\bновгород-сіверськ(ий|ого|ому|им|ім)\\b"]
+    },
+    "chernihiv_oblast_olyshivka": {
+      "id": "chernihiv_oblast_olyshivka",
+      "patterns": ["\\bолишівк(а|и|у|ою|і)\\b"]
+    },
+    "chernihiv_oblast_oster": {
+      "id": "chernihiv_oblast_oster",
+      "patterns": ["\\bостер(а|у|ом|і)?\\b"]
+    },
+    "chernihiv_oblast_parafiivka": {
+      "id": "chernihiv_oblast_parafiivka",
+      "patterns": ["\\bпарафіїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "chernihiv_oblast_peremoha": {
+      "id": "chernihiv_oblast_peremoha",
+      "patterns": ["\\bперемог(у|и)\\b"]
+    },
+    "chernihiv_oblast_pryluky": {
+      "id": "chernihiv_oblast_pryluky",
+      "patterns": ["\\bприлук(и|ів|ами)?\\b"]
+    },
+    "chernihiv_oblast_ripky": {
+      "id": "chernihiv_oblast_ripky",
+      "patterns": ["\\bріп(ки|ок|кам|ками|ках)\\b"]
+    },
+    "chernihiv_oblast_sedniv": {
+      "id": "chernihiv_oblast_sedniv",
+      "patterns": ["\\bседн(ів|ова|ову|овом|ові)\\b"]
+    },
+    "chernihiv_oblast_shestovytsia": {
+      "id": "chernihiv_oblast_shestovytsia",
+      "patterns": ["\\bшестовиц(я|і|ю|ею)\\b"]
+    },
+    "chernihiv_oblast_snovsk": {
+      "id": "chernihiv_oblast_snovsk",
+      "patterns": ["\\bсновськ(а|у|ом|і)?\\b"]
+    },
+    "chernihiv_oblast_sorokoshychi": {
+      "id": "chernihiv_oblast_sorokoshychi",
+      "patterns": ["\\bсорокошич(і|ів|ам|ами|ах)\\b"]
+    },
+    "chernihiv_oblast_sosnytsia": {
+      "id": "chernihiv_oblast_sosnytsia",
+      "patterns": ["\\bсосниц(я|і|ю|ею)\\b"]
+    },
+    "chernihiv_oblast_sribne": {
+      "id": "chernihiv_oblast_sribne",
+      "patterns": ["\\bсрібн(е|ого|ому|им|ім)\\b"]
+    },
+    "chernihiv_oblast_talalaivka": {
+      "id": "chernihiv_oblast_talalaivka",
+      "patterns": ["\\bталалаїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "chernihiv_oblast_varva": {
+      "id": "chernihiv_oblast_varva",
+      "patterns": ["\\bварв(а|и|і|у|ою)\\b"]
+    }
+  }
+}

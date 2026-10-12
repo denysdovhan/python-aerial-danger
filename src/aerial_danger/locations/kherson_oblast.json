@@ -1,0 +1,26 @@
+{
+  "id": "kherson_oblast",
+  "patterns": ["\\bхерсонщин(а|и|і|у|ою)\\b", "\\bхерсонськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "kherson_oblast_arkhanhelske": {
+      "id": "kherson_oblast_arkhanhelske",
+      "patterns": ["\\bархангельськ(е|ого|ому|им|ім)\\b"]
+    },
+    "kherson_oblast_beryslav": {
+      "id": "kherson_oblast_beryslav",
+      "patterns": ["\\bберислав(а|у|ом|і)?\\b"]
+    },
+    "kherson_oblast_kherson": {
+      "id": "kherson_oblast_kherson",
+      "patterns": ["\\bхерсон(а|у|ом|і)?\\b"]
+    },
+    "kherson_oblast_stanislav": {
+      "id": "kherson_oblast_stanislav",
+      "patterns": ["\\bстаніслав(а|у|ом|і)?\\b"]
+    },
+    "kherson_oblast_vysokopillia": {
+      "id": "kherson_oblast_vysokopillia",
+      "patterns": ["\\bвисокопілл(я|ю|ям|і)\\b"]
+    }
+  }
+}

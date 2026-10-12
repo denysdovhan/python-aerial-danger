@@ -1,0 +1,62 @@
+{
+  "id": "rivne_oblast",
+  "patterns": ["\\bрівненщин(а|и|і|у|ою)\\b", "\\bрівненськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "rivne_oblast_berezne": {
+      "id": "rivne_oblast_berezne",
+      "patterns": ["\\bберезн(е|ого|ому|им|ім)\\b"]
+    },
+    "rivne_oblast_dubno": {
+      "id": "rivne_oblast_dubno",
+      "patterns": ["\\bдубн(о|а|у|ом|і)\\b"]
+    },
+    "rivne_oblast_dubrovytsia": {
+      "id": "rivne_oblast_dubrovytsia",
+      "patterns": ["\\bдубровиц(я|і|ю|ею)\\b"]
+    },
+    "rivne_oblast_hoshcha": {
+      "id": "rivne_oblast_hoshcha",
+      "patterns": ["\\bгощ(а|і|у|ею)\\b"]
+    },
+    "rivne_oblast_klevan": {
+      "id": "rivne_oblast_klevan",
+      "patterns": ["\\bклеван(ь|я|ю|ем|і)\\b"]
+    },
+    "rivne_oblast_korets": {
+      "id": "rivne_oblast_korets",
+      "patterns": ["\\bкор(ець|ця|цю|цем|ці)\\b"]
+    },
+    "rivne_oblast_kostopil": {
+      "id": "rivne_oblast_kostopil",
+      "patterns": ["\\bкостоп(іль|оля|олю|олем|олі)\\b"]
+    },
+    "rivne_oblast_mizoch": {
+      "id": "rivne_oblast_mizoch",
+      "patterns": ["\\bмізоч(а|у|ем|і)?\\b"]
+    },
+    "rivne_oblast_rivne": {
+      "id": "rivne_oblast_rivne",
+      "patterns": ["\\bрівне\\b"]
+    },
+    "rivne_oblast_sarny": {
+      "id": "rivne_oblast_sarny",
+      "patterns": ["\\bсарн(и|ам|ами|ах)?\\b"]
+    },
+    "rivne_oblast_stepan": {
+      "id": "rivne_oblast_stepan",
+      "patterns": ["\\bстепан(ь|я|ю|ем|і)\\b"]
+    },
+    "rivne_oblast_tomashhorod": {
+      "id": "rivne_oblast_tomashhorod",
+      "patterns": ["\\bтомашгород(а|у|ом|і)?\\b"]
+    },
+    "rivne_oblast_varash": {
+      "id": "rivne_oblast_varash",
+      "patterns": ["\\bвараш(а|у|ем|і)?\\b"]
+    },
+    "rivne_oblast_zdolbuniv": {
+      "id": "rivne_oblast_zdolbuniv",
+      "patterns": ["\\bздолбун(ів|ова|ову|овом|ові)\\b"]
+    }
+  }
+}

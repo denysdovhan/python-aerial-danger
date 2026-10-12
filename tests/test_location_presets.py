@@ -2,7 +2,9 @@
 
 # ruff: noqa: S101
 
+import json
 import re
+from importlib.resources import files
 
 from aerial_danger import DangerDetector, DangerType
 from aerial_danger.location_presets import LOCATION_PRESETS
@@ -127,14 +129,62 @@ PRESET_EXAMPLES = {
 }
 
 
+def _unique_keys(pairs: list[tuple[str, object]]) -> dict[str, object]:
+    """Reject duplicate JSON keys instead of silently dropping presets."""
+    result = dict(pairs)
+    assert len(result) == len(pairs), "Duplicate key in location data"
+    return result
+
+
+def test_bundled_location_data() -> None:
+    """Validate JSON records and catch regex escapes decoded as control characters."""
+    resources = sorted(
+        (
+            resource
+            for resource in files("aerial_danger.locations").iterdir()
+            if resource.name.endswith(".json")
+        ),
+        key=lambda resource: resource.name,
+    )
+    assert [resource.name.removesuffix(".json") for resource in resources] == list(
+        LOCATION_PRESETS
+    )
+    locality_ids_seen = set()
+    for resource in resources:
+        region = json.loads(
+            resource.read_text(encoding="utf-8"), object_pairs_hook=_unique_keys
+        )
+        assert region["id"] == resource.name.removesuffix(".json")
+        assert set(region) == {"id", "patterns", "localities"}
+        assert isinstance(region["localities"], dict)
+        assert region["localities"]
+        for locality_id, locality in region["localities"].items():
+            assert locality["id"] == locality_id
+            assert locality_id not in locality_ids_seen
+            locality_ids_seen.add(locality_id)
+            assert {"id", "patterns"} <= locality.keys() <= {"id", "patterns", "notes"}
+            if "notes" in locality:
+                assert isinstance(locality["notes"], str)
+                assert locality["notes"]
+        for preset in (region, *region["localities"].values()):
+            assert isinstance(preset["patterns"], list)
+            assert preset["patterns"]
+            for pattern in preset["patterns"]:
+                assert isinstance(pattern, str)
+                assert pattern
+                assert not re.search(r"[\x00-\x1f]", pattern)
+
+
 def test_registry_ids_ownership_and_compilation() -> None:
     """Test stable IDs, nested ownership, and valid regexes."""
     assert locality_ids([]) == []
     for region_id, region in LOCATION_PRESETS.items():
         assert region.id == region_id
+        assert isinstance(region.patterns, tuple)
         assert re.fullmatch(r"[a-z]+(?:_[a-z]+)*", region.id)
         for locality_id, locality in region.localities.items():
             assert locality.id == locality_id
+            assert isinstance(locality.patterns, tuple)
             assert re.fullmatch(r"[a-z]+(?:_[a-z]+)*", locality.id)
         assert region.localities
         assert locality_ids([region_id]) == list(region.localities)

@@ -1,0 +1,289 @@
+{
+  "id": "odesa_oblast",
+  "patterns": ["\\bодещин(а|и|і|у|ою)\\b", "\\bодеськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "odesa_oblast_altestove": {
+      "id": "odesa_oblast_altestove",
+      "patterns": ["\\bалтестов(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_ananiv": {
+      "id": "odesa_oblast_ananiv",
+      "patterns": ["\\bанань(їв|єва|єву|євом|єві)\\b"]
+    },
+    "odesa_oblast_arkadiia": {
+      "id": "odesa_oblast_arkadiia",
+      "patterns": ["\\bаркаді(я|ї|ю|єю)\\b"]
+    },
+    "odesa_oblast_artsyz": {
+      "id": "odesa_oblast_artsyz",
+      "patterns": ["\\bарциз(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_avanhard": {
+      "id": "odesa_oblast_avanhard",
+      "patterns": ["\\bавангард(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_balta": {
+      "id": "odesa_oblast_balta",
+      "patterns": ["\\bбалт(а|и|і|у|ою)\\b"]
+    },
+    "odesa_oblast_baraboi": {
+      "id": "odesa_oblast_baraboi",
+      "patterns": ["\\bбарабо(й|я|ю|єм|ї)\\b"]
+    },
+    "odesa_oblast_berezivka": {
+      "id": "odesa_oblast_berezivka",
+      "patterns": ["\\bберезів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_bilhorod_dnistrovskyi": {
+      "id": "odesa_oblast_bilhorod_dnistrovskyi",
+      "patterns": ["\\bбілгород[ -]дністровськ(ий|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_biliaivka": {
+      "id": "odesa_oblast_biliaivka",
+      "patterns": ["\\bбіляїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_biliari": {
+      "id": "odesa_oblast_biliari",
+      "patterns": ["\\bбіляр(і|ів|ям|ями|ях)\\b"]
+    },
+    "odesa_oblast_bolhrad": {
+      "id": "odesa_oblast_bolhrad",
+      "patterns": ["\\bболград(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_buialyk": {
+      "id": "odesa_oblast_buialyk",
+      "patterns": ["\\bбуялик(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_chornomorsk": {
+      "id": "odesa_oblast_chornomorsk",
+      "patterns": ["\\bчорноморськ(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_chornomorske": {
+      "id": "odesa_oblast_chornomorske",
+      "patterns": ["\\bчорноморське\\b"]
+    },
+    "odesa_oblast_dachne": {
+      "id": "odesa_oblast_dachne",
+      "patterns": ["\\bдачн(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_dalnyk": {
+      "id": "odesa_oblast_dalnyk",
+      "patterns": ["\\bдальник(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_dobroslav": {
+      "id": "odesa_oblast_dobroslav",
+      "patterns": ["\\bдоброслав(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_fontanka": {
+      "id": "odesa_oblast_fontanka",
+      "patterns": ["\\bфонтан(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_hrybivka": {
+      "id": "odesa_oblast_hrybivka",
+      "patterns": ["\\bгрибів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_hryhorivka": {
+      "id": "odesa_oblast_hryhorivka",
+      "patterns": ["\\bгригорів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_ilichanka": {
+      "id": "odesa_oblast_ilichanka",
+      "patterns": ["\\bілічан(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_ivanivka": {
+      "id": "odesa_oblast_ivanivka",
+      "patterns": ["\\bіванів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_izmail": {
+      "id": "odesa_oblast_izmail",
+      "patterns": ["\\bізмаїл(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_karolino_buhaz": {
+      "id": "odesa_oblast_karolino_buhaz",
+      "patterns": ["\\bкароліно[ -]бугаз(у|і|ом|а)?\\b"]
+    },
+    "odesa_oblast_katlabuh": {
+      "id": "odesa_oblast_katlabuh",
+      "patterns": ["\\bкатлабуг(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_khadzhybeiskyi_raion": {
+      "id": "odesa_oblast_khadzhybeiskyi_raion",
+      "patterns": ["\\bхаджибейськ(ий|ого|ому|им|ім) район(у|і|ом)?\\b"]
+    },
+    "odesa_oblast_kiliia": {
+      "id": "odesa_oblast_kiliia",
+      "patterns": ["\\bкілі(я|ї|ю|єю)\\b"]
+    },
+    "odesa_oblast_kosa": {
+      "id": "odesa_oblast_kosa",
+      "patterns": ["\\bкос(у|ою)\\b"]
+    },
+    "odesa_oblast_kosy": {
+      "id": "odesa_oblast_kosy",
+      "patterns": ["\\bкоси\\b"]
+    },
+    "odesa_oblast_krasnosilka": {
+      "id": "odesa_oblast_krasnosilka",
+      "patterns": ["\\bкрасносіл(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_kurisove": {
+      "id": "odesa_oblast_kurisove",
+      "patterns": ["\\bкурісов(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_kurortne": {
+      "id": "odesa_oblast_kurortne",
+      "patterns": ["\\bкурортн(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_liubashivka": {
+      "id": "odesa_oblast_liubashivka",
+      "patterns": ["\\bлюбашів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_lyman": {
+      "id": "odesa_oblast_lyman",
+      "patterns": ["\\bлиман(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_lymanka": {
+      "id": "odesa_oblast_lymanka",
+      "patterns": ["\\bлиман(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_malodolynske": {
+      "id": "odesa_oblast_malodolynske",
+      "patterns": ["\\bмалодолинськ(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_malyi_fontan": {
+      "id": "odesa_oblast_malyi_fontan",
+      "patterns": ["\\bмал(ий|ого|ому|им|ім)\\s+фонтан(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_mayaky": {
+      "id": "odesa_oblast_mayaky",
+      "patterns": ["\\bмаяки\\b"]
+    },
+    "odesa_oblast_moldovanka": {
+      "id": "odesa_oblast_moldovanka",
+      "patterns": ["\\bмолдован(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_nadlymanske": {
+      "id": "odesa_oblast_nadlymanske",
+      "patterns": ["\\bнадлиманськ(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_nova_dolyna": {
+      "id": "odesa_oblast_nova_dolyna",
+      "patterns": ["\\bнов(а|ої|ій|у|ою)\\s+долин(а|и|і|у|ою)\\b"]
+    },
+    "odesa_oblast_novi_biliari": {
+      "id": "odesa_oblast_novi_biliari",
+      "patterns": ["\\bнов(і|их|им|ими)\\s+біляр(і|ів|ям|ями|ях)\\b"]
+    },
+    "odesa_oblast_odesa": {
+      "id": "odesa_oblast_odesa",
+      "patterns": ["\\bодес(а|и|і|у|ою)\\b"]
+    },
+    "odesa_oblast_odesa_port": {
+      "id": "odesa_oblast_odesa_port",
+      "patterns": [
+        "\\bодеськ(ий|ого|ому|им|ім) порт(у|і|ом|а)?\\b",
+        "\\bодес(а|и|і|у|ою)\\s*[ /-]\\s*порт(у|і|ом|а)?\\b"
+      ]
+    },
+    "odesa_oblast_oleksandrivka": {
+      "id": "odesa_oblast_oleksandrivka",
+      "patterns": ["\\bолександрів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_orlivka": {
+      "id": "odesa_oblast_orlivka",
+      "patterns": ["\\bорлів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_ovidiopol": {
+      "id": "odesa_oblast_ovidiopol",
+      "patterns": ["\\bовідіопол(ь|я|і|ю|ем)\\b"]
+    },
+    "odesa_oblast_peresyp": {
+      "id": "odesa_oblast_peresyp",
+      "patterns": ["\\bпересип(у|ом|і)?\\b"]
+    },
+    "odesa_oblast_pivdenne": {
+      "id": "odesa_oblast_pivdenne",
+      "patterns": ["\\bпівденне\\b"]
+    },
+    "odesa_oblast_podilsk": {
+      "id": "odesa_oblast_podilsk",
+      "patterns": ["\\bподільськ(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_prylymanske": {
+      "id": "odesa_oblast_prylymanske",
+      "patterns": ["\\bприлиманськ(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_prymorske": {
+      "id": "odesa_oblast_prymorske",
+      "patterns": ["\\bприморськ(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_reni": {
+      "id": "odesa_oblast_reni",
+      "patterns": ["\\bрен(і|ях|ями)\\b"]
+    },
+    "odesa_oblast_rozdilna": {
+      "id": "odesa_oblast_rozdilna",
+      "patterns": ["\\bроздільн(а|ої|ій|у|ою)\\b"]
+    },
+    "odesa_oblast_sanzhiika": {
+      "id": "odesa_oblast_sanzhiika",
+      "patterns": ["\\bсанжій(ка|ки|ці|ку|кою)\\b"]
+    },
+    "odesa_oblast_sarata": {
+      "id": "odesa_oblast_sarata",
+      "patterns": ["\\bсарат(а|и|і|у|ою)\\b"]
+    },
+    "odesa_oblast_shabo": {
+      "id": "odesa_oblast_shabo",
+      "patterns": ["\\bшабо\\b"]
+    },
+    "odesa_oblast_shyriaieve": {
+      "id": "odesa_oblast_shyriaieve",
+      "patterns": ["\\bширяєв(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_starokozache": {
+      "id": "odesa_oblast_starokozache",
+      "patterns": ["\\bстарокозач(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_sukhyi_lyman": {
+      "id": "odesa_oblast_sukhyi_lyman",
+      "patterns": ["\\bсух(ий|ого|ому|им|ім)\\s+лиман(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_tairove": {
+      "id": "odesa_oblast_tairove",
+      "patterns": ["\\bтаїров(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_tatarbunary": {
+      "id": "odesa_oblast_tatarbunary",
+      "patterns": ["\\bтатарбунар(и|ів|ам|ами|ах)\\b"]
+    },
+    "odesa_oblast_teplodar": {
+      "id": "odesa_oblast_teplodar",
+      "patterns": ["\\bтеплодар(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_tuzly": {
+      "id": "odesa_oblast_tuzly",
+      "patterns": ["\\bтузли\\b"]
+    },
+    "odesa_oblast_usatove": {
+      "id": "odesa_oblast_usatove",
+      "patterns": ["\\bусатов(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_velykodolynske": {
+      "id": "odesa_oblast_velykodolynske",
+      "patterns": ["\\bвеликодолинськ(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_velykyi_dalnyk": {
+      "id": "odesa_oblast_velykyi_dalnyk",
+      "patterns": ["\\bвелик(ий|ого|ому|им|ім)\\s+дальник(а|у|ом|і)?\\b"]
+    },
+    "odesa_oblast_vylkove": {
+      "id": "odesa_oblast_vylkove",
+      "patterns": ["\\bвилков(е|ого|ому|им|ім)\\b"]
+    },
+    "odesa_oblast_zatoka": {
+      "id": "odesa_oblast_zatoka",
+      "patterns": ["\\bзаток(а|и|у|ою|ці)\\b"]
+    }
+  }
+}

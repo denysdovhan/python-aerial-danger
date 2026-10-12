@@ -1,0 +1,146 @@
+{
+  "id": "poltava_oblast",
+  "patterns": ["\\bполтавщин(а|и|і|у|ою)\\b", "\\bполтавськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "poltava_oblast_bilyky": {
+      "id": "poltava_oblast_bilyky",
+      "patterns": ["\\bбілик(и|ів|ам|ами|ах)\\b"]
+    },
+    "poltava_oblast_chornukhy": {
+      "id": "poltava_oblast_chornukhy",
+      "patterns": ["\\bчорну(хи|х|хам|хами|хах)\\b"]
+    },
+    "poltava_oblast_chutove": {
+      "id": "poltava_oblast_chutove",
+      "patterns": ["\\bчутов(е|ого|ому|им|ім)\\b"]
+    },
+    "poltava_oblast_dykanka": {
+      "id": "poltava_oblast_dykanka",
+      "patterns": ["\\bдиканьк(а|и|у|ою|і)\\b"]
+    },
+    "poltava_oblast_hadiach": {
+      "id": "poltava_oblast_hadiach",
+      "patterns": ["\\bгадяч(а)?\\b"]
+    },
+    "poltava_oblast_hlobyne": {
+      "id": "poltava_oblast_hlobyne",
+      "patterns": ["\\bглобин(е|ого|ому|им|ім)\\b"]
+    },
+    "poltava_oblast_hoholeve": {
+      "id": "poltava_oblast_hoholeve",
+      "patterns": ["\\bгоголев(е|ого|ому|им|ім)\\b"]
+    },
+    "poltava_oblast_horishni_plavni": {
+      "id": "poltava_oblast_horishni_plavni",
+      "patterns": ["\\bгорішн(і|іх|ім|іми)\\s+плавн(і|ів|ям|ями|ях)\\b"]
+    },
+    "poltava_oblast_hradyzk": {
+      "id": "poltava_oblast_hradyzk",
+      "patterns": ["\\bградизьк(а|у|ом|і)?\\b"]
+    },
+    "poltava_oblast_hrebinka": {
+      "id": "poltava_oblast_hrebinka",
+      "patterns": ["\\bгребінк(а|и|у|ою|і)\\b"]
+    },
+    "poltava_oblast_karlivka": {
+      "id": "poltava_oblast_karlivka",
+      "patterns": ["\\bкарлів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "poltava_oblast_khorol": {
+      "id": "poltava_oblast_khorol",
+      "patterns": ["\\bхорол(а|у|ом|і)?\\b"]
+    },
+    "poltava_oblast_kobeliaky": {
+      "id": "poltava_oblast_kobeliaky",
+      "patterns": ["\\bкобеляк(и|ів|ам|ами|ах)\\b"]
+    },
+    "poltava_oblast_komyshnia": {
+      "id": "poltava_oblast_komyshnia",
+      "patterns": ["\\bкомишн(я|і|ю|ею)\\b"]
+    },
+    "poltava_oblast_kotelva": {
+      "id": "poltava_oblast_kotelva",
+      "patterns": ["\\bкотельв(а|и|у|ою|і)\\b"]
+    },
+    "poltava_oblast_kozelshchyna": {
+      "id": "poltava_oblast_kozelshchyna",
+      "patterns": ["\\bкозельщин(а|и|і|у|ою)\\b"]
+    },
+    "poltava_oblast_kremenchuk": {
+      "id": "poltava_oblast_kremenchuk",
+      "patterns": ["\\bкременч(ук|ука|уку|уком|уці)\\b"]
+    },
+    "poltava_oblast_lokhvytsia": {
+      "id": "poltava_oblast_lokhvytsia",
+      "patterns": ["\\bлохвиц(я|і|ю|ею)\\b"]
+    },
+    "poltava_oblast_lubny": {
+      "id": "poltava_oblast_lubny",
+      "patterns": ["\\bлуб(ни|ен|нів|ням|нями|нях)\\b"]
+    },
+    "poltava_oblast_mashivka": {
+      "id": "poltava_oblast_mashivka",
+      "patterns": ["\\bмашів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "poltava_oblast_myrhorod": {
+      "id": "poltava_oblast_myrhorod",
+      "patterns": ["\\bмиргород(а|у|ом|і)?\\b"]
+    },
+    "poltava_oblast_novi_sanzhary": {
+      "id": "poltava_oblast_novi_sanzhary",
+      "patterns": ["\\bнов(і|их|им|ими) санжар(и|ів|ам|ами|ах)\\b"]
+    },
+    "poltava_oblast_novoorzhytske": {
+      "id": "poltava_oblast_novoorzhytske",
+      "patterns": ["\\bновооржицьк(е|ого|ому|им|ім)\\b"]
+    },
+    "poltava_oblast_opishnia": {
+      "id": "poltava_oblast_opishnia",
+      "patterns": ["\\bопішн(я|і|ю|ею)\\b"]
+    },
+    "poltava_oblast_poltava": {
+      "id": "poltava_oblast_poltava",
+      "patterns": ["\\bполтав(а|и|і|у|ою)\\b"]
+    },
+    "poltava_oblast_pyriatyn": {
+      "id": "poltava_oblast_pyriatyn",
+      "patterns": ["\\bпирятин(а)?\\b"]
+    },
+    "poltava_oblast_reshetylivka": {
+      "id": "poltava_oblast_reshetylivka",
+      "patterns": ["\\bрешетилівк(а|и|у|ою|і)\\b"]
+    },
+    "poltava_oblast_romodan": {
+      "id": "poltava_oblast_romodan",
+      "patterns": ["\\bромодан(а|у|ом|і)?\\b"]
+    },
+    "poltava_oblast_shyshaky": {
+      "id": "poltava_oblast_shyshaky",
+      "patterns": ["\\bшишак(и|ів|ам|ами|ах)\\b"]
+    },
+    "poltava_oblast_skorokhodove": {
+      "id": "poltava_oblast_skorokhodove",
+      "patterns": ["\\bскороходов(е|ого|ому|им|ім)\\b"]
+    },
+    "poltava_oblast_velyka_bahachka": {
+      "id": "poltava_oblast_velyka_bahachka",
+      "patterns": ["\\bвелик(а|ої|ій|у|ою)\\s+багач(ка|ки|ці|ку|кою)\\b"]
+    },
+    "poltava_oblast_velyki_sorochyntsi": {
+      "id": "poltava_oblast_velyki_sorochyntsi",
+      "patterns": ["\\bвелик(і|их|им|ими) сорочинц(і|ів|ям|ями|ях)\\b"]
+    },
+    "poltava_oblast_vyrishalne": {
+      "id": "poltava_oblast_vyrishalne",
+      "patterns": ["\\bвирішальн(е|ого|ому|им|ім)\\b"]
+    },
+    "poltava_oblast_zavodske": {
+      "id": "poltava_oblast_zavodske",
+      "patterns": ["\\bзаводськ(е|ого|ому|им|ім)\\b"]
+    },
+    "poltava_oblast_zinkiv": {
+      "id": "poltava_oblast_zinkiv",
+      "patterns": ["\\bзіньків\\b"]
+    }
+  }
+}

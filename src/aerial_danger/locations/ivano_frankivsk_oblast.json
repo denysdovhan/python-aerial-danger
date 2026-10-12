@@ -1,0 +1,30 @@
+{
+  "id": "ivano_frankivsk_oblast",
+  "patterns": [
+    "\\bфранківщин(а|и|і|у|ою)\\b",
+    "\\bівано-франківщин(а|и|і|у|ою)\\b",
+    "\\bівано-франківськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"
+  ],
+  "localities": {
+    "ivano_frankivsk_oblast_burshtyn": {
+      "id": "ivano_frankivsk_oblast_burshtyn",
+      "patterns": ["\\bбурштин(а|у|ом|і)?\\b"]
+    },
+    "ivano_frankivsk_oblast_ivano_frankivsk": {
+      "id": "ivano_frankivsk_oblast_ivano_frankivsk",
+      "patterns": ["\\bівано-франківськ(у|ом|і)?\\b"]
+    },
+    "ivano_frankivsk_oblast_kalush": {
+      "id": "ivano_frankivsk_oblast_kalush",
+      "patterns": ["\\bкалуш(а|у|ем|і)?\\b"]
+    },
+    "ivano_frankivsk_oblast_kolomyia": {
+      "id": "ivano_frankivsk_oblast_kolomyia",
+      "patterns": ["\\bколоми(я|ї|ю|єю)\\b"]
+    },
+    "ivano_frankivsk_oblast_rohatyn": {
+      "id": "ivano_frankivsk_oblast_rohatyn",
+      "patterns": ["\\bрогатин(а|у|ом|і)?\\b"]
+    }
+  }
+}

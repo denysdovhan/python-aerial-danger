@@ -1,0 +1,802 @@
+{
+  "id": "kyiv_oblast",
+  "patterns": [
+    "\\bкиївщин(а|и|і|у|ою)\\b",
+    "\\bкиївськ(а|ої|ій|у|ою|і|их|им|ими) област(ь|і|ю|ей|ям|ями|ях)\\b"
+  ],
+  "localities": {
+    "kyiv_oblast_babyntsi": {
+      "id": "kyiv_oblast_babyntsi",
+      "patterns": ["\\bбабин(ці|ців|цям|цями|цях)\\b"]
+    },
+    "kyiv_oblast_bahryn": {
+      "id": "kyiv_oblast_bahryn",
+      "patterns": ["\\bбагрин(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_barakhty": {
+      "id": "kyiv_oblast_barakhty",
+      "patterns": ["\\bбарахт(и|ам|ами|ах)?\\b"]
+    },
+    "kyiv_oblast_baryshivka": {
+      "id": "kyiv_oblast_baryshivka",
+      "patterns": ["\\bбаришівк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_berezan": {
+      "id": "kyiv_oblast_berezan",
+      "patterns": ["\\bберезан(ь|і)\\b"]
+    },
+    "kyiv_oblast_bezpiatne": {
+      "id": "kyiv_oblast_bezpiatne",
+      "patterns": ["\\bбезп['’ʼ]ятн(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_bila_tserkva": {
+      "id": "kyiv_oblast_bila_tserkva",
+      "patterns": ["\\bбіл(а|ої|ій|у|ою) церкв(а|и|і|у|ою)\\b", "\\bбц\\b"]
+    },
+    "kyiv_oblast_bilohorodka": {
+      "id": "kyiv_oblast_bilohorodka",
+      "patterns": ["\\bбілогородк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_blystavytsia": {
+      "id": "kyiv_oblast_blystavytsia",
+      "patterns": ["\\bблиставиц(я|і|ю|ею)\\b"]
+    },
+    "kyiv_oblast_bobryk": {
+      "id": "kyiv_oblast_bobryk",
+      "patterns": ["\\bбобрик(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_bobrytsia": {
+      "id": "kyiv_oblast_bobrytsia",
+      "patterns": ["\\bбобриц(я|і|ю|ею)\\b"]
+    },
+    "kyiv_oblast_bodenky": {
+      "id": "kyiv_oblast_bodenky",
+      "patterns": ["\\bбодень(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_bohuslav": {
+      "id": "kyiv_oblast_bohuslav",
+      "patterns": ["\\bбогуслав(а|ом)?\\b"]
+    },
+    "kyiv_oblast_borodianka": {
+      "id": "kyiv_oblast_borodianka",
+      "patterns": ["\\bбородянк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_borova": {
+      "id": "kyiv_oblast_borova",
+      "patterns": ["\\bборов(а|ої|ій|у|ою)\\b"]
+    },
+    "kyiv_oblast_boryspil": {
+      "id": "kyiv_oblast_boryspil",
+      "patterns": ["\\bборисп(іль|оля|олю|олем|олі)\\b", "\\bборік\\b"]
+    },
+    "kyiv_oblast_boyarka": {
+      "id": "kyiv_oblast_boyarka",
+      "patterns": ["\\bбоярк(у|а|и|ою)\\b"]
+    },
+    "kyiv_oblast_brovary": {
+      "id": "kyiv_oblast_brovary",
+      "patterns": ["\\bбровар(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_bucha": {
+      "id": "kyiv_oblast_bucha",
+      "patterns": ["\\bбуч(а|і|у|ею)\\b"]
+    },
+    "kyiv_oblast_buzova": {
+      "id": "kyiv_oblast_buzova",
+      "patterns": ["\\bбузов(а|ої|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_byshiv": {
+      "id": "kyiv_oblast_byshiv",
+      "patterns": ["\\bбишів\\b"]
+    },
+    "kyiv_oblast_chabany": {
+      "id": "kyiv_oblast_chabany",
+      "patterns": ["\\bчабан(и|ів)\\b"]
+    },
+    "kyiv_oblast_chaiky": {
+      "id": "kyiv_oblast_chaiky",
+      "patterns": ["\\bчайк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_chornobyl": {
+      "id": "kyiv_oblast_chornobyl",
+      "patterns": ["\\bчорнобил(ь|я|ю|ем|і)\\b"]
+    },
+    "kyiv_oblast_demydiv": {
+      "id": "kyiv_oblast_demydiv",
+      "patterns": ["\\bдемид(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_dereviana": {
+      "id": "kyiv_oblast_dereviana",
+      "patterns": ["\\bдерев['’ʼ]ян(а|ої|ій|у|ою)\\b"]
+    },
+    "kyiv_oblast_divychky": {
+      "id": "kyiv_oblast_divychky",
+      "patterns": ["\\bдівич(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_doslidnytske": {
+      "id": "kyiv_oblast_doslidnytske",
+      "patterns": ["\\bдослідницьк(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_dudarkiv": {
+      "id": "kyiv_oblast_dudarkiv",
+      "patterns": ["\\bдудар(ків|кова|кову|ковом|кові)\\b"]
+    },
+    "kyiv_oblast_dymer": {
+      "id": "kyiv_oblast_dymer",
+      "patterns": ["\\bдимер(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_dytiatky": {
+      "id": "kyiv_oblast_dytiatky",
+      "patterns": ["\\bдитят(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_fastiv": {
+      "id": "kyiv_oblast_fastiv",
+      "patterns": ["\\bфаст(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_fenevychi": {
+      "id": "kyiv_oblast_fenevychi",
+      "patterns": ["\\bфеневич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_fursy": {
+      "id": "kyiv_oblast_fursy",
+      "patterns": ["\\bфурс(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_gatne": {
+      "id": "kyiv_oblast_gatne",
+      "patterns": ["\\bгатн(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_hlevakha": {
+      "id": "kyiv_oblast_hlevakha",
+      "patterns": ["\\bглевах(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_hlibivka": {
+      "id": "kyiv_oblast_hlibivka",
+      "patterns": ["\\bглібів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_hnidyn": {
+      "id": "kyiv_oblast_hnidyn",
+      "patterns": ["\\bгнідин(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_hoholiv": {
+      "id": "kyiv_oblast_hoholiv",
+      "patterns": ["\\bгогол(ів|ева|еву|евом|еві)\\b"]
+    },
+    "kyiv_oblast_hora": {
+      "id": "kyiv_oblast_hora",
+      "patterns": ["\\bгор(а|и|і|у|ою)\\b"]
+    },
+    "kyiv_oblast_horenka": {
+      "id": "kyiv_oblast_horenka",
+      "patterns": ["\\bгоренк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_horenychi": {
+      "id": "kyiv_oblast_horenychi",
+      "patterns": ["\\bгоренич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_hostomel": {
+      "id": "kyiv_oblast_hostomel",
+      "patterns": ["\\bгостомел(ь|я|ю|ем|і)\\b"]
+    },
+    "kyiv_oblast_hotianivka": {
+      "id": "kyiv_oblast_hotianivka",
+      "patterns": ["\\bхотянівк(а|и|у|ою|ці)\\b"]
+    },
+    "kyiv_oblast_hrebinky": {
+      "id": "kyiv_oblast_hrebinky",
+      "patterns": ["\\bгребінк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_hvozdiv": {
+      "id": "kyiv_oblast_hvozdiv",
+      "patterns": ["\\bгвозд(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_irpin": {
+      "id": "kyiv_oblast_irpin",
+      "patterns": ["\\bірп(інь|еня|еню|енем|ені)\\b"]
+    },
+    "kyiv_oblast_ivankiv": {
+      "id": "kyiv_oblast_ivankiv",
+      "patterns": ["\\bіван(ків|кова|кову|ковом|кові)\\b"]
+    },
+    "kyiv_oblast_ivankovychi": {
+      "id": "kyiv_oblast_ivankovychi",
+      "patterns": ["\\bіванкович(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_kaharlyk": {
+      "id": "kyiv_oblast_kaharlyk",
+      "patterns": ["\\bкагарлик(а)?\\b"]
+    },
+    "kyiv_oblast_kalita": {
+      "id": "kyiv_oblast_kalita",
+      "patterns": ["\\bкалит(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_kapitanivka": {
+      "id": "kyiv_oblast_kapitanivka",
+      "patterns": ["\\bкапітанів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_katiuzhanka": {
+      "id": "kyiv_oblast_katiuzhanka",
+      "patterns": ["\\bкатюжанк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_khalepia": {
+      "id": "kyiv_oblast_khalepia",
+      "patterns": ["\\bхалеп['’ʼ](я|ю|ям|ї)\\b"]
+    },
+    "kyiv_oblast_khodosivka": {
+      "id": "kyiv_oblast_khodosivka",
+      "patterns": ["\\bходосівк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_khotiv": {
+      "id": "kyiv_oblast_khotiv",
+      "patterns": [
+        "\\b(на|до|у|в|через|повз|поблизу|районі|курс|курсом)\\s+хотів\\b",
+        "\\bхотів(?=\\s*(?:[-/!?.:,]|сектор|увага|бпла|ще|на|та|поки))",
+        "(?m)^[ \\t]*хотів[.!]*[ \\t]*$"
+      ]
+    },
+    "kyiv_oblast_khotsky": {
+      "id": "kyiv_oblast_khotsky",
+      "patterns": ["\\bхоцьк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_klavdiievo_tarasove": {
+      "id": "kyiv_oblast_klavdiievo_tarasove",
+      "patterns": ["\\bклавдієво[ -]тарасов(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_kniazhychi": {
+      "id": "kyiv_oblast_kniazhychi",
+      "patterns": ["\\bкняжич(і|ів)\\b"]
+    },
+    "kyiv_oblast_kobtsi": {
+      "id": "kyiv_oblast_kobtsi",
+      "patterns": ["\\bкобц(і|ів|ям|ями|ях)\\b"]
+    },
+    "kyiv_oblast_kodaky": {
+      "id": "kyiv_oblast_kodaky",
+      "patterns": ["\\bкодак(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_kodra": {
+      "id": "kyiv_oblast_kodra",
+      "patterns": ["\\bкодр(а|и|і|у|ою)\\b"]
+    },
+    "kyiv_oblast_kopachiv": {
+      "id": "kyiv_oblast_kopachiv",
+      "patterns": ["\\bкопач(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_kopyliv": {
+      "id": "kyiv_oblast_kopyliv",
+      "patterns": ["\\bкопил(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_kotsiubynske": {
+      "id": "kyiv_oblast_kotsiubynske",
+      "patterns": ["\\bкоцюбинськ(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_kovalyn": {
+      "id": "kyiv_oblast_kovalyn",
+      "patterns": ["\\bковалин(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_kozarovychi": {
+      "id": "kyiv_oblast_kozarovychi",
+      "patterns": ["\\bкозарович(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_kozhanka": {
+      "id": "kyiv_oblast_kozhanka",
+      "patterns": ["\\bкожан(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_kozyn": {
+      "id": "kyiv_oblast_kozyn",
+      "patterns": ["\\bкозин(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_krasiatychi": {
+      "id": "kyiv_oblast_krasiatychi",
+      "patterns": ["\\bкрасятич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_krasylivka": {
+      "id": "kyiv_oblast_krasylivka",
+      "patterns": ["\\bкрасилів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_kremenyshche": {
+      "id": "kyiv_oblast_kremenyshche",
+      "patterns": ["\\bкременищ(е|а|у|ем|і)\\b"]
+    },
+    "kyiv_oblast_krenychi": {
+      "id": "kyiv_oblast_krenychi",
+      "patterns": ["\\bкренич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_kriukivshchyna": {
+      "id": "kyiv_oblast_kriukivshchyna",
+      "patterns": ["\\bкрюківщин(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_kruhlyk": {
+      "id": "kyiv_oblast_kruhlyk",
+      "patterns": ["\\bкруглик(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_krushynka": {
+      "id": "kyiv_oblast_krushynka",
+      "patterns": ["\\bкрушинк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_kryachky": {
+      "id": "kyiv_oblast_kryachky",
+      "patterns": ["\\bкрячк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_kulibaba": {
+      "id": "kyiv_oblast_kulibaba",
+      "patterns": ["\\bкулібаб(а|и|і|у|ою)\\b"]
+    },
+    "kyiv_oblast_kvitneve": {
+      "id": "kyiv_oblast_kvitneve",
+      "patterns": ["\\bквітнев(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_kyiliv": {
+      "id": "kyiv_oblast_kyiliv",
+      "patterns": ["\\bкийл(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_lebedivka": {
+      "id": "kyiv_oblast_lebedivka",
+      "patterns": ["\\bлебедівк(а|у|и)\\b"]
+    },
+    "kyiv_oblast_lisnyky": {
+      "id": "kyiv_oblast_lisnyky",
+      "patterns": ["\\bлісники\\b"]
+    },
+    "kyiv_oblast_litky": {
+      "id": "kyiv_oblast_litky",
+      "patterns": ["\\bліт(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_litochky": {
+      "id": "kyiv_oblast_litochky",
+      "patterns": ["\\bліточ(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_liubartsi": {
+      "id": "kyiv_oblast_liubartsi",
+      "patterns": ["\\bлюбарц(і|ів|ям|ями|ях)\\b"]
+    },
+    "kyiv_oblast_liutizh": {
+      "id": "kyiv_oblast_liutizh",
+      "patterns": ["\\bлютіж\\b"]
+    },
+    "kyiv_oblast_lypovyi_skytok": {
+      "id": "kyiv_oblast_lypovyi_skytok",
+      "patterns": ["\\bлипов(ий|ого|ому|им|ім)\\s+скит(ок|ка|ку|ком|ці)\\b"]
+    },
+    "kyiv_oblast_makariv": {
+      "id": "kyiv_oblast_makariv",
+      "patterns": ["\\bмакар(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_maliutianka": {
+      "id": "kyiv_oblast_maliutianka",
+      "patterns": ["\\bмалютянк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_markhalivka": {
+      "id": "kyiv_oblast_markhalivka",
+      "patterns": ["\\bмархалівк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_mokrets": {
+      "id": "kyiv_oblast_mokrets",
+      "patterns": ["\\bмокр(ець|ця|цю|цем|ці)\\b"]
+    },
+    "kyiv_oblast_moshchun": {
+      "id": "kyiv_oblast_moshchun",
+      "patterns": ["\\bмощун(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_motyzhyn": {
+      "id": "kyiv_oblast_motyzhyn",
+      "patterns": ["\\bмотижин(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_mriia": {
+      "id": "kyiv_oblast_mriia",
+      "patterns": ["(?m)^\\s*мрі(я|ї|ю|єю)[.!]*\\s*$"]
+    },
+    "kyiv_oblast_muzychi": {
+      "id": "kyiv_oblast_muzychi",
+      "patterns": ["\\bмузич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_myla": {
+      "id": "kyiv_oblast_myla",
+      "patterns": ["\\bмил(а|ої|ій|у|ою)\\b"]
+    },
+    "kyiv_oblast_myronivka": {
+      "id": "kyiv_oblast_myronivka",
+      "patterns": ["\\bмиронівк(у|и|а)\\b"]
+    },
+    "kyiv_oblast_mytnytsia": {
+      "id": "kyiv_oblast_mytnytsia",
+      "patterns": ["\\bмитниц(я|і|ю|ею)\\b"]
+    },
+    "kyiv_oblast_nalyvaikivka": {
+      "id": "kyiv_oblast_nalyvaikivka",
+      "patterns": ["\\bналивайків(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_nehrashi": {
+      "id": "kyiv_oblast_nehrashi",
+      "patterns": ["\\bнеграш(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_nemishaieve": {
+      "id": "kyiv_oblast_nemishaieve",
+      "patterns": ["\\bнемішаєв(е|о|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_neshcheriv": {
+      "id": "kyiv_oblast_neshcheriv",
+      "patterns": ["\\bнещер(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_nove_zalissia": {
+      "id": "kyiv_oblast_nove_zalissia",
+      "patterns": ["\\bнов(е|ого|ому|им|ім)\\s+залісс(я|ю|ям|і)\\b"]
+    },
+    "kyiv_oblast_novi_bezradychi": {
+      "id": "kyiv_oblast_novi_bezradychi",
+      "patterns": ["\\bнов(і|их|им|ими)\\s+безрадич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_novosilky": {
+      "id": "kyiv_oblast_novosilky",
+      "patterns": ["\\bновосілк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_nyzhcha_dubechnia": {
+      "id": "kyiv_oblast_nyzhcha_dubechnia",
+      "patterns": ["\\bнижч(а|ої|ій|у|ою)\\s+дубечн(я|і|ю|ею)\\b"]
+    },
+    "kyiv_oblast_obukhiv": {
+      "id": "kyiv_oblast_obukhiv",
+      "patterns": ["\\bобух(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_orane": {
+      "id": "kyiv_oblast_orane",
+      "patterns": ["\\bоран(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_oseshchyna": {
+      "id": "kyiv_oblast_oseshchyna",
+      "patterns": ["\\bосещин(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_ostriiky": {
+      "id": "kyiv_oblast_ostriiky",
+      "patterns": ["\\bострій(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_pereiaslav": {
+      "id": "kyiv_oblast_pereiaslav",
+      "patterns": ["\\bпереяслав(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_petrivtsi": {
+      "id": "kyiv_oblast_petrivtsi",
+      "patterns": ["\\bпетрівц(і|ів|ям|ями|ях)\\b"]
+    },
+    "kyiv_oblast_petropavlivska_borshchahivka": {
+      "id": "kyiv_oblast_petropavlivska_borshchahivka",
+      "patterns": ["\\bпетропавлівськ(а|ої|ій|у|ою) борщагівк(а|и|і|у|ою|ці)\\b"]
+    },
+    "kyiv_oblast_pidhirtsi": {
+      "id": "kyiv_oblast_pidhirtsi",
+      "patterns": ["\\bпідгірці\\b"]
+    },
+    "kyiv_oblast_piskivka": {
+      "id": "kyiv_oblast_piskivka",
+      "patterns": ["\\bпісківк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_plyuty": {
+      "id": "kyiv_oblast_plyuty",
+      "patterns": ["\\bплют(и|ів|ям|ями|ях)\\b"]
+    },
+    "kyiv_oblast_pohreby": {
+      "id": "kyiv_oblast_pohreby",
+      "patterns": ["\\bпогреб(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_prolisky": {
+      "id": "kyiv_oblast_prolisky",
+      "patterns": ["\\bпроліс(ки|ків|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_protsiv": {
+      "id": "kyiv_oblast_protsiv",
+      "patterns": ["\\bпроц(ів|ева|еву|евом|еві)\\b"]
+    },
+    "kyiv_oblast_prypiat": {
+      "id": "kyiv_oblast_prypiat",
+      "patterns": ["\\bприп['’ʼ]ят(ь|і|тю)\\b"]
+    },
+    "kyiv_oblast_pukhivka": {
+      "id": "kyiv_oblast_pukhivka",
+      "patterns": ["\\bпухівк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_revne": {
+      "id": "kyiv_oblast_revne",
+      "patterns": ["\\bревн(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_rohoziv": {
+      "id": "kyiv_oblast_rohoziv",
+      "patterns": ["\\bрогоз(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_rokytne": {
+      "id": "kyiv_oblast_rokytne",
+      "patterns": ["\\bрокитн(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_romanivka": {
+      "id": "kyiv_oblast_romanivka",
+      "patterns": ["\\bроманів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_romankiv": {
+      "id": "kyiv_oblast_romankiv",
+      "patterns": ["\\bроманк(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_roslavychi": {
+      "id": "kyiv_oblast_roslavychi",
+      "patterns": ["\\bрославич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_rovzhi": {
+      "id": "kyiv_oblast_rovzhi",
+      "patterns": ["\\bровж(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_rozhivka": {
+      "id": "kyiv_oblast_rozhivka",
+      "patterns": ["\\bрожівк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_rozhny": {
+      "id": "kyiv_oblast_rozhny",
+      "patterns": ["\\bрожни\\b"]
+    },
+    "kyiv_oblast_rusaniv": {
+      "id": "kyiv_oblast_rusaniv",
+      "patterns": ["\\bрусанів\\b"]
+    },
+    "kyiv_oblast_rzhyshchiv": {
+      "id": "kyiv_oblast_rzhyshchiv",
+      "patterns": ["\\bржищ(ів|ева|еву|евом|еві)\\b"]
+    },
+    "kyiv_oblast_semypolky": {
+      "id": "kyiv_oblast_semypolky",
+      "patterns": ["\\bсемипол(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_shchaslyve": {
+      "id": "kyiv_oblast_shchaslyve",
+      "patterns": ["\\bщасливе\\b"]
+    },
+    "kyiv_oblast_shkarivka": {
+      "id": "kyiv_oblast_shkarivka",
+      "patterns": ["\\bшкарів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_shpytky": {
+      "id": "kyiv_oblast_shpytky",
+      "patterns": ["\\bшпить(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_skibyn": {
+      "id": "kyiv_oblast_skibyn",
+      "patterns": ["\\bскибин(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_skvyra": {
+      "id": "kyiv_oblast_skvyra",
+      "patterns": ["\\bсквир(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_slavutych": {
+      "id": "kyiv_oblast_slavutych",
+      "patterns": ["\\bславутич(а|у|ем|і)?\\b"]
+    },
+    "kyiv_oblast_sofiivska_borshchahivka": {
+      "id": "kyiv_oblast_sofiivska_borshchahivka",
+      "patterns": [
+        "\\bсофіївськ(а|ої|ій|у|ою) борщагівк(а|и|і|у|ою|ці)\\b",
+        "\\bсоф\\s+борщаг(?:а|у|и|ою)\\b",
+        "\\bсоф\\b"
+      ]
+    },
+    "kyiv_oblast_staiky": {
+      "id": "kyiv_oblast_staiky",
+      "patterns": ["\\bстай(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_stare": {
+      "id": "kyiv_oblast_stare",
+      "patterns": ["\\bстар(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_stavyshche": {
+      "id": "kyiv_oblast_stavyshche",
+      "patterns": ["\\bставищ(е|а|ем)\\b"]
+    },
+    "kyiv_oblast_stoianka": {
+      "id": "kyiv_oblast_stoianka",
+      "patterns": ["\\bстоянк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_strakholissia": {
+      "id": "kyiv_oblast_strakholissia",
+      "patterns": ["\\bстрахолісс(я|і|ям)\\b"]
+    },
+    "kyiv_oblast_sukholuchchia": {
+      "id": "kyiv_oblast_sukholuchchia",
+      "patterns": ["\\bсухолучч(я|і|ям)\\b"]
+    },
+    "kyiv_oblast_sulymivka": {
+      "id": "kyiv_oblast_sulymivka",
+      "patterns": ["\\bсулимів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_suvid": {
+      "id": "kyiv_oblast_suvid",
+      "patterns": ["\\bсувид(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_sviatopetrivske": {
+      "id": "kyiv_oblast_sviatopetrivske",
+      "patterns": ["\\bсвятопетрівськ(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_svitilnia": {
+      "id": "kyiv_oblast_svitilnia",
+      "patterns": ["\\bсвітильн(я|і|ю|ею)\\b"]
+    },
+    "kyiv_oblast_tarashcha": {
+      "id": "kyiv_oblast_tarashcha",
+      "patterns": ["\\bтаращ(у|і|а|ею)\\b"]
+    },
+    "kyiv_oblast_tarasivka": {
+      "id": "kyiv_oblast_tarasivka",
+      "patterns": ["\\bтарасів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_tatsenky": {
+      "id": "kyiv_oblast_tatsenky",
+      "patterns": ["\\bтаценк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_terezyne": {
+      "id": "kyiv_oblast_terezyne",
+      "patterns": ["\\bтерезин(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_tetiiv": {
+      "id": "kyiv_oblast_tetiiv",
+      "patterns": ["\\bтет(іїв|ієва|ієву|ієвом|ієві)\\b"]
+    },
+    "kyiv_oblast_tolokun": {
+      "id": "kyiv_oblast_tolokun",
+      "patterns": ["\\bтолокун(ь|я|ю|ем|і)\\b"]
+    },
+    "kyiv_oblast_trebukhiv": {
+      "id": "kyiv_oblast_trebukhiv",
+      "patterns": ["\\bтребух(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_trushky": {
+      "id": "kyiv_oblast_trushky",
+      "patterns": ["\\bтруш(ки|ок|кам|ками|ках)\\b"]
+    },
+    "kyiv_oblast_trypillia": {
+      "id": "kyiv_oblast_trypillia",
+      "patterns": ["\\bтрипілл(я|і|ям)\\b"]
+    },
+    "kyiv_oblast_ukrainka": {
+      "id": "kyiv_oblast_ukrainka",
+      "patterns": ["\\bукраїнк(а|и|у|ою|ці)\\b"]
+    },
+    "kyiv_oblast_uzyn": {
+      "id": "kyiv_oblast_uzyn",
+      "patterns": ["\\bузин(а|ом)?\\b"]
+    },
+    "kyiv_oblast_vasylkiv": {
+      "id": "kyiv_oblast_vasylkiv",
+      "patterns": [
+        "\\bвасильков(а|у|ом|і)?\\b",
+        "\\bвасильків(а|у|ом|і)?\\b",
+        "\\bвасі\\b",
+        "\\bвасік(а|у|ом|і)?\\b"
+      ]
+    },
+    "kyiv_oblast_velyka_buhaivka": {
+      "id": "kyiv_oblast_velyka_buhaivka",
+      "patterns": ["\\bвелик(а|ої|ій|у|ою)\\s+бугаїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_velyka_dymerka": {
+      "id": "kyiv_oblast_velyka_dymerka",
+      "patterns": ["\\bвелик(а|ої|ій|у|ою) димерк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_velyki_dmytrovychi": {
+      "id": "kyiv_oblast_velyki_dmytrovychi",
+      "patterns": ["\\bвелик(і|их|им|ими)\\s+дмитрович(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_velykopolovetske": {
+      "id": "kyiv_oblast_velykopolovetske",
+      "patterns": ["\\bвеликополовецьк(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_velykyi_krupil": {
+      "id": "kyiv_oblast_velykyi_krupil",
+      "patterns": ["\\bвелик(ий|ого|ому|им|ім)\\s+круп(іль|оля|олю|олем|олі)\\b"]
+    },
+    "kyiv_oblast_veremia": {
+      "id": "kyiv_oblast_veremia",
+      "patterns": ["\\bверем['’ʼ](я|ю|ям|ї)\\b"]
+    },
+    "kyiv_oblast_vita_poshtova": {
+      "id": "kyiv_oblast_vita_poshtova",
+      "patterns": ["\\bвіт(а|и|і|у|ою)[ -]пошт(ова|ової|овій|ову|овою)\\b"]
+    },
+    "kyiv_oblast_volodarka": {
+      "id": "kyiv_oblast_volodarka",
+      "patterns": ["\\bволодар(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_voronkiv": {
+      "id": "kyiv_oblast_voronkiv",
+      "patterns": ["\\bвороньк(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_voropaiv": {
+      "id": "kyiv_oblast_voropaiv",
+      "patterns": ["\\bворопа(їв|єва|єву|євом|єві)\\b"]
+    },
+    "kyiv_oblast_vorzel": {
+      "id": "kyiv_oblast_vorzel",
+      "patterns": ["\\bворзел(ь|я|ю|ем|і)\\b"]
+    },
+    "kyiv_oblast_vyshcha_dubechnia": {
+      "id": "kyiv_oblast_vyshcha_dubechnia",
+      "patterns": ["\\bвищ(а|ої|ій|у|ою)\\s+дубечн(я|і|ю|ею)\\b"]
+    },
+    "kyiv_oblast_vyshenky": {
+      "id": "kyiv_oblast_vyshenky",
+      "patterns": ["\\bвишеньк(и|ок|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_vyshhorod": {
+      "id": "kyiv_oblast_vyshhorod",
+      "patterns": ["\\bвишгород(у|і|ом|а)?\\b"]
+    },
+    "kyiv_oblast_vyshneve": {
+      "id": "kyiv_oblast_vyshneve",
+      "patterns": ["\\bвишнев(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_vytachiv": {
+      "id": "kyiv_oblast_vytachiv",
+      "patterns": ["\\bвитач(ів|ова|ову|овом|ові)\\b"]
+    },
+    "kyiv_oblast_yahotyn": {
+      "id": "kyiv_oblast_yahotyn",
+      "patterns": ["\\bяготин(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_yasnohorodka": {
+      "id": "kyiv_oblast_yasnohorodka",
+      "patterns": ["\\bясногород(ка|ки|ці|ку|кою)\\b"]
+    },
+    "kyiv_oblast_yatsky": {
+      "id": "kyiv_oblast_yatsky",
+      "patterns": ["\\bяцьк(и|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_yerkivtsi": {
+      "id": "kyiv_oblast_yerkivtsi",
+      "patterns": ["\\bєрків(ці|ців|цям|цями|цях)\\b"]
+    },
+    "kyiv_oblast_yurivka": {
+      "id": "kyiv_oblast_yurivka",
+      "patterns": ["\\bюрівк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_zabiria": {
+      "id": "kyiv_oblast_zabiria",
+      "patterns": ["\\bзабір['’ʼ](я|ю|ям|ї)\\b"]
+    },
+    "kyiv_oblast_zalissia": {
+      "id": "kyiv_oblast_zalissia",
+      "patterns": ["\\bзалісс(я|ю|ям|і)\\b"]
+    },
+    "kyiv_oblast_zalizne": {
+      "id": "kyiv_oblast_zalizne",
+      "patterns": ["\\bзалізн(е|ого|ому|им|ім)\\b"]
+    },
+    "kyiv_oblast_zarichchia": {
+      "id": "kyiv_oblast_zarichchia",
+      "patterns": ["\\bзарічч(я|ю|ям|і)\\b"]
+    },
+    "kyiv_oblast_zavorychi": {
+      "id": "kyiv_oblast_zavorychi",
+      "patterns": ["\\bзаворич(і|ів|ам|ами|ах)\\b"]
+    },
+    "kyiv_oblast_zazyma": {
+      "id": "kyiv_oblast_zazyma",
+      "patterns": ["\\bзазим['’ʼ]?(я|ї|ям)\\b"]
+    },
+    "kyiv_oblast_zelenyi_bir": {
+      "id": "kyiv_oblast_zelenyi_bir",
+      "patterns": ["\\bзелен(ий|ого|ому|им|ім)\\s+б(ір|ору|ором|орі)\\b"]
+    },
+    "kyiv_oblast_zghurivka": {
+      "id": "kyiv_oblast_zghurivka",
+      "patterns": ["\\bзгурівк(а|и|у|ою|і)\\b"]
+    },
+    "kyiv_oblast_zherebiatyn": {
+      "id": "kyiv_oblast_zherebiatyn",
+      "patterns": ["\\bжереб['’ʼ]ятин(а|у|ом|і)?\\b"]
+    },
+    "kyiv_oblast_zhk_sofiia": {
+      "id": "kyiv_oblast_zhk_sofiia",
+      "patterns": ["\\bжк[. ]+[«\\\"]?софі(я|ї|ю|єю)\\b"]
+    },
+    "kyiv_oblast_zhukivtsi": {
+      "id": "kyiv_oblast_zhukivtsi",
+      "patterns": ["\\bжуків(ці|ців|цям|цями|цях)\\b"]
+    },
+    "kyiv_oblast_zhukyn": {
+      "id": "kyiv_oblast_zhukyn",
+      "patterns": ["\\bжукин(а|у|им|і)?\\b"]
+    }
+  }
+}

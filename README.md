@@ -65,6 +65,8 @@ assert detector.drone_danger("Шахед на Нивки!").danger
 ```
 
 Preset IDs and patterns are in [`aerial_danger.location_presets.LOCATION_PRESETS`](src/aerial_danger/location_presets.py).
+The registry loads bundled [JSON files](src/aerial_danger/locations), one per region,
+into `RegionPreset` and `LocalityPreset` objects. Pattern sequences remain tuples.
 Pass custom patterns as the first argument to each resolver to combine them with presets.
 Each region and locality has an `id` matching its registry key, such as `kyiv_nyvky`.
 The library has no display names or translations. Your application supplies labels for these IDs.

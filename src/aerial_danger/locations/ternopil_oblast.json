@@ -1,0 +1,46 @@
+{
+  "id": "ternopil_oblast",
+  "patterns": ["\\bтернопільщин(а|и|і|у|ою)\\b", "\\bтернопільськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "ternopil_oblast_chortkiv": {
+      "id": "ternopil_oblast_chortkiv",
+      "patterns": ["\\bчортк(ів|ова|ову|овом|ові)\\b"]
+    },
+    "ternopil_oblast_hrymailiv": {
+      "id": "ternopil_oblast_hrymailiv",
+      "patterns": ["\\bгримайл(ів|ова|ову|овом|ові)\\b"]
+    },
+    "ternopil_oblast_khorostkiv": {
+      "id": "ternopil_oblast_khorostkiv",
+      "patterns": ["\\bхоростк(ів|ова|ову|овом|ові)\\b"]
+    },
+    "ternopil_oblast_kozova": {
+      "id": "ternopil_oblast_kozova",
+      "patterns": ["\\bкозов(а|и|і|у|ою)\\b"]
+    },
+    "ternopil_oblast_kremenets": {
+      "id": "ternopil_oblast_kremenets",
+      "patterns": ["\\bкремен(ець|ця|цю|цем|ці)\\b"]
+    },
+    "ternopil_oblast_lanivtsi": {
+      "id": "ternopil_oblast_lanivtsi",
+      "patterns": ["\\bланівц(і|ів|ям|ями|ях)\\b"]
+    },
+    "ternopil_oblast_terebovlia": {
+      "id": "ternopil_oblast_terebovlia",
+      "patterns": ["\\bтеребовл(я|і|ю|ею)\\b"]
+    },
+    "ternopil_oblast_ternopil": {
+      "id": "ternopil_oblast_ternopil",
+      "patterns": ["\\bтерноп(іль|оля|олю|олем|олі)\\b"]
+    },
+    "ternopil_oblast_velyki_birky": {
+      "id": "ternopil_oblast_velyki_birky",
+      "patterns": ["\\bвелик(і|их|им|ими)\\s+бір(ки|ок|кам|ками|ках)\\b"]
+    },
+    "ternopil_oblast_vyshnivets": {
+      "id": "ternopil_oblast_vyshnivets",
+      "patterns": ["\\bвишнів(ець|ця|цю|цем|ці)\\b"]
+    }
+  }
+}

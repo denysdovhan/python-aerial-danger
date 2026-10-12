@@ -1,0 +1,38 @@
+{
+  "id": "zaporizhzhia_oblast",
+  "patterns": ["\\bзапорізьк(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "zaporizhzhia_oblast_balabyne": {
+      "id": "zaporizhzhia_oblast_balabyne",
+      "patterns": ["\\bбалабин(е|ого|ому|им|ім)\\b"]
+    },
+    "zaporizhzhia_oblast_komyshuvakha": {
+      "id": "zaporizhzhia_oblast_komyshuvakha",
+      "patterns": ["\\bкомишувах(а|и|і|у|ою)\\b"]
+    },
+    "zaporizhzhia_oblast_kushuhum": {
+      "id": "zaporizhzhia_oblast_kushuhum",
+      "patterns": ["\\bкушугум(а|у|ом|і)?\\b"]
+    },
+    "zaporizhzhia_oblast_novomykolaivka": {
+      "id": "zaporizhzhia_oblast_novomykolaivka",
+      "patterns": ["\\bновомиколаїв(ка|ки|ці|ку|кою)\\b"]
+    },
+    "zaporizhzhia_oblast_orikhiv": {
+      "id": "zaporizhzhia_oblast_orikhiv",
+      "patterns": ["\\bоріх(ів|ова|ову|ові|овом)\\b"]
+    },
+    "zaporizhzhia_oblast_sotsmisto": {
+      "id": "zaporizhzhia_oblast_sotsmisto",
+      "patterns": ["\\bсоцміст(о|ом|т)\\b"]
+    },
+    "zaporizhzhia_oblast_vilniansk": {
+      "id": "zaporizhzhia_oblast_vilniansk",
+      "patterns": ["\\bвільнянськ(а|у|і|ом)?\\b"]
+    },
+    "zaporizhzhia_oblast_zaporizhzhia": {
+      "id": "zaporizhzhia_oblast_zaporizhzhia",
+      "patterns": ["\\bзапоріжж(я|і|ю|ям)\\b", "\\bзп\\b"]
+    }
+  }
+}

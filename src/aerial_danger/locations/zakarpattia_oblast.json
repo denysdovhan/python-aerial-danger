@@ -1,0 +1,14 @@
+{
+  "id": "zakarpattia_oblast",
+  "patterns": ["\\bзакарпатськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "zakarpattia_oblast_mukachevo": {
+      "id": "zakarpattia_oblast_mukachevo",
+      "patterns": ["\\bмукачев(о|а|у|ом|і)\\b"]
+    },
+    "zakarpattia_oblast_uzhhorod": {
+      "id": "zakarpattia_oblast_uzhhorod",
+      "patterns": ["\\bужгород(а|у|ом|і)?\\b"]
+    }
+  }
+}

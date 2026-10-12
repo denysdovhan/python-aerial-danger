@@ -1,0 +1,114 @@
+{
+  "id": "zhytomyr_oblast",
+  "patterns": ["\\bжитомирщин(а|и|і|у|ою)\\b", "\\bжитомирськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "zhytomyr_oblast_andrushivka": {
+      "id": "zhytomyr_oblast_andrushivka",
+      "patterns": ["\\bандрушів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "zhytomyr_oblast_berdychiv": {
+      "id": "zhytomyr_oblast_berdychiv",
+      "patterns": ["\\bбердич(ів|ева|еву|евом|еві)\\b"]
+    },
+    "zhytomyr_oblast_brusyliv": {
+      "id": "zhytomyr_oblast_brusyliv",
+      "patterns": ["\\bбрусил(ів|ова|ову|овом|ові)\\b"]
+    },
+    "zhytomyr_oblast_cherniakhiv": {
+      "id": "zhytomyr_oblast_cherniakhiv",
+      "patterns": ["\\bчернях(ів|ова|ову|овом|ові)\\b"]
+    },
+    "zhytomyr_oblast_chopovychi": {
+      "id": "zhytomyr_oblast_chopovychi",
+      "patterns": ["\\bчопович(і|ів|ам|ами|ах)\\b"]
+    },
+    "zhytomyr_oblast_chudniv": {
+      "id": "zhytomyr_oblast_chudniv",
+      "patterns": ["\\bчудн(ів|ова|ову|овом|ові)\\b"]
+    },
+    "zhytomyr_oblast_dovbysh": {
+      "id": "zhytomyr_oblast_dovbysh",
+      "patterns": ["\\bдовбиш(а|у|ем|і)?\\b"]
+    },
+    "zhytomyr_oblast_irshansk": {
+      "id": "zhytomyr_oblast_irshansk",
+      "patterns": ["\\bіршанськ(а|у|ом|і)?\\b"]
+    },
+    "zhytomyr_oblast_khoroshiv": {
+      "id": "zhytomyr_oblast_khoroshiv",
+      "patterns": ["\\bхорош(ів|ова|ову|овом|ові)\\b"]
+    },
+    "zhytomyr_oblast_kornyn": {
+      "id": "zhytomyr_oblast_kornyn",
+      "patterns": ["\\bкорнин(а|у|ом|і)?\\b"]
+    },
+    "zhytomyr_oblast_korosten": {
+      "id": "zhytomyr_oblast_korosten",
+      "patterns": ["\\bкоростен(ь|я|ем|і)\\b"]
+    },
+    "zhytomyr_oblast_korostyshiv": {
+      "id": "zhytomyr_oblast_korostyshiv",
+      "patterns": ["\\bкоростиш(ів|ова|ову|овом|ові)\\b"]
+    },
+    "zhytomyr_oblast_liubar": {
+      "id": "zhytomyr_oblast_liubar",
+      "patterns": ["\\bлюбар(а|у|ом|і)?\\b"]
+    },
+    "zhytomyr_oblast_luhyny": {
+      "id": "zhytomyr_oblast_luhyny",
+      "patterns": ["\\bлугин(и|ів|ам|ами|ах)\\b"]
+    },
+    "zhytomyr_oblast_malyn": {
+      "id": "zhytomyr_oblast_malyn",
+      "patterns": ["\\bмалин(а|у|ом|і)?\\b"]
+    },
+    "zhytomyr_oblast_narodychi": {
+      "id": "zhytomyr_oblast_narodychi",
+      "patterns": ["\\bнародич(і|ів|ам|ами|ах)\\b"]
+    },
+    "zhytomyr_oblast_nova_borova": {
+      "id": "zhytomyr_oblast_nova_borova",
+      "patterns": ["\\bнов(а|ої|ій|у|ою)\\s+боров(а|ої|ій|у|ою)\\b"]
+    },
+    "zhytomyr_oblast_novohuivynske": {
+      "id": "zhytomyr_oblast_novohuivynske",
+      "patterns": ["\\bновогуйвинськ(е|ого|ому|им|ім)\\b"]
+    },
+    "zhytomyr_oblast_olevsk": {
+      "id": "zhytomyr_oblast_olevsk",
+      "patterns": ["\\bолевськ(а|у|ом|і)?\\b"]
+    },
+    "zhytomyr_oblast_ovruch": {
+      "id": "zhytomyr_oblast_ovruch",
+      "patterns": ["\\bовруч(а|у|ем|і)?\\b"]
+    },
+    "zhytomyr_oblast_ozerne": {
+      "id": "zhytomyr_oblast_ozerne",
+      "patterns": ["\\bозерн(е|ого|ому|им|ім)\\b"]
+    },
+    "zhytomyr_oblast_pulyny": {
+      "id": "zhytomyr_oblast_pulyny",
+      "patterns": ["\\bпулин(и|ів|ам|ами|ах)\\b"]
+    },
+    "zhytomyr_oblast_radomyshl": {
+      "id": "zhytomyr_oblast_radomyshl",
+      "patterns": ["\\bрадомишл(ь|я|ю|ем|і)\\b"]
+    },
+    "zhytomyr_oblast_ruzhyn": {
+      "id": "zhytomyr_oblast_ruzhyn",
+      "patterns": ["\\bружин(а|у|ом|і)?\\b"]
+    },
+    "zhytomyr_oblast_zarichany": {
+      "id": "zhytomyr_oblast_zarichany",
+      "patterns": ["\\bзарічан(и|ам|ами|ах)?\\b"]
+    },
+    "zhytomyr_oblast_zhytomyr": {
+      "id": "zhytomyr_oblast_zhytomyr",
+      "patterns": ["\\bжитомир(а|у|ом|і)?\\b"]
+    },
+    "zhytomyr_oblast_zviahel": {
+      "id": "zhytomyr_oblast_zviahel",
+      "patterns": ["\\bзвягел(ь|я|ю|ем|і)\\b"]
+    }
+  }
+}

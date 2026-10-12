@@ -1,0 +1,114 @@
+{
+  "id": "cherkasy_oblast",
+  "patterns": ["\\bчеркащин(а|и|і|у|ою)\\b", "\\bчеркаськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "cherkasy_oblast_buky": {
+      "id": "cherkasy_oblast_buky",
+      "patterns": ["\\bбук(и|ів|ам|ами|ах)\\b"]
+    },
+    "cherkasy_oblast_cherkasy": {
+      "id": "cherkasy_oblast_cherkasy",
+      "patterns": ["\\bчеркас(и|ам|ами|ах)?\\b"]
+    },
+    "cherkasy_oblast_chornobai": {
+      "id": "cherkasy_oblast_chornobai",
+      "patterns": ["\\bчорноба(й|я|ю|єм|ї)\\b"]
+    },
+    "cherkasy_oblast_chyhyryn": {
+      "id": "cherkasy_oblast_chyhyryn",
+      "patterns": ["\\bчигирин(а|у|ом|і)?\\b"]
+    },
+    "cherkasy_oblast_drabiv": {
+      "id": "cherkasy_oblast_drabiv",
+      "patterns": ["\\bдраб(ів|ова|ову|овом|ові)\\b"]
+    },
+    "cherkasy_oblast_helmiaziv": {
+      "id": "cherkasy_oblast_helmiaziv",
+      "patterns": ["\\bгельмяз(ів|ова|ову|овом|ові)\\b"]
+    },
+    "cherkasy_oblast_horodyshche": {
+      "id": "cherkasy_oblast_horodyshche",
+      "patterns": ["\\bгородищ(е|а|у|ем|і)\\b"]
+    },
+    "cherkasy_oblast_irdyn": {
+      "id": "cherkasy_oblast_irdyn",
+      "patterns": ["\\bірдин(ь|я|ю|ем|і)\\b"]
+    },
+    "cherkasy_oblast_irkliiv": {
+      "id": "cherkasy_oblast_irkliiv",
+      "patterns": ["\\bіркл(іїв|ієва|ієву|ієвом|ієві)\\b"]
+    },
+    "cherkasy_oblast_kalynopil": {
+      "id": "cherkasy_oblast_kalynopil",
+      "patterns": ["\\bкалиноп(іль|оля|олю|олем|олі)\\b"]
+    },
+    "cherkasy_oblast_kamianka": {
+      "id": "cherkasy_oblast_kamianka",
+      "patterns": ["\\bкам['’ʼ]ян(ка|ки|ці|ку|кою)\\b"]
+    },
+    "cherkasy_oblast_kaniv": {
+      "id": "cherkasy_oblast_kaniv",
+      "patterns": ["\\bкан(ів|ева|еву|евом|еві)\\b"]
+    },
+    "cherkasy_oblast_korsun_shevchenkivskyi": {
+      "id": "cherkasy_oblast_korsun_shevchenkivskyi",
+      "patterns": ["\\bкорсун(ь|я|ю|ем|і)[ -]шевченківськ(ий|ого|ому|им|ім)\\b"]
+    },
+    "cherkasy_oblast_lysianka": {
+      "id": "cherkasy_oblast_lysianka",
+      "patterns": ["\\bлисян(ка|ки|ці|ку|кою)\\b"]
+    },
+    "cherkasy_oblast_monastyryshche": {
+      "id": "cherkasy_oblast_monastyryshche",
+      "patterns": ["\\bмонастирищ(е|а|у|ем|і)\\b"]
+    },
+    "cherkasy_oblast_moshny": {
+      "id": "cherkasy_oblast_moshny",
+      "patterns": ["\\bмош(ни|ен|нам|нами|нах)\\b"]
+    },
+    "cherkasy_oblast_shpola": {
+      "id": "cherkasy_oblast_shpola",
+      "patterns": ["\\bшпол(а|и|і|у|ою)\\b"]
+    },
+    "cherkasy_oblast_smila": {
+      "id": "cherkasy_oblast_smila",
+      "patterns": ["\\bсміл(а|и|у|ою)\\b"]
+    },
+    "cherkasy_oblast_talne": {
+      "id": "cherkasy_oblast_talne",
+      "patterns": ["\\bтальн(е|ого|ому|им|ім)\\b"]
+    },
+    "cherkasy_oblast_trakhtemyriv": {
+      "id": "cherkasy_oblast_trakhtemyriv",
+      "patterns": ["\\bтрахтемир(ів|ова|ову|овом|ові)\\b"]
+    },
+    "cherkasy_oblast_tsvitkove": {
+      "id": "cherkasy_oblast_tsvitkove",
+      "patterns": ["\\bцвітков(е|ого|ому|им|ім)\\b"]
+    },
+    "cherkasy_oblast_tsybuliv": {
+      "id": "cherkasy_oblast_tsybuliv",
+      "patterns": ["\\bцибул(ів|ова|ову|овом|ові)\\b"]
+    },
+    "cherkasy_oblast_uman": {
+      "id": "cherkasy_oblast_uman",
+      "patterns": ["\\bуман(ь|і|ню|нею)\\b"]
+    },
+    "cherkasy_oblast_vilshana": {
+      "id": "cherkasy_oblast_vilshana",
+      "patterns": ["\\bвільшан(а|и|і|у|ою)\\b"]
+    },
+    "cherkasy_oblast_zhashkiv": {
+      "id": "cherkasy_oblast_zhashkiv",
+      "patterns": ["\\bжашк(ів|ова|ову|овом|ові)\\b"]
+    },
+    "cherkasy_oblast_zolotonosha": {
+      "id": "cherkasy_oblast_zolotonosha",
+      "patterns": ["\\bзолотонош(а|і|у|ею)\\b"]
+    },
+    "cherkasy_oblast_zvenyhorodka": {
+      "id": "cherkasy_oblast_zvenyhorodka",
+      "patterns": ["\\bзвенигород(ка|ки|ці|ку|кою)\\b"]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "chernivtsi_oblast",
+  "patterns": [
+    "\\bбуковин(а|и|і|у|ою)\\b",
+    "\\bчернівеччин(а|и|і|у|ою)\\b",
+    "\\bчернівецьк(а|ої|ій|у|ою) област(ь|і|ю)\\b"
+  ],
+  "localities": {
+    "chernivtsi_oblast_chernivtsi": {
+      "id": "chernivtsi_oblast_chernivtsi",
+      "patterns": ["\\bчернівц(і|ів|ям|ями|ях)\\b"]
+    },
+    "chernivtsi_oblast_khotyn": {
+      "id": "chernivtsi_oblast_khotyn",
+      "patterns": ["\\bхотин(а|у|ом|і)?\\b"]
+    },
+    "chernivtsi_oblast_kitsman": {
+      "id": "chernivtsi_oblast_kitsman",
+      "patterns": ["\\bкіцман(ь|я|ю|ем|і)\\b"]
+    },
+    "chernivtsi_oblast_novodnistrovsk": {
+      "id": "chernivtsi_oblast_novodnistrovsk",
+      "patterns": ["\\bноводністровськ(а|у|ом|і)?\\b"]
+    }
+  }
+}

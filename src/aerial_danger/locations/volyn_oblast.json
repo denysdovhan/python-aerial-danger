@@ -1,0 +1,30 @@
+{
+  "id": "volyn_oblast",
+  "patterns": ["\\bволин(ь|і|ню)\\b", "\\bволинськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "volyn_oblast_kolky": {
+      "id": "volyn_oblast_kolky",
+      "patterns": ["\\bкол(ки|ок|кам|ками|ках)\\b"]
+    },
+    "volyn_oblast_kovel": {
+      "id": "volyn_oblast_kovel",
+      "patterns": ["\\bковел(ь|я|ю|ем|і)\\b"]
+    },
+    "volyn_oblast_liubeshiv": {
+      "id": "volyn_oblast_liubeshiv",
+      "patterns": ["\\bлюбеш(ів|ова|ову|овом|ові)\\b"]
+    },
+    "volyn_oblast_lutsk": {
+      "id": "volyn_oblast_lutsk",
+      "patterns": ["\\bлуцьк(а|у|ом|ові)?\\b"]
+    },
+    "volyn_oblast_tsuman": {
+      "id": "volyn_oblast_tsuman",
+      "patterns": ["\\bцуман(ь|і|ню)\\b"]
+    },
+    "volyn_oblast_volodymyr": {
+      "id": "volyn_oblast_volodymyr",
+      "patterns": ["\\b(на|від|повз|через|до|біля)\\s+володимир(а|у|ом|і)?\\b"]
+    }
+  }
+}

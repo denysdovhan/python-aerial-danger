@@ -1,0 +1,98 @@
+{
+  "id": "mykolaiv_oblast",
+  "patterns": ["\\bмиколаївщин(а|и|і|у|ою)\\b", "\\bмиколаївськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
+  "localities": {
+    "mykolaiv_oblast_arbuzynka": {
+      "id": "mykolaiv_oblast_arbuzynka",
+      "patterns": ["\\bарбузин(ка|ки|ці|ку|кою)\\b"]
+    },
+    "mykolaiv_oblast_bashtanka": {
+      "id": "mykolaiv_oblast_bashtanka",
+      "patterns": ["\\bбаштанк(а|и|у|ою|і)\\b"]
+    },
+    "mykolaiv_oblast_bereznehuvate": {
+      "id": "mykolaiv_oblast_bereznehuvate",
+      "patterns": ["\\bберезнегуват(е|ого|ому|им|ім)\\b"]
+    },
+    "mykolaiv_oblast_bratske": {
+      "id": "mykolaiv_oblast_bratske",
+      "patterns": ["\\bбратськ(е|ого|ому|им|ім)\\b"]
+    },
+    "mykolaiv_oblast_kazanka": {
+      "id": "mykolaiv_oblast_kazanka",
+      "patterns": ["\\bказан(ка|ки|ці|ку|кою)\\b"]
+    },
+    "mykolaiv_oblast_kobleve": {
+      "id": "mykolaiv_oblast_kobleve",
+      "patterns": ["\\bкоблев(е|ого|ому|им|ім)\\b"]
+    },
+    "mykolaiv_oblast_kryve_ozero": {
+      "id": "mykolaiv_oblast_kryve_ozero",
+      "patterns": ["\\bкрив(е|ого|ому|им|ім)\\s+озер(о|а|у|ом|і)\\b"]
+    },
+    "mykolaiv_oblast_morske": {
+      "id": "mykolaiv_oblast_morske",
+      "patterns": ["\\bморськ(е|ого|ому|им|ім)\\b"]
+    },
+    "mykolaiv_oblast_mykolaiv": {
+      "id": "mykolaiv_oblast_mykolaiv",
+      "patterns": ["\\bмикола(їв|єва|єві|єву|євом)\\b"]
+    },
+    "mykolaiv_oblast_novyi_buh": {
+      "id": "mykolaiv_oblast_novyi_buh",
+      "patterns": ["\\bнов(ий|ого|ому|им|ім) буг(а|у|ом|і)?\\b"]
+    },
+    "mykolaiv_oblast_ochakiv": {
+      "id": "mykolaiv_oblast_ochakiv",
+      "patterns": ["\\bочак(ів|ова|ову|овом|ові)\\b"]
+    },
+    "mykolaiv_oblast_olshanske": {
+      "id": "mykolaiv_oblast_olshanske",
+      "patterns": ["\\bольшанськ(е|ого|ому|им|ім)\\b"]
+    },
+    "mykolaiv_oblast_pervomaisk": {
+      "id": "mykolaiv_oblast_pervomaisk",
+      "patterns": ["\\bпервомайськ(а|у|ом|і)?\\b"]
+    },
+    "mykolaiv_oblast_pivdennoukrainsk": {
+      "id": "mykolaiv_oblast_pivdennoukrainsk",
+      "patterns": ["\\bпівденноукраїнськ(а|у|ом|і)?\\b"]
+    },
+    "mykolaiv_oblast_rybakivka": {
+      "id": "mykolaiv_oblast_rybakivka",
+      "patterns": ["\\bрибаків(ка|ки|ці|ку|кою)\\b"]
+    },
+    "mykolaiv_oblast_snigurivka": {
+      "id": "mykolaiv_oblast_snigurivka",
+      "patterns": ["\\bснігурівк(у|и|а)\\b"]
+    },
+    "mykolaiv_oblast_tokarivka": {
+      "id": "mykolaiv_oblast_tokarivka",
+      "patterns": ["\\bтокарів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "mykolaiv_oblast_trykhaty": {
+      "id": "mykolaiv_oblast_trykhaty",
+      "patterns": ["\\bтрихат(и|ам|ами|ах)?\\b"]
+    },
+    "mykolaiv_oblast_veselynove": {
+      "id": "mykolaiv_oblast_veselynove",
+      "patterns": ["\\bвеселинов(е|ого|ому|им|ім)\\b"]
+    },
+    "mykolaiv_oblast_voskresenske": {
+      "id": "mykolaiv_oblast_voskresenske",
+      "patterns": ["\\bвоскресенськ(е|ого|ому|им|ім)\\b"]
+    },
+    "mykolaiv_oblast_voznesensk": {
+      "id": "mykolaiv_oblast_voznesensk",
+      "patterns": ["\\bвознесенськ(а|у|ом|і)?\\b"]
+    },
+    "mykolaiv_oblast_vozsiiatske": {
+      "id": "mykolaiv_oblast_vozsiiatske",
+      "patterns": ["\\bвозсіятськ(е|ого|ому|им|ім)\\b"]
+    },
+    "mykolaiv_oblast_yelanets": {
+      "id": "mykolaiv_oblast_yelanets",
+      "patterns": ["\\bєлан(ець|ця|цю|цем|ці)\\b"]
+    }
+  }
+}
