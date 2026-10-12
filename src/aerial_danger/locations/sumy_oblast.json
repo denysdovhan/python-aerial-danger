@@ -70,6 +70,10 @@
       "id": "sumy_oblast_mykolaivka",
       "patterns": ["\\bмиколаїв(ка|ки|ці|ку|кою)\\b"]
     },
+    "sumy_oblast_myropillia": {
+      "id": "sumy_oblast_myropillia",
+      "patterns": ["\\bмиропілл(я|ю|і|ям)\\b"]
+    },
     "sumy_oblast_nedryhailiv": {
       "id": "sumy_oblast_nedryhailiv",
       "patterns": ["\\bнедригайлів(а|у|ом|і)?\\b"]
@@ -96,7 +100,11 @@
     },
     "sumy_oblast_shostka": {
       "id": "sumy_oblast_shostka",
-      "patterns": ["\\bшостк(а|и|у|ою|і)\\b"]
+      "patterns": ["\\bшост(ка|ки|ку|кою|ці)\\b"]
+    },
+    "sumy_oblast_shostkynskyi_raion": {
+      "id": "sumy_oblast_shostkynskyi_raion",
+      "patterns": ["\\bшосткинськ(ий|ого|ому|им) район(у|і|ом)?\\b"]
     },
     "sumy_oblast_sumy": {
       "id": "sumy_oblast_sumy",
@@ -117,6 +125,10 @@
     "sumy_oblast_ulianivka": {
       "id": "sumy_oblast_ulianivka",
       "patterns": ["\\bулянів(ка|ки|ці|ку|кою)\\b"]
+    },
+    "sumy_oblast_varachyne": {
+      "id": "sumy_oblast_varachyne",
+      "patterns": ["\\bварачин(е|ого|ому|им)\\b"]
     },
     "sumy_oblast_velyka_pysarivka": {
       "id": "sumy_oblast_velyka_pysarivka",

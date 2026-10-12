@@ -10,6 +10,10 @@
       "id": "kyiv_antonov",
       "patterns": ["\\bантонов(а)?\\b"]
     },
+    "kyiv_beresteiska": {
+      "id": "kyiv_beresteiska",
+      "patterns": ["\\bберестейськ(а|ої|ій|у|ою)\\b"]
+    },
     "kyiv_berezniaky": {
       "id": "kyiv_berezniaky",
       "patterns": ["\\bберезняк(и|ів|ах|ами)\\b"]
@@ -185,6 +189,10 @@
       "id": "kyiv_osokorky",
       "patterns": ["\\bосокорк(и|ів|ах|ами)\\b"]
     },
+    "kyiv_pasazhyrskyi": {
+      "id": "kyiv_pasazhyrskyi",
+      "patterns": ["\\bкиїв[ -]пасажирський\\b"]
+    },
     "kyiv_pechersk": {
       "id": "kyiv_pechersk",
       "patterns": ["\\bпечерськ(ий|ого|ому|им)?\\b"]
@@ -245,13 +253,17 @@
       "id": "kyiv_rusanivski_sady",
       "patterns": ["\\bрусанівськ(і|их|им|ими) сад(и|ів|ах|ами)\\b"]
     },
+    "kyiv_rybalskyi_ostriv": {
+      "id": "kyiv_rybalskyi_ostriv",
+      "patterns": ["\\bрибальськ(ий|ого|ому|им)(?: остр(ів|ова|ову|ові|овом))?\\b"]
+    },
     "kyiv_shevchenkivskyi_district": {
       "id": "kyiv_shevchenkivskyi_district",
       "patterns": ["\\bшевченківськ(ий|ого|ому|им|ім) район(у|і|ом|а)?\\b"]
     },
     "kyiv_shuliavka": {
       "id": "kyiv_shuliavka",
-      "patterns": ["\\bшулявк(а|и|у|ою|ці)\\b"]
+      "patterns": ["\\bшулявк(а|и|у|ою|ці)\\b", "\\bшул(я|і|ю|ею|ьою|е)\\b"]
     },
     "kyiv_solomianka": {
       "id": "kyiv_solomianka",
@@ -284,6 +296,10 @@
     "kyiv_teremky": {
       "id": "kyiv_teremky",
       "patterns": ["\\bтеремк(и|ів|ах|ами)\\b"]
+    },
+    "kyiv_tovarnyi": {
+      "id": "kyiv_tovarnyi",
+      "patterns": ["\\bкиїв[ -]товарний\\b"]
     },
     "kyiv_troieshchyna": {
       "id": "kyiv_troieshchyna",
@@ -321,7 +337,7 @@
     },
     "kyiv_vynohradar": {
       "id": "kyiv_vynohradar",
-      "patterns": ["\\bвиноградар(а|і|ем)?\\b"]
+      "patterns": ["\\bвиноградар(а|я|і|ем)?\\b"]
     },
     "kyiv_zhuliany": {
       "id": "kyiv_zhuliany",

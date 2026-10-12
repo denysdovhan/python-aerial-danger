@@ -1,6 +1,6 @@
 """Aerial danger detection results and match types."""
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum
 
 
@@ -24,6 +24,14 @@ class PatternMatch:
     pattern: str
 
 
+class DetectionStatus(str, Enum):
+    """How a message affects an existing danger state."""
+
+    DANGER = "danger"
+    SAFE = "safe"
+    IGNORED = "ignored"
+
+
 @dataclass
 class Detection:
     """Represents a detected aerial danger."""
@@ -35,6 +43,7 @@ class Detection:
     matched_danger: str | None = None
     area_pattern: str | None = None
     danger_pattern: str | None = None
+    status: DetectionStatus = field(default=DetectionStatus.IGNORED, kw_only=True)
 
 
 @dataclass(frozen=True)

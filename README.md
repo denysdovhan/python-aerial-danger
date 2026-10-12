@@ -86,18 +86,40 @@ detector.cruise_missile_danger(message: str) -> Detection
 detector.drone_danger(message: str) -> Detection
 detector.generic_danger(message: str) -> Detection
 detector.is_safe(message: str) -> bool
+detector.is_ignored(message: str) -> bool
 ```
 
 `danger()` checks the danger types in the order listed above and returns the first match.
 IRBM alerts need no location. Drones, MLRS, and guided bombs need a locality match.
 Other alerts need a region or locality match.
 
-The result tells you whether danger matched, its type, and the original message.
-It also includes the matched text and regex patterns. With no match, `danger` is
-`False` and the match details are `None`. IRBM results have no matched area.
+### Detection results
 
-`is_safe()` checks for wording that blocks a danger match. It does not confirm that
-an area is safe. Invalid regex patterns raise `re.error`.
+Each detector method returns a `Detection` with the original `message`, a
+`danger` boolean, and a `DetectionStatus`:
+
+| Status    | `danger` | Meaning                               | Source state         |
+| --------- | -------- | ------------------------------------- | -------------------- |
+| `DANGER`  | `True`   | An active alert matched.              | Store the detection. |
+| `SAFE`    | `False`  | Explicit all-clear wording matched.   | Clear the detection. |
+| `IGNORED` | `False`  | Excluded wording or no alert matched. | Keep the detection.  |
+
+Danger results include the threat type, matched text, and regex patterns.
+Other results have no match details. IRBM results have no matched area.
+
+`Detection(danger=..., message=...)` accepts an optional keyword-only `status`,
+which defaults to `IGNORED`. Detector methods set both values explicitly.
+
+### Wording checks
+
+- `is_safe()` checks explicit all-clear wording.
+- `is_ignored()` checks historical, forecast, and reconnaissance exclusions.
+
+Both checks can match one message. Detection checks exclusions first, so a
+historical report quoting an all-clear stays `IGNORED`. Unmatched messages also
+return `IGNORED`, even when `is_ignored()` is `False`.
+
+These checks do not confirm real-world safety. Invalid regexes raise `re.error`.
 
 ## Development
 

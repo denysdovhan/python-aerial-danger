@@ -194,6 +194,10 @@
       "id": "kharkiv_oblast_vilshany",
       "patterns": ["\\bвільшан(и|ам|ами|ах)?\\b"]
     },
+    "kharkiv_oblast_vokzal": {
+      "id": "kharkiv_oblast_vokzal",
+      "patterns": ["\\bвокзал(у|а|ом|і)?\\b"]
+    },
     "kharkiv_oblast_vysokyi": {
       "id": "kharkiv_oblast_vysokyi",
       "patterns": ["\\bвисок(ий|ого|ому|им|ім)\\b(?=\\s*([.!?,/—–-]|$))"]

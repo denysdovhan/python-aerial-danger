@@ -6,7 +6,7 @@ import json
 import re
 from importlib.resources import files
 
-from aerial_danger import DangerDetector, DangerType
+from aerial_danger import DangerDetector
 from aerial_danger.location_presets import LOCATION_PRESETS
 from aerial_danger.pattern_utils import (
     locality_ids,
@@ -19,6 +19,7 @@ PRESET_EXAMPLES = {
     "cherkasy_oblast_cherkasy": ("Черкас",),
     "chernihiv_oblast": ("Чернігівщиною", "Чернігівській області"),
     "chernihiv_oblast_chernihiv": ("Чернігова",),
+    "chernihiv_oblast_semenivka": ("Семенівка", "Семенівку"),
     "chernivtsi_oblast": (
         "Буковиною",
         "Чернівеччиною",
@@ -32,6 +33,7 @@ PRESET_EXAMPLES = {
     "dnipropetrovsk_oblast_pavlohrad": ("Павлоградом",),
     "donetsk_oblast": ("Донеччиною", "Донецькій області"),
     "donetsk_oblast_donetsk": ("Донецьку",),
+    "donetsk_oblast_sloviansk": ("Словʼянськ",),
     "ivano_frankivsk_oblast": (
         "Франківщиною",
         "Івано-Франківщиною",
@@ -49,6 +51,7 @@ PRESET_EXAMPLES = {
     "kharkiv_oblast_kupiansk": ("Куп'янськом",),
     "kharkiv_oblast_piatykhatky": ("П'ятихатках",),
     "kharkiv_oblast_saltivka": ("Салтівкою",),
+    "kharkiv_oblast_vokzal": ("Вокзал",),
     "kherson_oblast": ("Херсонщиною", "Херсонській області"),
     "kherson_oblast_kherson": ("Херсону",),
     "khmelnytskyi_oblast": ("Хмельниччиною", "Хмельницькій області"),
@@ -57,14 +60,20 @@ PRESET_EXAMPLES = {
     "kirovohrad_oblast_kropyvnytskyi": ("Кропивницького",),
     "kyiv": ("Києва", "Києві", "Києву", "Києвом", "столиця"),
     "kyiv_akademmistechko": ("Академмістечком",),
+    "kyiv_beresteiska": ("Берестейська", "Берестейську"),
     "kyiv_darnytsia": ("Дарницький масив",),
     "kyiv_lisovyi_masyv": ("Лісовий",),
     "kyiv_livoberezhnyi_masyv": ("Лівобережний",),
     "kyiv_minskyi_masyv": ("Мінський",),
+    "kyiv_pasazhyrskyi": ("Київ-Пасажирський", "Київ Пасажирський"),
+    "kyiv_shuliavka": ("Шуля", "Шулі", "Шулю", "Шулею", "Шульою", "Шуле"),
+    "kyiv_rybalskyi_ostriv": ("Рибальський острів", "Рибальський"),
     "kyiv_sviatoshyn": ("Святошино",),
+    "kyiv_tovarnyi": ("Київ товарний", "Київ-Товарний", "Київ Товарний"),
     "kyiv_troieshchyna": ("Троєщини",),
     "kyiv_vidradnyi": ("Відрадний",),
     "kyiv_voskresenka": ("Воскресенка",),
+    "kyiv_vynohradar": ("Виноградаря", "Виноградара"),
     "kyiv_oblast": (
         "Київщина",
         "Київщини",
@@ -77,6 +86,9 @@ PRESET_EXAMPLES = {
         "Київською областю",
     ),
     "kyiv_oblast_bila_tserkva": ("Білої Церкви", "Білу Церкву", "БЦ"),
+    "kyiv_oblast_bilohorodka": ("Білогородка", "Білогородку"),
+    "kyiv_oblast_boiarka": ("Боярку",),
+    "kyiv_oblast_borodianka": ("Бородянку",),
     "kyiv_oblast_boryspil": (
         "Борисполя",
         "Борисполю",
@@ -84,12 +96,47 @@ PRESET_EXAMPLES = {
         "Борисполі",
         "Борік",
     ),
+    "kyiv_oblast_demydiv": ("Демидові",),
+    "kyiv_oblast_hnidyn": ("Гнідин",),
+    "kyiv_oblast_hlevakha": ("Глеваху",),
+    "kyiv_oblast_irpin": ("Ірпінь",),
+    "kyiv_oblast_ivankiv": ("Іванків",),
+    "kyiv_oblast_ivankovychi": ("Іванковичі",),
+    "kyiv_oblast_katiuzhanka": ("Катюжанку",),
+    "kyiv_oblast_kniazhychi": ("Княжичі",),
+    "kyiv_oblast_kozyn": ("Козин",),
+    "kyiv_oblast_kriukivshchyna": ("Крюківщину",),
+    "kyiv_oblast_krushynka": ("Крушинку",),
+    "kyiv_oblast_liutizh": ("Лютежі", "Лютежа", "Лютежу", "Лютежем", "Лютожі"),
+    "kyiv_oblast_makariv": ("Макарів",),
+    "kyiv_oblast_motyzhyn": ("Мотижин",),
+    "kyiv_oblast_muzychi": ("Музичі",),
+    "kyiv_oblast_novi_petrivtsi": ("Нових Петрівцях",),
+    "kyiv_oblast_oseshchyna": ("Осещиною",),
+    "kyiv_oblast_prolisky": ("Проліски",),
+    "kyiv_oblast_revne": ("Ревне",),
+    "kyiv_oblast_sofiivska_borshchahivka": ("Софіївська Борщагівка",),
+    "kyiv_oblast_slavutych": ("Славутич",),
+    "kyiv_oblast_stari_petrivtsi": ("Старих Петрівцях",),
+    "kyiv_oblast_stoianka": (
+        "Стоянка",
+        "Стоянки",
+        "Стоянці",
+        "Стоянку",
+        "Стоянкою",
+    ),
+    "kyiv_oblast_vasylkiv": ("Василькова", "Васильків", "Васік"),
+    "kyiv_oblast_vyshneve": ("Вишневе",),
+    "kyiv_oblast_vita_poshtova": ("Віта-Поштова",),
+    "kyiv_oblast_zazyma": ("Зазим'я",),
+    "kyiv_oblast_zabiria": ("Забірʼя", "Забірʼї", "Забірʼям"),
     "luhansk_oblast": ("Луганщиною", "Луганській області"),
     "luhansk_oblast_luhansk": ("Луганську",),
     "lviv_oblast": ("Львівщиною", "Львівській області"),
     "lviv_oblast_lviv": ("Львова",),
     "mykolaiv_oblast": ("Миколаївщиною", "Миколаївській області"),
     "mykolaiv_oblast_mykolaiv": ("Миколаєва",),
+    "mykolaiv_oblast_ochakiv": ("Очакова", "Очаковом"),
     "odesa_oblast": ("Одещина", "Одещини", "Одещиною", "Одеською областю"),
     "odesa_oblast_arkadiia": ("Аркадією",),
     "odesa_oblast_bilhorod_dnistrovskyi": ("Білгород Дністровському",),
@@ -100,6 +147,7 @@ PRESET_EXAMPLES = {
     ),
     "odesa_oblast_karolino_buhaz": ("Кароліно Бугазом",),
     "odesa_oblast_khadzhybeiskyi_raion": ("Хаджибейському районі",),
+    "odesa_oblast_novi_biliari": ("Нові Білярі",),
     "odesa_oblast_odesa": ("Одесою",),
     "odesa_oblast_odesa_port": ("Одеському порту", "Одеса / порт"),
     "odesa_oblast_ovidiopol": ("Овідіополем",),
@@ -110,7 +158,11 @@ PRESET_EXAMPLES = {
     "rivne_oblast": ("Рівненщиною", "Рівненській області"),
     "rivne_oblast_rivne": ("Рівне",),
     "sumy_oblast": ("Сумщиною", "Сумській області"),
+    "sumy_oblast_myropillia": ("Миропілля",),
+    "sumy_oblast_shostka": ("Шостка", "Шостки", "Шостку"),
+    "sumy_oblast_shostkynskyi_raion": ("Шосткинський район", "Шосткинському району"),
     "sumy_oblast_sumy": ("Сум",),
+    "sumy_oblast_varachyne": ("Варачине",),
     "ternopil_oblast": ("Тернопільщиною", "Тернопільській області"),
     "ternopil_oblast_ternopil": ("Тернополя",),
     "vinnytsia_oblast": ("Вінниччиною", "Вінницькій області"),
@@ -227,18 +279,6 @@ def test_boundaries_and_safe_location_text() -> None:
         re.search(pattern, "академія", re.IGNORECASE) for pattern in localities
     )
     assert not detector.danger("Станція метро Академмістечко відкрита").danger
-
-
-def test_shuliavka_slang_alert() -> None:
-    """Match the observed slang alert through the selected locality preset."""
-    localities = resolve_locality_patterns([], ["kyiv"], ["kyiv_shuliavka"])
-    detector = DangerDetector([], localities)
-    detection = detector.danger("Шуля увага")
-    assert detection.danger
-    assert detection.type is DangerType.GENERIC
-    assert detection.matched_area == "Шуля"
-    assert not detector.danger("Шуляк увага").danger
-    assert not DangerDetector([], []).danger("Шуля увага").danger
 
 
 def test_resolve_custom_first_deduplicates_and_ignores_unknown_ids() -> None:

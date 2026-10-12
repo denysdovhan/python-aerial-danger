@@ -20,7 +20,7 @@
     },
     "donetsk_oblast_sloviansk": {
       "id": "donetsk_oblast_sloviansk",
-      "patterns": ["\\bслов['’ʼ]янськ(а|у|ом|і)?\\b"]
+      "patterns": ["\\bслов['ʼ’]?янськ(а|у|ом|і)?\\b"]
     }
   }
 }

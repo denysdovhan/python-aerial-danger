@@ -44,7 +44,7 @@
     },
     "mykolaiv_oblast_ochakiv": {
       "id": "mykolaiv_oblast_ochakiv",
-      "patterns": ["\\bочак(ів|ова|ову|овом|ові)\\b"]
+      "patterns": ["\\bочак(ів|ова|ову|ові|овом)\\b"]
     },
     "mykolaiv_oblast_olshanske": {
       "id": "mykolaiv_oblast_olshanske",

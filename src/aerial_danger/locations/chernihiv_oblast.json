@@ -154,6 +154,10 @@
       "id": "chernihiv_oblast_sedniv",
       "patterns": ["\\bседн(ів|ова|ову|овом|ові)\\b"]
     },
+    "chernihiv_oblast_semenivka": {
+      "id": "chernihiv_oblast_semenivka",
+      "patterns": ["\\bсеменів(ка|ки|ку|кою|ці)\\b"]
+    },
     "chernihiv_oblast_shestovytsia": {
       "id": "chernihiv_oblast_shestovytsia",
       "patterns": ["\\bшестовиц(я|і|ю|ею)\\b"]

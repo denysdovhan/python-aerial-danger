@@ -2,7 +2,13 @@
 
 # ruff: noqa: S101
 
-from aerial_danger import DangerDetector, DangerType, Detection, PatternMatch
+from aerial_danger import (
+    DangerDetector,
+    DangerType,
+    Detection,
+    DetectionStatus,
+    PatternMatch,
+)
 from aerial_danger.location_presets import LOCATION_PRESETS
 from aerial_danger.pattern_utils import (
     resolve_locality_patterns,
@@ -13,6 +19,7 @@ detector = DangerDetector(regions=[r"\bкиїв\b"], localities=[])
 result = detector.danger("КИЇВ ШВИДКІСНА!")
 assert isinstance(result, Detection)
 assert result.danger
+assert result.status is DetectionStatus.DANGER
 assert result.type == DangerType.BALLISTIC
 assert result.matched_area == "КИЇВ"
 assert PatternMatch("КИЇВ", r"\bкиїв\b").text == result.matched_area
@@ -24,3 +31,5 @@ preset_detector = DangerDetector(
     localities=resolve_locality_patterns([], ["kyiv"], ["kyiv_nyvky"]),
 )
 assert preset_detector.drone_danger("Шахед на Нивки!").danger
+assert detector.danger("Привіт").status is DetectionStatus.IGNORED
+assert detector.danger("Все тихо").status is DetectionStatus.SAFE

@@ -172,7 +172,7 @@
     },
     "odesa_oblast_novi_biliari": {
       "id": "odesa_oblast_novi_biliari",
-      "patterns": ["\\bнов(і|их|им|ими)\\s+біляр(і|ів|ям|ями|ях)\\b"]
+      "patterns": ["\\bнов(і|их|им|ими) біляр(і|ів|ям|ями|ях)\\b"]
     },
     "odesa_oblast_odesa": {
       "id": "odesa_oblast_odesa",

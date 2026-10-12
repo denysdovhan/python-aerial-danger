@@ -4,6 +4,8 @@
 
 from aerial_danger import DangerDetector, DangerType
 from aerial_danger.keywords import DRONE_DANGER
+from aerial_danger.location_presets import LOCATION_PRESETS
+from aerial_danger.pattern_utils import resolve_locality_patterns
 
 from .common import LOCALITY_PATTERNS, REGION_PATTERNS
 
@@ -24,7 +26,21 @@ DRONE_CASES: list[tuple[str, str]] = [
     (DRONE_DANGER[31], "Антонов йде!"),
 ]
 
+DESCENT_DRONE_CASES: list[str] = [
+    "1х падає на Солом'янку/Чоколівку.",
+    "1х Білогородка падає.",
+    "1х Білогородка. Падає.",
+    "Падає Жуляни\n800м",
+    "Сирець, падає",
+    "1х на зниження Берестейська.",
+    "Київ:\n🔻Зниження Нивки",
+    "Київ:\n🔻Зниження Шулявка",
+    "**🔻Зниження** Київ товарний",
+]
+
 DRONE_MESSAGE_CASES: list[str] = [
+    *DESCENT_DRONE_CASES,
+    "1х керований реактив у бік Виноградаря.",
     "Нивки увага БПЛА!",
     "🛵 Шахед на Академмістечко.",
     "🛵 Нивки!",
@@ -50,6 +66,10 @@ REPORTED_DRONE_LOCALITY_CASES: list[tuple[str, str]] = [
 ]
 
 REGION_ONLY_DRONE_CASES: list[str] = [
+    *DESCENT_DRONE_CASES,
+    "🟡🛵 Шахеди над Києвом, вектор Теремки, Виноградар та Чоколівка!",
+    "1х керований реактив у бік Виноградаря.",
+    "⚠️ 5х БпЛА на північ від Києва. \n 6х БпЛА у напрямку Вишневе/Білогородка",
     "Область чистоНад Києвом 1, на Лісовий йде",
     "Над Києвом 1, на Лісовий йде",
     "Область чисто\nНад Києвом 1, на Лісовий йде",
@@ -171,6 +191,23 @@ def test_drone_messages() -> None:
         assert detector.danger(text).type == DangerType.DRONE, text
 
 
+def test_falling_drone_messages_match_selected_localities() -> None:
+    """Falling alerts should match each selected area in the message."""
+    cases = [
+        ("kyiv_oblast", "kyiv_oblast_stoianka", "1х падає Стоянка."),
+        ("kyiv", "kyiv_center", "1х падає Центр\n1.2 км"),
+        ("kyiv", "kyiv_antonov", "1х падає Антонов\n1.2 км"),
+    ]
+    for region_id, locality_id, text in cases:
+        localities = resolve_locality_patterns([], [region_id], [locality_id])
+        detector = DangerDetector([], localities)
+        detection = detector.drone_danger(text)
+
+        assert detection.danger is True, text
+        assert detection.type == DangerType.DRONE, text
+        assert detector.danger(text).type == DangerType.DRONE, text
+
+
 def test_reported_drone_messages_match_configured_locality() -> None:
     """Reported drone messages should use an explicitly configured locality."""
     for locality_pattern, text in REPORTED_DRONE_LOCALITY_CASES:
@@ -202,6 +239,27 @@ def test_drone_route_requires_selected_locality() -> None:
     assert detection.danger is False
     assert detection.type is None
     assert detector.is_safe(text) is False
+
+
+def test_drone_attention_requires_selected_locality() -> None:
+    """A drone attention alert must not fall back to the configured city."""
+    text = "Київ Виноградар увага по БПЛА"
+    kyiv = LOCATION_PRESETS["kyiv"]
+    for locality_id, expected_type in (
+        (None, None),
+        ("kyiv_nyvky", None),
+        ("kyiv_vynohradar", DangerType.DRONE),
+    ):
+        localities = kyiv.localities[locality_id].patterns if locality_id else []
+        detector = DangerDetector(kyiv.patterns, localities)
+
+        detection = detector.danger(text)
+
+        assert detection.danger is (expected_type is not None), locality_id
+        assert detection.type == expected_type, locality_id
+        assert detection.message == text
+        assert detector.generic_danger(text).danger is False, locality_id
+        assert detector.is_safe(text) is False
 
 
 def test_reactive_drone_danger() -> None:

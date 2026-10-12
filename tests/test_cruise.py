@@ -71,6 +71,19 @@ def test_cruise_only() -> None:
         assert detector.danger(text).danger is True, text
 
 
+def test_cruise_aftermath_does_not_match() -> None:
+    """Past missile reports are neither active alerts nor an all-clear."""
+    detector = DangerDetector(REGION_PATTERNS, LOCALITY_PATTERNS)
+    text = (
+        "Ракети, які летіли на Київ, були випущені з Курської області. "
+        "Всього орієнтовно 6 ракет."
+    )
+
+    assert detector.cruise_missile_danger(text).danger is False
+    assert detector.danger(text).danger is False
+    assert detector.is_safe(text) is False
+
+
 def test_zircon_is_cruise() -> None:
     """Shared Zircon keywords should match cruise detection."""
     detector = DangerDetector([r".*"], [])
