@@ -46,7 +46,7 @@
         "uk": "Дубов’язівка",
         "en": "Duboviazivka"
       },
-      "patterns": ["\\bдубов'язівк(а|и|у|ою|і)\\b"]
+      "patterns": ["\\bдубов['’ʼ]язівк(а|и|у|ою|і)\\b"]
     },
     "sumy_oblast_esman": {
       "names": {

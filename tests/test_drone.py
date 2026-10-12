@@ -208,6 +208,38 @@ def test_falling_drone_messages_match_selected_localities() -> None:
         assert detector.danger(text).type == DangerType.DRONE, text
 
 
+def test_preset_drone_messages_require_selected_locality() -> None:
+    """Observed alerts use the selected preset and preserve the matched text."""
+    cases = [
+        (
+            "sumy_oblast",
+            "sumy_oblast_duboviazivka",
+            "Пара БПЛА Путивль, Дубовʼязівка.\n\nБПЛА на Білопілля.",
+            "Дубовʼязівка",
+        ),
+        (
+            "sumy_oblast",
+            "sumy_oblast_duboviazivka",
+            "🛵 Сумщина - БпЛА на Дубов'язівку.",
+            "Дубов'язівку",
+        ),
+        (
+            "zhytomyr_oblast",
+            "zhytomyr_oblast_berdychiv",
+            "БПЛА від Бердичева курс Старкон.",
+            "Бердичева",
+        ),
+    ]
+    for region_id, locality_id, text, matched_area in cases:
+        region = LOCATION_PRESETS[region_id]
+        localities = resolve_locality_patterns([], [region_id], [locality_id])
+        detection = DangerDetector(region.patterns, localities).danger(text)
+        assert detection.type == DangerType.DRONE, (locality_id, text)
+        assert detection.message == text
+        assert detection.matched_area == matched_area
+        assert not DangerDetector(region.patterns, []).danger(text).danger
+
+
 def test_reported_drone_messages_match_configured_locality() -> None:
     """Reported drone messages should use an explicitly configured locality."""
     for locality_pattern, text in REPORTED_DRONE_LOCALITY_CASES:
