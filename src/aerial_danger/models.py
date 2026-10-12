@@ -35,3 +35,20 @@ class Detection:
     matched_danger: str | None = None
     area_pattern: str | None = None
     danger_pattern: str | None = None
+
+
+@dataclass(frozen=True)
+class LocalityPreset:
+    """Locality preset definition."""
+
+    id: str
+    patterns: tuple[str, ...]
+
+
+@dataclass(frozen=True)
+class RegionPreset:
+    """Region preset definition and its localities."""
+
+    id: str
+    patterns: tuple[str, ...]
+    localities: dict[str, LocalityPreset]
