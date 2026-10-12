@@ -11,11 +11,12 @@ from .keywords import (
     DRONE_DANGER,
     GENERIC_DANGER,
     GUIDED_BOMB_DANGER,
+    IGNORED,
     IRBM_DANGER,
     MLRS_DANGER,
     SAFETY,
 )
-from .models import DangerType, Detection, PatternMatch
+from .models import DangerType, Detection, DetectionStatus, PatternMatch
 
 if TYPE_CHECKING:
     from collections.abc import Iterable, Sequence
@@ -39,6 +40,7 @@ class DangerDetector:
         self._regions = list(regions)
         self._localities = list(localities)
         self._safety_patterns = self.compile_patterns(SAFETY)
+        self._ignored_patterns = self.compile_patterns(IGNORED)
 
         self._ballistic_patterns = self.compile_patterns(
             self.map_areas(BALLISTIC_DANGER, self._regions + self._localities)
@@ -94,8 +96,12 @@ class DangerDetector:
         return None
 
     def is_safe(self, message: str) -> bool:
-        """Return whether a message explicitly clears danger."""
+        """Return whether a message contains explicit safety wording."""
         return self.match_first(self._safety_patterns, message) is not None
+
+    def is_ignored(self, message: str) -> bool:
+        """Return whether exclusion wording suppresses danger and safety matches."""
+        return self.match_first(self._ignored_patterns, message) is not None
 
     def detect(
         self,
@@ -107,19 +113,28 @@ class DangerDetector:
         match_areas: bool = True,
     ) -> Detection:
         """Shared detection helper used by danger-specific methods."""
+        if self.is_ignored(message):
+            return Detection(
+                danger=False, status=DetectionStatus.IGNORED, message=message
+            )
         if self.is_safe(message):
-            return Detection(danger=False, message=message)
+            return Detection(danger=False, status=DetectionStatus.SAFE, message=message)
 
         danger_match = self.match_first(patterns, message)
         if danger_match is None:
-            return Detection(danger=False, message=message)
+            return Detection(
+                danger=False, status=DetectionStatus.IGNORED, message=message
+            )
 
         area_match = self.find_area(message, areas) if match_areas else None
         if match_areas and area_match is None:
-            return Detection(danger=False, message=message)
+            return Detection(
+                danger=False, status=DetectionStatus.IGNORED, message=message
+            )
 
         return Detection(
             danger=True,
+            status=DetectionStatus.DANGER,
             type=danger_type,
             message=message,
             matched_area=area_match.text if area_match else None,
@@ -204,14 +219,15 @@ class DangerDetector:
             self.generic_danger,
         ):
             detection = checker(message)
-            if detection.danger:
+            if detection.status is not DetectionStatus.IGNORED:
                 return detection
-        return Detection(danger=False, message=message)
+        return Detection(danger=False, status=DetectionStatus.IGNORED, message=message)
 
 
 __all__ = [
     "DangerDetector",
     "DangerType",
     "Detection",
+    "DetectionStatus",
     "PatternMatch",
 ]
