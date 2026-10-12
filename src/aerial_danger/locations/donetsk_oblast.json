@@ -1,25 +1,44 @@
 {
   "id": "donetsk_oblast",
+  "names": {
+    "uk": "Донецька область",
+    "en": "Donetsk Oblast"
+  },
   "patterns": ["\\bдонеччин(а|и|і|у|ою)\\b", "\\bдонецьк(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
   "localities": {
     "donetsk_oblast_dobropillia": {
-      "id": "donetsk_oblast_dobropillia",
+      "names": {
+        "uk": "Добропілля",
+        "en": "Dobropillia"
+      },
       "patterns": ["\\bдобропілл(я|ю|ям|і)\\b"]
     },
     "donetsk_oblast_donetsk": {
-      "id": "donetsk_oblast_donetsk",
+      "names": {
+        "uk": "Донецьк",
+        "en": "Donetsk"
+      },
       "patterns": ["\\bдонецьк(у|ом|і)?\\b"]
     },
     "donetsk_oblast_kramatorsk": {
-      "id": "donetsk_oblast_kramatorsk",
+      "names": {
+        "uk": "Краматорськ",
+        "en": "Kramatorsk"
+      },
       "patterns": ["\\bкраматорськ(а|у|ом|і)?\\b"]
     },
     "donetsk_oblast_novodonetske": {
-      "id": "donetsk_oblast_novodonetske",
+      "names": {
+        "uk": "Новодонецьке",
+        "en": "Novodonetske"
+      },
       "patterns": ["\\bноводонецьк(е|ого|ому|им|ім)\\b"]
     },
     "donetsk_oblast_sloviansk": {
-      "id": "donetsk_oblast_sloviansk",
+      "names": {
+        "uk": "Словʼянськ",
+        "en": "Sloviansk"
+      },
       "patterns": ["\\bслов['ʼ’]?янськ(а|у|ом|і)?\\b"]
     }
   }

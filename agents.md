@@ -13,14 +13,14 @@
 - Before repository work, read [.agents/log/index.md](.agents/log/index.md). Search entries by touched paths and task keywords, then read matching entries in full.
 - Newer decisions supersede older ones. Keep finalized `done` entries unchanged. Continue a matching `wip` entry for significant work and finalize only at the user's request or when asked to create a PR for designed changesk.
 - Read [the import guide](.agents/log/README.md) for historical path mappings. Old HA paths, commands, and test counts are historical, not current library instructions.
-- The [extraction decision](.agents/log/2026-09-18-extract-danger-library.md) supersedes library-owned display names and bundled-package paths. HA entities and source aggregation remain consumer responsibilities.
+- The [localized catalog decision](.agents/log/2026-10-12-localized-location-catalog.md) supersedes the extraction decision's application-owned location labels. HA entities and source aggregation remain consumer responsibilities.
 
 ## Library boundaries
 
 - Distribution: `aerial-danger`. Import: `aerial_danger`. Keep the `src/aerial_danger/` layout and `uv_build` backend.
 - Support Python 3.10 and later. Keep matching independent of Home Assistant and network access.
 - `danger.py` owns detection, `keywords.py` owns regex templates, and `models.py` owns results. `location_presets.py` owns `LOCATION_PRESETS`; `pattern_utils.py` resolves patterns and IDs.
-- Applications provide localized labels, collect messages, and manage active-danger state. Do not add display names or translations to this library.
+- The library owns Ukrainian and English location names in region JSON files. Applications consume these labels, collect messages, and manage active-danger state; other UI translations remain application-owned.
 
 ## Matching contract
 

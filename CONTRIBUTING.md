@@ -9,8 +9,13 @@ Run the commands in the [README](README.md#development) before opening a pull re
 ## Edit location presets
 
 Edit the region's JSON file in `src/aerial_danger/locations/`. Keep region filenames
-and locality keys alphabetically sorted, and preserve pattern order. IDs must match
-their filename or locality key and remain stable for saved application selections.
+and locality keys alphabetically sorted, and preserve pattern order. The region ID
+matches its filename; locality IDs come from object keys, without a duplicate `id`
+field. Keep IDs stable for saved application selections.
+
+Every region and locality needs a `names` object with nonempty `uk` and `en`
+strings. Preserve established labels and use verified Ukrainian names with English
+transliteration for missing settlements. See [name sources](docs/location-names.md).
 
 JSON regexes escape each backslash: write `"\\bкиїв\\b"`, not `"\bкиїв\b"`.
 Use an optional `notes` string on a locality for matching rationale; the loader

@@ -24,6 +24,10 @@ assert result.type == DangerType.BALLISTIC
 assert result.matched_area == "КИЇВ"
 assert PatternMatch("КИЇВ", r"\bкиїв\b").text == result.matched_area
 assert LOCATION_PRESETS["kyiv"].patterns
+assert LOCATION_PRESETS["kyiv"].localities["kyiv_nyvky"].names == {
+    "uk": "Нивки",
+    "en": "Nyvky",
+}
 assert not detector.danger("Привіт").danger
 
 preset_detector = DangerDetector(

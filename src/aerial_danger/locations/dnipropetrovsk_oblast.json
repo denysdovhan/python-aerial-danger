@@ -1,184 +1,320 @@
 {
   "id": "dnipropetrovsk_oblast",
+  "names": {
+    "uk": "Дніпропетровська область",
+    "en": "Dnipropetrovsk Oblast"
+  },
   "patterns": [
     "\\bдніпропетровщин(а|и|і|у|ою)\\b",
     "\\bдніпропетровськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"
   ],
   "localities": {
     "dnipropetrovsk_oblast_apostolove": {
-      "id": "dnipropetrovsk_oblast_apostolove",
+      "names": {
+        "uk": "Апостолове",
+        "en": "Apostolove"
+      },
       "patterns": ["\\bапостолов(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_aviatorske": {
-      "id": "dnipropetrovsk_oblast_aviatorske",
+      "names": {
+        "uk": "Авіаторське",
+        "en": "Aviatorske"
+      },
       "patterns": ["\\bавіаторськ(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_bozhedarivka": {
-      "id": "dnipropetrovsk_oblast_bozhedarivka",
+      "names": {
+        "uk": "Божедарівка",
+        "en": "Bozhedarivka"
+      },
       "patterns": ["\\bбожедарів(ка|ки|ці|ку|кою)\\b"]
     },
     "dnipropetrovsk_oblast_chaplyne": {
-      "id": "dnipropetrovsk_oblast_chaplyne",
+      "names": {
+        "uk": "Чаплине",
+        "en": "Chaplyne"
+      },
       "patterns": ["\\bчаплин(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_cherkaske": {
-      "id": "dnipropetrovsk_oblast_cherkaske",
+      "names": {
+        "uk": "Черкаське",
+        "en": "Cherkaske"
+      },
       "patterns": ["\\bчеркаськ(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_dnipro": {
-      "id": "dnipropetrovsk_oblast_dnipro",
+      "names": {
+        "uk": "Дніпро",
+        "en": "Dnipro"
+      },
       "patterns": ["\\bдніпр(о|а|у|і|ом)\\b"]
     },
     "dnipropetrovsk_oblast_dorohe": {
-      "id": "dnipropetrovsk_oblast_dorohe",
+      "names": {
+        "uk": "Дороге",
+        "en": "Dorohe"
+      },
       "patterns": ["\\bдорог(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_doslidne": {
-      "id": "dnipropetrovsk_oblast_doslidne",
+      "names": {
+        "uk": "Дослідне",
+        "en": "Doslidne"
+      },
       "patterns": ["\\bдослідн(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_hirnytske": {
-      "id": "dnipropetrovsk_oblast_hirnytske",
+      "names": {
+        "uk": "Гірницьке",
+        "en": "Hirnytske"
+      },
       "patterns": ["\\bгірницьке\\b"]
     },
     "dnipropetrovsk_oblast_hubynykha": {
-      "id": "dnipropetrovsk_oblast_hubynykha",
+      "names": {
+        "uk": "Губиниха",
+        "en": "Hubynykha"
+      },
       "patterns": ["\\bгубини(ха|хи|сі|ху|хою)\\b"]
     },
     "dnipropetrovsk_oblast_kamianske": {
-      "id": "dnipropetrovsk_oblast_kamianske",
+      "names": {
+        "uk": "Камʼянське",
+        "en": "Kamianske"
+      },
       "patterns": ["\\bкам['’ʼ]?янськ(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_karnaukhivka": {
-      "id": "dnipropetrovsk_oblast_karnaukhivka",
+      "names": {
+        "uk": "Карнаухівка",
+        "en": "Karnaukhivka"
+      },
       "patterns": ["\\bкарнаухів(ка|ки|ці|ку|кою)\\b"]
     },
     "dnipropetrovsk_oblast_krynychky": {
-      "id": "dnipropetrovsk_oblast_krynychky",
+      "names": {
+        "uk": "Кринички",
+        "en": "Krynychky"
+      },
       "patterns": ["\\bкринич(ки|ок|кам|ками|ках)\\b"]
     },
     "dnipropetrovsk_oblast_kryvyi_rih": {
-      "id": "dnipropetrovsk_oblast_kryvyi_rih",
+      "names": {
+        "uk": "Кривий Ріг",
+        "en": "Kryvyi Rih"
+      },
       "patterns": ["\\bкрив(ий|ого|ому|им) р(іг|огу|озі|огом)\\b"]
     },
     "dnipropetrovsk_oblast_kurylivka": {
-      "id": "dnipropetrovsk_oblast_kurylivka",
+      "names": {
+        "uk": "Курилівка",
+        "en": "Kurylivka"
+      },
       "patterns": ["\\bкурилів(ка|ки|ці|ку|кою)\\b"]
     },
     "dnipropetrovsk_oblast_lykhivka": {
-      "id": "dnipropetrovsk_oblast_lykhivka",
+      "names": {
+        "uk": "Лихівка",
+        "en": "Lykhivka"
+      },
       "patterns": ["\\bлихів(ка|ки|ці|ку|кою)\\b"]
     },
     "dnipropetrovsk_oblast_marhanets": {
-      "id": "dnipropetrovsk_oblast_marhanets",
+      "names": {
+        "uk": "Марганець",
+        "en": "Marhanets"
+      },
       "patterns": ["\\bмарган(ець|ця|цю|цем|ці)\\b"]
     },
     "dnipropetrovsk_oblast_mezhova": {
-      "id": "dnipropetrovsk_oblast_mezhova",
+      "names": {
+        "uk": "Межова",
+        "en": "Mezhova"
+      },
       "patterns": ["\\bмежов(а|ої|ій|у|ою)\\b"]
     },
     "dnipropetrovsk_oblast_nikopol": {
-      "id": "dnipropetrovsk_oblast_nikopol",
+      "names": {
+        "uk": "Нікополь",
+        "en": "Nikopol"
+      },
       "patterns": ["\\bнікопол(ь|я|ем)\\b"]
     },
     "dnipropetrovsk_oblast_obukhivka": {
-      "id": "dnipropetrovsk_oblast_obukhivka",
+      "names": {
+        "uk": "Обухівка",
+        "en": "Obukhivka"
+      },
       "patterns": ["\\bобухів(ка|ки|ці|ку|кою)\\b"]
     },
     "dnipropetrovsk_oblast_pavlohrad": {
-      "id": "dnipropetrovsk_oblast_pavlohrad",
+      "names": {
+        "uk": "Павлоград",
+        "en": "Pavlohrad"
+      },
       "patterns": ["\\bпавлоград(а|у|і|ом)?\\b"]
     },
     "dnipropetrovsk_oblast_pereshchepyne": {
-      "id": "dnipropetrovsk_oblast_pereshchepyne",
+      "names": {
+        "uk": "Перещепине",
+        "en": "Pereshchepyne"
+      },
       "patterns": ["\\bперещепин(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_petropavlivka": {
-      "id": "dnipropetrovsk_oblast_petropavlivka",
+      "names": {
+        "uk": "Петропавлівка",
+        "en": "Petropavlivka"
+      },
       "patterns": ["\\bпетропавлів(ка|ки|ці|ку|кою)\\b"]
     },
     "dnipropetrovsk_oblast_petrykivka": {
-      "id": "dnipropetrovsk_oblast_petrykivka",
+      "names": {
+        "uk": "Петриківка",
+        "en": "Petrykivka"
+      },
       "patterns": ["\\bпетриків(ка|ки|ці|ку|кою)\\b"]
     },
     "dnipropetrovsk_oblast_pokrov": {
-      "id": "dnipropetrovsk_oblast_pokrov",
+      "names": {
+        "uk": "Покров",
+        "en": "Pokrov"
+      },
       "patterns": ["\\bпокров(а|у|ом|і)?\\b"]
     },
     "dnipropetrovsk_oblast_pokrovske": {
-      "id": "dnipropetrovsk_oblast_pokrovske",
+      "names": {
+        "uk": "Покровське",
+        "en": "Pokrovske"
+      },
       "patterns": ["\\bпокровськ(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_prosiana": {
-      "id": "dnipropetrovsk_oblast_prosiana",
+      "names": {
+        "uk": "Просяна",
+        "en": "Prosiana"
+      },
       "patterns": ["\\bпросян(а|ої|ій|у|ою)\\b"]
     },
     "dnipropetrovsk_oblast_pysmenne": {
-      "id": "dnipropetrovsk_oblast_pysmenne",
+      "names": {
+        "uk": "Письменне",
+        "en": "Pysmenne"
+      },
       "patterns": ["\\bписьменн(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_radushne": {
-      "id": "dnipropetrovsk_oblast_radushne",
+      "names": {
+        "uk": "Радушне",
+        "en": "Radushne"
+      },
       "patterns": ["\\bрадушн(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_samar": {
-      "id": "dnipropetrovsk_oblast_samar",
+      "names": {
+        "uk": "Самар",
+        "en": "Samar"
+      },
       "patterns": ["\\bсамар(а|у|ом|і)?\\b"]
     },
     "dnipropetrovsk_oblast_shakhtarske": {
-      "id": "dnipropetrovsk_oblast_shakhtarske",
+      "names": {
+        "uk": "Шахтарське",
+        "en": "Shakhtarske"
+      },
       "patterns": ["\\bшахтарське\\b"]
     },
     "dnipropetrovsk_oblast_shyroke": {
-      "id": "dnipropetrovsk_oblast_shyroke",
+      "names": {
+        "uk": "Широке",
+        "en": "Shyroke"
+      },
       "patterns": ["\\bширок(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_slavhorod": {
-      "id": "dnipropetrovsk_oblast_slavhorod",
+      "names": {
+        "uk": "Славгород",
+        "en": "Slavhorod"
+      },
       "patterns": ["\\bславгород(а|у|ом|і)?\\b"]
     },
     "dnipropetrovsk_oblast_solone": {
-      "id": "dnipropetrovsk_oblast_solone",
+      "names": {
+        "uk": "Солоне",
+        "en": "Solone"
+      },
       "patterns": ["\\bсолоне\\b"]
     },
     "dnipropetrovsk_oblast_synelnykove": {
-      "id": "dnipropetrovsk_oblast_synelnykove",
+      "names": {
+        "uk": "Синельникове",
+        "en": "Synelnykove"
+      },
       "patterns": ["\\bсинельник(ове|ового|ова)\\b"]
     },
     "dnipropetrovsk_oblast_ternivka": {
-      "id": "dnipropetrovsk_oblast_ternivka",
+      "names": {
+        "uk": "Тернівка",
+        "en": "Ternivka"
+      },
       "patterns": ["\\bтернів(ка|ки|ці|ку|кою)\\b"]
     },
     "dnipropetrovsk_oblast_tsarychanka": {
-      "id": "dnipropetrovsk_oblast_tsarychanka",
+      "names": {
+        "uk": "Царичанка",
+        "en": "Tsarychanka"
+      },
       "patterns": ["\\bцаричан(ка|ки|ці|ку|кою)\\b"]
     },
     "dnipropetrovsk_oblast_vasylkivka": {
-      "id": "dnipropetrovsk_oblast_vasylkivka",
+      "names": {
+        "uk": "Васильківка",
+        "en": "Vasylkivka"
+      },
       "patterns": ["\\bвасильківк(а|и|у|ою|і)\\b"]
     },
     "dnipropetrovsk_oblast_verkhivtseve": {
-      "id": "dnipropetrovsk_oblast_verkhivtseve",
+      "names": {
+        "uk": "Верхівцеве",
+        "en": "Verkhivtseve"
+      },
       "patterns": ["\\bверхівцев(е|ого|ому|им|ім)\\b"]
     },
     "dnipropetrovsk_oblast_verkhnodniprovsk": {
-      "id": "dnipropetrovsk_oblast_verkhnodniprovsk",
+      "names": {
+        "uk": "Верхньодніпровськ",
+        "en": "Verkhnodniprovsk"
+      },
       "patterns": ["\\bверхньодніпровськ(а|у|ом|і)?\\b"]
     },
     "dnipropetrovsk_oblast_vilnohirsk": {
-      "id": "dnipropetrovsk_oblast_vilnohirsk",
+      "names": {
+        "uk": "Вільногірськ",
+        "en": "Vilnohirsk"
+      },
       "patterns": ["\\bвільногірськ(а|у|ом|і)?\\b"]
     },
     "dnipropetrovsk_oblast_yurivka": {
-      "id": "dnipropetrovsk_oblast_yurivka",
+      "names": {
+        "uk": "Юр’ївка",
+        "en": "Yurivka"
+      },
       "patterns": ["\\bюр['’ʼ]їв(ка|ки|ці|ку|кою)\\b"]
     },
     "dnipropetrovsk_oblast_zelenodolsk": {
-      "id": "dnipropetrovsk_oblast_zelenodolsk",
+      "names": {
+        "uk": "Зеленодольськ",
+        "en": "Zelenodolsk"
+      },
       "patterns": ["\\bзеленодольськ(а|у|ом|і)?\\b"]
     },
     "dnipropetrovsk_oblast_zhovti_vody": {
-      "id": "dnipropetrovsk_oblast_zhovti_vody",
+      "names": {
+        "uk": "Жовті Води",
+        "en": "Zhovti Vody"
+      },
       "patterns": ["\\bжовт(і|их|им|ими)\\s+вод(и|ам|ами|ах)?\\b"]
     }
   }

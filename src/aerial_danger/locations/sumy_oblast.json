@@ -1,153 +1,268 @@
 {
   "id": "sumy_oblast",
+  "names": {
+    "uk": "Сумська область",
+    "en": "Sumy Oblast"
+  },
   "patterns": ["\\bсумщин(а|и|і|у|ою)\\b", "\\bсумськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
   "localities": {
     "sumy_oblast_bilopillia": {
-      "id": "sumy_oblast_bilopillia",
+      "names": {
+        "uk": "Білопілля",
+        "en": "Bilopillia"
+      },
       "patterns": ["\\bбілопілля\\b"]
     },
     "sumy_oblast_boromlia": {
-      "id": "sumy_oblast_boromlia",
+      "names": {
+        "uk": "Боромля",
+        "en": "Boromlia"
+      },
       "patterns": ["\\bборомл(я|і|ю|ею)\\b"]
     },
     "sumy_oblast_buryn": {
-      "id": "sumy_oblast_buryn",
+      "names": {
+        "uk": "Буринь",
+        "en": "Buryn"
+      },
       "patterns": ["\\bбурин(ь|і|ню)\\b"]
     },
     "sumy_oblast_chupakhivka": {
-      "id": "sumy_oblast_chupakhivka",
+      "names": {
+        "uk": "Чупахівка",
+        "en": "Chupakhivka"
+      },
       "patterns": ["\\bчупахів(ка|ки|ці|ку|кою)\\b"]
     },
     "sumy_oblast_dmytrivka": {
-      "id": "sumy_oblast_dmytrivka",
+      "names": {
+        "uk": "Дмитрівка",
+        "en": "Dmytrivka"
+      },
       "patterns": ["\\bдмитрів(ка|ки|ці|ку|кою)\\b"]
     },
     "sumy_oblast_duboviazivka": {
-      "id": "sumy_oblast_duboviazivka",
+      "names": {
+        "uk": "Дубов’язівка",
+        "en": "Duboviazivka"
+      },
       "patterns": ["\\bдубов'язівк(а|и|у|ою|і)\\b"]
     },
     "sumy_oblast_esman": {
-      "id": "sumy_oblast_esman",
+      "names": {
+        "uk": "Есмань",
+        "en": "Esman"
+      },
       "patterns": ["\\bесман(ь|і|ню)\\b"]
     },
     "sumy_oblast_hlukhiv": {
-      "id": "sumy_oblast_hlukhiv",
+      "names": {
+        "uk": "Глухів",
+        "en": "Hlukhiv"
+      },
       "patterns": ["\\bглухів\\b"]
     },
     "sumy_oblast_kharkivshchyna": {
-      "id": "sumy_oblast_kharkivshchyna",
+      "names": {
+        "uk": "Харківщина",
+        "en": "Kharkivshchyna"
+      },
       "patterns": ["\\bхарківщин(а|у|і|и|ою)\\b"]
     },
     "sumy_oblast_khotin": {
-      "id": "sumy_oblast_khotin",
+      "names": {
+        "uk": "Хотінь",
+        "en": "Khotin"
+      },
       "patterns": ["\\bхот(інь|іня|іні|іню|інею)\\b"]
     },
     "sumy_oblast_konotop": {
-      "id": "sumy_oblast_konotop",
+      "names": {
+        "uk": "Конотоп",
+        "en": "Konotop"
+      },
       "patterns": ["\\bконотоп(а|ом|у)?\\b"]
     },
     "sumy_oblast_krasnopillia": {
-      "id": "sumy_oblast_krasnopillia",
+      "names": {
+        "uk": "Краснопілля",
+        "en": "Krasnopillia"
+      },
       "patterns": ["\\bкраснопілл(я|ю|ям|і)\\b"]
     },
     "sumy_oblast_krolevets": {
-      "id": "sumy_oblast_krolevets",
+      "names": {
+        "uk": "Кролевець",
+        "en": "Krolevets"
+      },
       "patterns": ["\\bкрол(евець|евця|евцю|евцем|евці)\\b"]
     },
     "sumy_oblast_kyrykivka": {
-      "id": "sumy_oblast_kyrykivka",
+      "names": {
+        "uk": "Кириківка",
+        "en": "Kyrykivka"
+      },
       "patterns": ["\\bкириківк(а|и|у|ою|і)\\b"]
     },
     "sumy_oblast_lebedyn": {
-      "id": "sumy_oblast_lebedyn",
+      "names": {
+        "uk": "Лебедин",
+        "en": "Lebedyn"
+      },
       "patterns": ["\\bлебедин\\b"]
     },
     "sumy_oblast_lypova_dolyna": {
-      "id": "sumy_oblast_lypova_dolyna",
+      "names": {
+        "uk": "Липова Долина",
+        "en": "Lypova Dolyna"
+      },
       "patterns": ["\\bлипов(а|ої|ій|у|ою)\\s+долин(а|и|і|у|ою)\\b"]
     },
     "sumy_oblast_mykolaivka": {
-      "id": "sumy_oblast_mykolaivka",
+      "names": {
+        "uk": "Миколаївка",
+        "en": "Mykolaivka"
+      },
       "patterns": ["\\bмиколаїв(ка|ки|ці|ку|кою)\\b"]
     },
     "sumy_oblast_myropillia": {
-      "id": "sumy_oblast_myropillia",
+      "names": {
+        "uk": "Миропілля",
+        "en": "Myropillia"
+      },
       "patterns": ["\\bмиропілл(я|ю|і|ям)\\b"]
     },
     "sumy_oblast_nedryhailiv": {
-      "id": "sumy_oblast_nedryhailiv",
+      "names": {
+        "uk": "Недригайлів",
+        "en": "Nedryhailiv"
+      },
       "patterns": ["\\bнедригайлів(а|у|ом|і)?\\b"]
     },
     "sumy_oblast_nyzy": {
-      "id": "sumy_oblast_nyzy",
+      "names": {
+        "uk": "Низи",
+        "en": "Nyzy"
+      },
       "patterns": ["\\bниз(и|ів|ам|ами|ах)\\b"]
     },
     "sumy_oblast_okhtyrka": {
-      "id": "sumy_oblast_okhtyrka",
+      "names": {
+        "uk": "Охтирка",
+        "en": "Okhtyrka"
+      },
       "patterns": ["\\bохтирк(а|и|у|ою|і)\\b"]
     },
     "sumy_oblast_putivl": {
-      "id": "sumy_oblast_putivl",
+      "names": {
+        "uk": "Путивль",
+        "en": "Putyvl"
+      },
       "patterns": ["\\bпутивл(ь|я|ю|ем|і)\\b"]
     },
     "sumy_oblast_romny": {
-      "id": "sumy_oblast_romny",
+      "names": {
+        "uk": "Ромни",
+        "en": "Romny"
+      },
       "patterns": ["\\bром(ни|ен|нів|нам|нами|нах)\\b"]
     },
     "sumy_oblast_shalyhyne": {
-      "id": "sumy_oblast_shalyhyne",
+      "names": {
+        "uk": "Шалигине",
+        "en": "Shalyhyne"
+      },
       "patterns": ["\\bшалигин(е|ого|ому|им|ім)\\b"]
     },
     "sumy_oblast_shostka": {
-      "id": "sumy_oblast_shostka",
+      "names": {
+        "uk": "Шостка",
+        "en": "Shostka"
+      },
       "patterns": ["\\bшост(ка|ки|ку|кою|ці)\\b"]
     },
     "sumy_oblast_shostkynskyi_raion": {
-      "id": "sumy_oblast_shostkynskyi_raion",
+      "names": {
+        "uk": "Шосткинський район",
+        "en": "Shostka District"
+      },
       "patterns": ["\\bшосткинськ(ий|ого|ому|им) район(у|і|ом)?\\b"]
     },
     "sumy_oblast_sumy": {
-      "id": "sumy_oblast_sumy",
+      "names": {
+        "uk": "Суми",
+        "en": "Sumy"
+      },
       "patterns": ["\\bсум(и|ах|ами)?\\b"]
     },
     "sumy_oblast_svesa": {
-      "id": "sumy_oblast_svesa",
+      "names": {
+        "uk": "Свеса",
+        "en": "Svesa"
+      },
       "patterns": ["\\bсвес(а|и|і|у|ою)\\b"]
     },
     "sumy_oblast_terny": {
-      "id": "sumy_oblast_terny",
+      "names": {
+        "uk": "Терни",
+        "en": "Terny"
+      },
       "patterns": ["\\bтерни\\b"]
     },
     "sumy_oblast_trostianets": {
-      "id": "sumy_oblast_trostianets",
+      "names": {
+        "uk": "Тростянець",
+        "en": "Trostianets"
+      },
       "patterns": ["\\bтростянець\\b"]
     },
     "sumy_oblast_ulianivka": {
-      "id": "sumy_oblast_ulianivka",
+      "names": {
+        "uk": "Улянівка",
+        "en": "Ulianivka"
+      },
       "patterns": ["\\bулянів(ка|ки|ці|ку|кою)\\b"]
     },
     "sumy_oblast_varachyne": {
-      "id": "sumy_oblast_varachyne",
+      "names": {
+        "uk": "Варачине",
+        "en": "Varachyne"
+      },
       "patterns": ["\\bварачин(е|ого|ому|им)\\b"]
     },
     "sumy_oblast_velyka_pysarivka": {
-      "id": "sumy_oblast_velyka_pysarivka",
+      "names": {
+        "uk": "Велика Писарівка",
+        "en": "Velyka Pysarivka"
+      },
       "patterns": ["\\bвелик(а|ої|ій|у|ою)\\s+писарів(ка|ки|ці|ку|кою)\\b"]
     },
     "sumy_oblast_voronizh": {
-      "id": "sumy_oblast_voronizh",
+      "names": {
+        "uk": "Вороніж",
+        "en": "Voronizh"
+      },
       "patterns": ["\\bворон(іж|ежа|ежу|ежем|ежі)\\b"]
     },
     "sumy_oblast_vorozhba": {
-      "id": "sumy_oblast_vorozhba",
+      "names": {
+        "uk": "Ворожба",
+        "en": "Vorozhba"
+      },
       "patterns": ["\\bворожб(а|и|і|у|ою)\\b"]
     },
     "sumy_oblast_yampil": {
-      "id": "sumy_oblast_yampil",
+      "names": {
+        "uk": "Ямпіль",
+        "en": "Yampil"
+      },
       "patterns": ["\\bямп(іль|оля|олю|олем|олі)\\b"]
     },
     "sumy_oblast_znob_novhorodske": {
-      "id": "sumy_oblast_znob_novhorodske",
+      "names": {
+        "uk": "Зноб-Новгородське",
+        "en": "Znob-Novhorodske"
+      },
       "patterns": ["\\bзноб[ -]новгородськ(е|ого|ому|им|ім)\\b"]
     }
   }

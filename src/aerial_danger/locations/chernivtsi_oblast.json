@@ -1,5 +1,9 @@
 {
   "id": "chernivtsi_oblast",
+  "names": {
+    "uk": "Чернівецька область",
+    "en": "Chernivtsi Oblast"
+  },
   "patterns": [
     "\\bбуковин(а|и|і|у|ою)\\b",
     "\\bчернівеччин(а|и|і|у|ою)\\b",
@@ -7,19 +11,31 @@
   ],
   "localities": {
     "chernivtsi_oblast_chernivtsi": {
-      "id": "chernivtsi_oblast_chernivtsi",
+      "names": {
+        "uk": "Чернівці",
+        "en": "Chernivtsi"
+      },
       "patterns": ["\\bчернівц(і|ів|ям|ями|ях)\\b"]
     },
     "chernivtsi_oblast_khotyn": {
-      "id": "chernivtsi_oblast_khotyn",
+      "names": {
+        "uk": "Хотин",
+        "en": "Khotyn"
+      },
       "patterns": ["\\bхотин(а|у|ом|і)?\\b"]
     },
     "chernivtsi_oblast_kitsman": {
-      "id": "chernivtsi_oblast_kitsman",
+      "names": {
+        "uk": "Кіцмань",
+        "en": "Kitsman"
+      },
       "patterns": ["\\bкіцман(ь|я|ю|ем|і)\\b"]
     },
     "chernivtsi_oblast_novodnistrovsk": {
-      "id": "chernivtsi_oblast_novodnistrovsk",
+      "names": {
+        "uk": "Новодністровськ",
+        "en": "Novodnistrovsk"
+      },
       "patterns": ["\\bноводністровськ(а|у|ом|і)?\\b"]
     }
   }

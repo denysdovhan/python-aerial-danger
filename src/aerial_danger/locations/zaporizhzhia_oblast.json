@@ -1,37 +1,65 @@
 {
   "id": "zaporizhzhia_oblast",
+  "names": {
+    "uk": "Запорізька область",
+    "en": "Zaporizhzhia Oblast"
+  },
   "patterns": ["\\bзапорізьк(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
   "localities": {
     "zaporizhzhia_oblast_balabyne": {
-      "id": "zaporizhzhia_oblast_balabyne",
+      "names": {
+        "uk": "Балабине",
+        "en": "Balabyne"
+      },
       "patterns": ["\\bбалабин(е|ого|ому|им|ім)\\b"]
     },
     "zaporizhzhia_oblast_komyshuvakha": {
-      "id": "zaporizhzhia_oblast_komyshuvakha",
+      "names": {
+        "uk": "Комишуваха",
+        "en": "Komyshuvakha"
+      },
       "patterns": ["\\bкомишувах(а|и|і|у|ою)\\b"]
     },
     "zaporizhzhia_oblast_kushuhum": {
-      "id": "zaporizhzhia_oblast_kushuhum",
+      "names": {
+        "uk": "Кушугум",
+        "en": "Kushuhum"
+      },
       "patterns": ["\\bкушугум(а|у|ом|і)?\\b"]
     },
     "zaporizhzhia_oblast_novomykolaivka": {
-      "id": "zaporizhzhia_oblast_novomykolaivka",
+      "names": {
+        "uk": "Новомиколаївка",
+        "en": "Novomykolaivka"
+      },
       "patterns": ["\\bновомиколаїв(ка|ки|ці|ку|кою)\\b"]
     },
     "zaporizhzhia_oblast_orikhiv": {
-      "id": "zaporizhzhia_oblast_orikhiv",
+      "names": {
+        "uk": "Оріхів",
+        "en": "Orikhiv"
+      },
       "patterns": ["\\bоріх(ів|ова|ову|ові|овом)\\b"]
     },
     "zaporizhzhia_oblast_sotsmisto": {
-      "id": "zaporizhzhia_oblast_sotsmisto",
+      "names": {
+        "uk": "Соцмісто",
+        "en": "Sotsmisto"
+      },
       "patterns": ["\\bсоцміст(о|ом|т)\\b"]
     },
     "zaporizhzhia_oblast_vilniansk": {
-      "id": "zaporizhzhia_oblast_vilniansk",
+      "names": {
+        "uk": "Вільнянськ",
+        "en": "Vilniansk"
+      },
       "patterns": ["\\bвільнянськ(а|у|і|ом)?\\b"]
     },
     "zaporizhzhia_oblast_zaporizhzhia": {
-      "id": "zaporizhzhia_oblast_zaporizhzhia",
+      "names": {
+        "uk": "Запоріжжя",
+        "en": "Zaporizhzhia"
+      },
       "patterns": ["\\bзапоріжж(я|і|ю|ям)\\b", "\\bзп\\b"]
     }
   }

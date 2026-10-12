@@ -52,6 +52,7 @@ class LocalityPreset:
 
     id: str
     patterns: tuple[str, ...]
+    names: dict[str, str] = field(default_factory=dict)
 
 
 @dataclass(frozen=True)
@@ -61,3 +62,4 @@ class RegionPreset:
     id: str
     patterns: tuple[str, ...]
     localities: dict[str, LocalityPreset]
+    names: dict[str, str] = field(default_factory=dict)

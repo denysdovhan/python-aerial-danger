@@ -1,13 +1,23 @@
 {
   "id": "zakarpattia_oblast",
+  "names": {
+    "uk": "Закарпатська область",
+    "en": "Zakarpattia Oblast"
+  },
   "patterns": ["\\bзакарпатськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
   "localities": {
     "zakarpattia_oblast_mukachevo": {
-      "id": "zakarpattia_oblast_mukachevo",
+      "names": {
+        "uk": "Мукачево",
+        "en": "Mukachevo"
+      },
       "patterns": ["\\bмукачев(о|а|у|ом|і)\\b"]
     },
     "zakarpattia_oblast_uzhhorod": {
-      "id": "zakarpattia_oblast_uzhhorod",
+      "names": {
+        "uk": "Ужгород",
+        "en": "Uzhhorod"
+      },
       "patterns": ["\\bужгород(а|у|ом|і)?\\b"]
     }
   }

@@ -1,25 +1,44 @@
 {
   "id": "lviv_oblast",
+  "names": {
+    "uk": "Львівська область",
+    "en": "Lviv Oblast"
+  },
   "patterns": ["\\bльвівщин(а|и|і|у|ою)\\b", "\\bльвівськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
   "localities": {
     "lviv_oblast_bibrka": {
-      "id": "lviv_oblast_bibrka",
+      "names": {
+        "uk": "Бібрка",
+        "en": "Bibrka"
+      },
       "patterns": ["\\bбібр(ка|ки|ці|ку|кою)\\b"]
     },
     "lviv_oblast_lviv": {
-      "id": "lviv_oblast_lviv",
+      "names": {
+        "uk": "Львів",
+        "en": "Lviv"
+      },
       "patterns": ["\\bльв(ів|ова|ову|овом|ові)\\b"]
     },
     "lviv_oblast_stryi": {
-      "id": "lviv_oblast_stryi",
+      "names": {
+        "uk": "Стрий",
+        "en": "Stryi"
+      },
       "patterns": ["\\bстри(й|я|ю|єм|ї)\\b"]
     },
     "lviv_oblast_zhovkva": {
-      "id": "lviv_oblast_zhovkva",
+      "names": {
+        "uk": "Жовква",
+        "en": "Zhovkva"
+      },
       "patterns": ["\\bжовкв(а|и|і|у|ою)\\b"]
     },
     "lviv_oblast_zhydachiv": {
-      "id": "lviv_oblast_zhydachiv",
+      "names": {
+        "uk": "Жидачів",
+        "en": "Zhydachiv"
+      },
       "patterns": ["\\bжидач(ів|ова|ову|овом|ові)\\b"]
     }
   }

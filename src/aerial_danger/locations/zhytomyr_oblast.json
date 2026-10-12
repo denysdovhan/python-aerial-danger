@@ -1,113 +1,198 @@
 {
   "id": "zhytomyr_oblast",
+  "names": {
+    "uk": "Житомирська область",
+    "en": "Zhytomyr Oblast"
+  },
   "patterns": ["\\bжитомирщин(а|и|і|у|ою)\\b", "\\bжитомирськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
   "localities": {
     "zhytomyr_oblast_andrushivka": {
-      "id": "zhytomyr_oblast_andrushivka",
+      "names": {
+        "uk": "Андрушівка",
+        "en": "Andrushivka"
+      },
       "patterns": ["\\bандрушів(ка|ки|ці|ку|кою)\\b"]
     },
     "zhytomyr_oblast_berdychiv": {
-      "id": "zhytomyr_oblast_berdychiv",
+      "names": {
+        "uk": "Бердичів",
+        "en": "Berdychiv"
+      },
       "patterns": ["\\bбердич(ів|ева|еву|евом|еві)\\b"]
     },
     "zhytomyr_oblast_brusyliv": {
-      "id": "zhytomyr_oblast_brusyliv",
+      "names": {
+        "uk": "Брусилів",
+        "en": "Brusyliv"
+      },
       "patterns": ["\\bбрусил(ів|ова|ову|овом|ові)\\b"]
     },
     "zhytomyr_oblast_cherniakhiv": {
-      "id": "zhytomyr_oblast_cherniakhiv",
+      "names": {
+        "uk": "Черняхів",
+        "en": "Cherniakhiv"
+      },
       "patterns": ["\\bчернях(ів|ова|ову|овом|ові)\\b"]
     },
     "zhytomyr_oblast_chopovychi": {
-      "id": "zhytomyr_oblast_chopovychi",
+      "names": {
+        "uk": "Чоповичі",
+        "en": "Chopovychi"
+      },
       "patterns": ["\\bчопович(і|ів|ам|ами|ах)\\b"]
     },
     "zhytomyr_oblast_chudniv": {
-      "id": "zhytomyr_oblast_chudniv",
+      "names": {
+        "uk": "Чуднів",
+        "en": "Chudniv"
+      },
       "patterns": ["\\bчудн(ів|ова|ову|овом|ові)\\b"]
     },
     "zhytomyr_oblast_dovbysh": {
-      "id": "zhytomyr_oblast_dovbysh",
+      "names": {
+        "uk": "Довбиш",
+        "en": "Dovbysh"
+      },
       "patterns": ["\\bдовбиш(а|у|ем|і)?\\b"]
     },
     "zhytomyr_oblast_irshansk": {
-      "id": "zhytomyr_oblast_irshansk",
+      "names": {
+        "uk": "Іршанськ",
+        "en": "Irshansk"
+      },
       "patterns": ["\\bіршанськ(а|у|ом|і)?\\b"]
     },
     "zhytomyr_oblast_khoroshiv": {
-      "id": "zhytomyr_oblast_khoroshiv",
+      "names": {
+        "uk": "Хорошів",
+        "en": "Khoroshiv"
+      },
       "patterns": ["\\bхорош(ів|ова|ову|овом|ові)\\b"]
     },
     "zhytomyr_oblast_kornyn": {
-      "id": "zhytomyr_oblast_kornyn",
+      "names": {
+        "uk": "Корнин",
+        "en": "Kornyn"
+      },
       "patterns": ["\\bкорнин(а|у|ом|і)?\\b"]
     },
     "zhytomyr_oblast_korosten": {
-      "id": "zhytomyr_oblast_korosten",
+      "names": {
+        "uk": "Коростень",
+        "en": "Korosten"
+      },
       "patterns": ["\\bкоростен(ь|я|ем|і)\\b"]
     },
     "zhytomyr_oblast_korostyshiv": {
-      "id": "zhytomyr_oblast_korostyshiv",
+      "names": {
+        "uk": "Коростишів",
+        "en": "Korostyshiv"
+      },
       "patterns": ["\\bкоростиш(ів|ова|ову|овом|ові)\\b"]
     },
     "zhytomyr_oblast_liubar": {
-      "id": "zhytomyr_oblast_liubar",
+      "names": {
+        "uk": "Любар",
+        "en": "Liubar"
+      },
       "patterns": ["\\bлюбар(а|у|ом|і)?\\b"]
     },
     "zhytomyr_oblast_luhyny": {
-      "id": "zhytomyr_oblast_luhyny",
+      "names": {
+        "uk": "Лугини",
+        "en": "Luhyny"
+      },
       "patterns": ["\\bлугин(и|ів|ам|ами|ах)\\b"]
     },
     "zhytomyr_oblast_malyn": {
-      "id": "zhytomyr_oblast_malyn",
+      "names": {
+        "uk": "Малин",
+        "en": "Malyn"
+      },
       "patterns": ["\\bмалин(а|у|ом|і)?\\b"]
     },
     "zhytomyr_oblast_narodychi": {
-      "id": "zhytomyr_oblast_narodychi",
+      "names": {
+        "uk": "Народичі",
+        "en": "Narodychi"
+      },
       "patterns": ["\\bнародич(і|ів|ам|ами|ах)\\b"]
     },
     "zhytomyr_oblast_nova_borova": {
-      "id": "zhytomyr_oblast_nova_borova",
+      "names": {
+        "uk": "Нова Борова",
+        "en": "Nova Borova"
+      },
       "patterns": ["\\bнов(а|ої|ій|у|ою)\\s+боров(а|ої|ій|у|ою)\\b"]
     },
     "zhytomyr_oblast_novohuivynske": {
-      "id": "zhytomyr_oblast_novohuivynske",
+      "names": {
+        "uk": "Новогуйвинське",
+        "en": "Novohuivynske"
+      },
       "patterns": ["\\bновогуйвинськ(е|ого|ому|им|ім)\\b"]
     },
     "zhytomyr_oblast_olevsk": {
-      "id": "zhytomyr_oblast_olevsk",
+      "names": {
+        "uk": "Олевськ",
+        "en": "Olevsk"
+      },
       "patterns": ["\\bолевськ(а|у|ом|і)?\\b"]
     },
     "zhytomyr_oblast_ovruch": {
-      "id": "zhytomyr_oblast_ovruch",
+      "names": {
+        "uk": "Овруч",
+        "en": "Ovruch"
+      },
       "patterns": ["\\bовруч(а|у|ем|і)?\\b"]
     },
     "zhytomyr_oblast_ozerne": {
-      "id": "zhytomyr_oblast_ozerne",
+      "names": {
+        "uk": "Озерне",
+        "en": "Ozerne"
+      },
       "patterns": ["\\bозерн(е|ого|ому|им|ім)\\b"]
     },
     "zhytomyr_oblast_pulyny": {
-      "id": "zhytomyr_oblast_pulyny",
+      "names": {
+        "uk": "Пулини",
+        "en": "Pulyny"
+      },
       "patterns": ["\\bпулин(и|ів|ам|ами|ах)\\b"]
     },
     "zhytomyr_oblast_radomyshl": {
-      "id": "zhytomyr_oblast_radomyshl",
+      "names": {
+        "uk": "Радомишль",
+        "en": "Radomyshl"
+      },
       "patterns": ["\\bрадомишл(ь|я|ю|ем|і)\\b"]
     },
     "zhytomyr_oblast_ruzhyn": {
-      "id": "zhytomyr_oblast_ruzhyn",
+      "names": {
+        "uk": "Ружин",
+        "en": "Ruzhyn"
+      },
       "patterns": ["\\bружин(а|у|ом|і)?\\b"]
     },
     "zhytomyr_oblast_zarichany": {
-      "id": "zhytomyr_oblast_zarichany",
+      "names": {
+        "uk": "Зарічани",
+        "en": "Zarichany"
+      },
       "patterns": ["\\bзарічан(и|ам|ами|ах)?\\b"]
     },
     "zhytomyr_oblast_zhytomyr": {
-      "id": "zhytomyr_oblast_zhytomyr",
+      "names": {
+        "uk": "Житомир",
+        "en": "Zhytomyr"
+      },
       "patterns": ["\\bжитомир(а|у|ом|і)?\\b"]
     },
     "zhytomyr_oblast_zviahel": {
-      "id": "zhytomyr_oblast_zviahel",
+      "names": {
+        "uk": "Звягель",
+        "en": "Zviahel"
+      },
       "patterns": ["\\bзвягел(ь|я|ю|ем|і)\\b"]
     }
   }

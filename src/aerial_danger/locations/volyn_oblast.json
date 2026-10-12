@@ -1,29 +1,51 @@
 {
   "id": "volyn_oblast",
+  "names": {
+    "uk": "Волинська область",
+    "en": "Volyn Oblast"
+  },
   "patterns": ["\\bволин(ь|і|ню)\\b", "\\bволинськ(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
   "localities": {
     "volyn_oblast_kolky": {
-      "id": "volyn_oblast_kolky",
+      "names": {
+        "uk": "Колки",
+        "en": "Kolky"
+      },
       "patterns": ["\\bкол(ки|ок|кам|ками|ках)\\b"]
     },
     "volyn_oblast_kovel": {
-      "id": "volyn_oblast_kovel",
+      "names": {
+        "uk": "Ковель",
+        "en": "Kovel"
+      },
       "patterns": ["\\bковел(ь|я|ю|ем|і)\\b"]
     },
     "volyn_oblast_liubeshiv": {
-      "id": "volyn_oblast_liubeshiv",
+      "names": {
+        "uk": "Любешів",
+        "en": "Liubeshiv"
+      },
       "patterns": ["\\bлюбеш(ів|ова|ову|овом|ові)\\b"]
     },
     "volyn_oblast_lutsk": {
-      "id": "volyn_oblast_lutsk",
+      "names": {
+        "uk": "Луцьк",
+        "en": "Lutsk"
+      },
       "patterns": ["\\bлуцьк(а|у|ом|ові)?\\b"]
     },
     "volyn_oblast_tsuman": {
-      "id": "volyn_oblast_tsuman",
+      "names": {
+        "uk": "Цумань",
+        "en": "Tsuman"
+      },
       "patterns": ["\\bцуман(ь|і|ню)\\b"]
     },
     "volyn_oblast_volodymyr": {
-      "id": "volyn_oblast_volodymyr",
+      "names": {
+        "uk": "Володимир",
+        "en": "Volodymyr"
+      },
       "patterns": ["\\b(на|від|повз|через|до|біля)\\s+володимир(а|у|ом|і)?\\b"]
     }
   }

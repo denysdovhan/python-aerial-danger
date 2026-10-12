@@ -1,81 +1,142 @@
 {
   "id": "khmelnytskyi_oblast",
+  "names": {
+    "uk": "Хмельницька область",
+    "en": "Khmelnytskyi Oblast"
+  },
   "patterns": ["\\bхмельниччин(а|и|і|у|ою)\\b", "\\bхмельницьк(а|ої|ій|у|ою) област(ь|і|ю)\\b"],
   "localities": {
     "khmelnytskyi_oblast_dunaivtsi": {
-      "id": "khmelnytskyi_oblast_dunaivtsi",
+      "names": {
+        "uk": "Дунаївці",
+        "en": "Dunaivtsi"
+      },
       "patterns": ["\\bдунаївц(і|ів|ям|ями|ях)\\b"]
     },
     "khmelnytskyi_oblast_iziaslav": {
-      "id": "khmelnytskyi_oblast_iziaslav",
+      "names": {
+        "uk": "Ізяслав",
+        "en": "Iziaslav"
+      },
       "patterns": ["\\bізяслав(а|у|ом|і)?\\b"]
     },
     "khmelnytskyi_oblast_khmelnytskyi": {
-      "id": "khmelnytskyi_oblast_khmelnytskyi",
+      "names": {
+        "uk": "Хмельницький",
+        "en": "Khmelnytskyi"
+      },
       "patterns": ["\\bхмельницьк(ий|ого|ому|им|ім)\\b"]
     },
     "khmelnytskyi_oblast_krasyliv": {
-      "id": "khmelnytskyi_oblast_krasyliv",
+      "names": {
+        "uk": "Красилів",
+        "en": "Krasyliv"
+      },
       "patterns": ["\\bкрасил(ів|ова|ову|овом|ові)\\b"]
     },
     "khmelnytskyi_oblast_letychiv": {
-      "id": "khmelnytskyi_oblast_letychiv",
+      "names": {
+        "uk": "Летичів",
+        "en": "Letychiv"
+      },
       "patterns": ["\\bлетич(ів|ова|ову|овом|ові)\\b"]
     },
     "khmelnytskyi_oblast_netishyn": {
-      "id": "khmelnytskyi_oblast_netishyn",
+      "names": {
+        "uk": "Нетішин",
+        "en": "Netishyn"
+      },
       "patterns": ["\\bнетішин(а|у|ом|і)?\\b"]
     },
     "khmelnytskyi_oblast_nova_ushytsia": {
-      "id": "khmelnytskyi_oblast_nova_ushytsia",
+      "names": {
+        "uk": "Нова Ушиця",
+        "en": "Nova Ushytsia"
+      },
       "patterns": ["\\bнов(а|ої|ій|у|ою)\\s+ушиц(я|і|ю|ею)\\b"]
     },
     "khmelnytskyi_oblast_sataniv": {
-      "id": "khmelnytskyi_oblast_sataniv",
+      "names": {
+        "uk": "Сатанів",
+        "en": "Sataniv"
+      },
       "patterns": ["\\bсатан(ів|ова|ову|овом|ові)\\b"]
     },
     "khmelnytskyi_oblast_shepetivka": {
-      "id": "khmelnytskyi_oblast_shepetivka",
+      "names": {
+        "uk": "Шепетівка",
+        "en": "Shepetivka"
+      },
       "patterns": ["\\bшепетів(ка|ки|ці|ку|кою)\\b"]
     },
     "khmelnytskyi_oblast_slavuta": {
-      "id": "khmelnytskyi_oblast_slavuta",
+      "names": {
+        "uk": "Славута",
+        "en": "Slavuta"
+      },
       "patterns": ["\\bславут(а|и|і|у|ою)\\b"]
     },
     "khmelnytskyi_oblast_smotrych": {
-      "id": "khmelnytskyi_oblast_smotrych",
+      "names": {
+        "uk": "Смотрич",
+        "en": "Smotrych"
+      },
       "patterns": ["\\bсмотрич(а|у|ем|і)?\\b"]
     },
     "khmelnytskyi_oblast_stara_syniava": {
-      "id": "khmelnytskyi_oblast_stara_syniava",
+      "names": {
+        "uk": "Стара Синява",
+        "en": "Stara Syniava"
+      },
       "patterns": ["\\bстар(а|ої|ій|у|ою)\\s+синяв(а|и|і|у|ою)\\b"]
     },
     "khmelnytskyi_oblast_stara_ushytsia": {
-      "id": "khmelnytskyi_oblast_stara_ushytsia",
+      "names": {
+        "uk": "Стара Ушиця",
+        "en": "Stara Ushytsia"
+      },
       "patterns": ["\\bстар(а|ої|ій|у|ою)\\s+ушиц(я|і|ю|ею)\\b"]
     },
     "khmelnytskyi_oblast_starokostiantyniv": {
-      "id": "khmelnytskyi_oblast_starokostiantyniv",
+      "names": {
+        "uk": "Старокостянтинів",
+        "en": "Starokostiantyniv"
+      },
       "patterns": ["\\bстарокостянтин(ів|ова|ову|овом|ові)\\b", "\\bстаркон(у|а)?\\b"]
     },
     "khmelnytskyi_oblast_vinkivtsi": {
-      "id": "khmelnytskyi_oblast_vinkivtsi",
+      "names": {
+        "uk": "Віньківці",
+        "en": "Vinkivtsi"
+      },
       "patterns": ["\\bвіньківц(і|ів|ям|ями|ях)\\b"]
     },
     "khmelnytskyi_oblast_volochysk": {
-      "id": "khmelnytskyi_oblast_volochysk",
+      "names": {
+        "uk": "Волочиськ",
+        "en": "Volochysk"
+      },
       "patterns": ["\\bволочиськ(а|у|ом|і)?\\b"]
     },
     "khmelnytskyi_oblast_vovkovyntsi": {
-      "id": "khmelnytskyi_oblast_vovkovyntsi",
+      "names": {
+        "uk": "Вовковинці",
+        "en": "Vovkovyntsi"
+      },
       "patterns": ["\\bвовковинц(і|ів|ям|ями|ях)\\b"]
     },
     "khmelnytskyi_oblast_yarmolyntsi": {
-      "id": "khmelnytskyi_oblast_yarmolyntsi",
+      "names": {
+        "uk": "Ярмолинці",
+        "en": "Yarmolyntsi"
+      },
       "patterns": ["\\bярмолин(ці|ців|цям|цями|цях)\\b"]
     },
     "khmelnytskyi_oblast_zakupne": {
-      "id": "khmelnytskyi_oblast_zakupne",
+      "names": {
+        "uk": "Закупне",
+        "en": "Zakupne"
+      },
       "patterns": ["\\bзакупн(е|ого|ому|им|ім)\\b"]
     }
   }
