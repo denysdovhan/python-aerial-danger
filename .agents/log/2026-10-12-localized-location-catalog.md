@@ -36,7 +36,7 @@ publishing remains the maintainer's action.
 - [x] 76 library tests pass; lint and formatting pass.
 - [x] Wheel and sdist smoke tests pass on Python 3.10 and 3.14.
 - [x] All 25 region and 168 existing HA locality labels match exactly in both languages.
-- [x] Every one of the 788 localities has nonempty Ukrainian and English names.
+- [x] Every one of the 787 localities has nonempty Ukrainian and English names.
 
 ## Implementation Notes
 
