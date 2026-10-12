@@ -8,6 +8,8 @@ import pytest
 
 from aerial_danger import (
     DangerDetector,
+    Detection,
+    DetectionStatus,
     PatternMatch,
 )
 
@@ -48,6 +50,7 @@ def test_detection_includes_exact_matches_and_patterns() -> None:
     detection = detector.danger("КИЇВ ШВИДКІСНА!")
 
     assert detection.matched_area == "КИЇВ"
+    assert detection.status is DetectionStatus.DANGER
     assert detection.matched_danger == "КИЇВ ШВИДКІСНА"
     assert detection.area_pattern == area_pattern
     assert detection.danger_pattern == rf"{area_pattern} швидкісна"
@@ -75,3 +78,25 @@ def test_non_matches() -> None:
         detection = detector.danger(text)
         assert detection.danger is False, text
         assert detection.type is None, text
+
+
+def test_unrelated_message_is_ignored() -> None:
+    """A non-match must not become an all-clear."""
+    detector = DangerDetector(REGION_PATTERNS, LOCALITY_PATTERNS)
+
+    assert detector.danger("Привіт").status is DetectionStatus.IGNORED
+
+
+@pytest.mark.parametrize("danger", [True, False])
+def test_detection_preserves_danger_constructor(*, danger: bool) -> None:
+    """Existing keyword and positional construction retain the primary flag."""
+    detection = Detection(danger=danger, message="КИЇВ ШВИДКІСНА!")
+    assert detection.danger is danger
+    assert detection == Detection(danger, "КИЇВ ШВИДКІСНА!")
+
+
+def test_explicit_safe_status_preserves_negative_danger_flag() -> None:
+    """Callers can distinguish an all-clear without a separate safe flag."""
+    detection = Detection(danger=False, message="Все тихо", status=DetectionStatus.SAFE)
+    assert detection.danger is False
+    assert detection.status is DetectionStatus.SAFE
