@@ -2,7 +2,9 @@
 
 # ruff: noqa: S101
 
-from aerial_danger import DangerDetector, DangerType
+import pytest
+
+from aerial_danger import DangerDetector, DangerType, DetectionStatus
 from aerial_danger.location_presets import LOCATION_PRESETS
 
 from .common import LOCALITY_PATTERNS, REGION_PATTERNS
@@ -79,6 +81,7 @@ GENERIC_CASES: list[str] = [
 ]
 
 REGION_ONLY_INCOMING_WEAPON_CASES: list[tuple[str, str]] = [
+    (r"\bчернігівщин\w*\b", "🛵 З Чернігівщини йде один БпЛА."),
     (r"\bкиїв\b", "Шахед на Київ підлітає"),
     (r"\bки(ї|є)в(а|у|ом|е|і)?\b", "🟡💣 Київ!"),
     (r"\bхарків(а|у|ом|і)?\b", "🔴❗️ РСЗВ на Харків!"),
@@ -132,15 +135,23 @@ def test_generic_only() -> None:
         assert detector.danger(text).type == DangerType.GENERIC, text
 
 
-def test_weapon_messages_do_not_fall_through_to_generic() -> None:
+@pytest.mark.parametrize(
+    "localities", [(), LOCATION_PRESETS["kyiv"].localities["kyiv_nyvky"].patterns]
+)
+def test_weapon_messages_do_not_fall_through_to_generic(
+    localities: tuple[str, ...],
+) -> None:
     """Typed messages with only a region match should stay neutral."""
     for region_pattern, text in REGION_ONLY_INCOMING_WEAPON_CASES:
-        detector = DangerDetector([region_pattern], [])
+        detector = DangerDetector([region_pattern], localities)
 
-        detection = detector.danger(text)
+        for checker in (detector.generic_danger, detector.danger):
+            detection = checker(text)
 
-        assert detection.danger is False, text
-        assert detection.type is None, text
+            assert detection.status is DetectionStatus.IGNORED, text
+            assert detection.danger is False, text
+            assert detection.type is None, text
+            assert detection.message == text
 
 
 def test_terse_generic_matches_complete_message() -> None:
@@ -170,6 +181,32 @@ def test_area_list_matches_each_selected_locality() -> None:
 
             assert detection.type == DangerType.GENERIC, locality_id
             assert detection.matched_danger == text, locality_id
+
+
+def test_direction_reports_match_selected_locality() -> None:
+    """Terse direction reports preserve the place name and complete alert."""
+    cases = [
+        ("kyiv_oblast_khotiv", "На Хотів - Лісники повернув.", "Хотів"),
+        ("kyiv_oblast_khotiv", "На Хотів - Лісники.", "Хотів"),
+        ("kyiv_oblast_khotiv", "На Хотів / Чабани", "Хотів"),
+        ("kyiv_oblast_khotiv", "На Хотів-Чабани", "Хотів"),
+        ("kyiv_oblast_khotiv", "До Хотів", "Хотів"),
+        ("kyiv_oblast_khotiv", "Повз Хотів", "Хотів"),
+        ("kyiv_oblast_khotiv", "На Хотів - Чабани - Гатне", "Хотів"),
+        ("kyiv_oblast_khotiv", "На Хотів - Феофанію", "Хотів"),
+    ]
+    region = LOCATION_PRESETS["kyiv_oblast"]
+    for locality_id, text, matched_area in cases:
+        localities = region.localities[locality_id].patterns
+        detection = DangerDetector([], localities).danger(text)
+
+        assert detection.type == DangerType.GENERIC, text
+        assert detection.message == text
+        assert detection.matched_area == matched_area, text
+        assert detection.matched_danger == text, text
+        assert not DangerDetector(region.patterns, []).danger(text).danger, text
+        unrelated = region.localities["kyiv_oblast_mriia"].patterns
+        assert not DangerDetector([], unrelated).danger(text).danger, text
 
 
 def test_station_attention_requires_selected_locality() -> None:
