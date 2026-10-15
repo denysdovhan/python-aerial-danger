@@ -8,10 +8,12 @@ import pytest
 
 from aerial_danger import (
     DangerDetector,
+    DangerType,
     Detection,
     DetectionStatus,
     PatternMatch,
 )
+from aerial_danger.location_presets import LOCATION_PRESETS
 
 from .common import LOCALITY_PATTERNS, REGION_PATTERNS
 
@@ -71,6 +73,20 @@ def test_match_helpers_return_pattern_matches() -> None:
     ) == PatternMatch(text="КИЇВ ШВИДКІСНА", pattern=danger_pattern)
 
 
+def test_named_area_patterns_compose_with_movement() -> None:
+    """Custom named captures remain valid in region and locality templates."""
+    pattern = r"\b(?P<place>Нивки)\b"
+    for regions, localities, expected_type in (
+        ([], [pattern], DangerType.DRONE),
+        ([pattern], [], DangerType.GENERIC),
+    ):
+        detection = DangerDetector(regions, localities).danger("На Нивки йде")
+
+        assert detection.type is expected_type
+        assert detection.matched_area == "Нивки"
+        assert detection.matched_danger == "На Нивки йде"
+
+
 def test_non_matches() -> None:
     """Negative samples should not raise danger flags."""
     detector = DangerDetector(REGION_PATTERNS, LOCALITY_PATTERNS)
@@ -78,6 +94,30 @@ def test_non_matches() -> None:
         detection = detector.danger(text)
         assert detection.danger is False, text
         assert detection.type is None, text
+
+
+def test_preset_prose_is_ignored() -> None:
+    """Common-word locality collisions require actual alert wording."""
+    cases = [
+        (
+            "kyiv_oblast_khotiv",
+            "О той що на Житомирщину хотів йде в бік Фастова",
+            None,
+        ),
+        ("kyiv_oblast_mriia", "мрії мрії", "мрії"),
+    ]
+    region = LOCATION_PRESETS["kyiv_oblast"]
+    for locality_id, text, matched_area in cases:
+        localities = region.localities[locality_id].patterns
+        detector = DangerDetector([], localities)
+        detection = detector.danger(text)
+        area = detector.find_area(text, localities)
+
+        assert (area.text if area else None) == matched_area, text
+        assert detection.status is DetectionStatus.IGNORED, text
+        assert detection.danger is False, text
+        assert detection.type is None, text
+        assert detector.is_safe(text) is False, text
 
 
 def test_unrelated_message_is_ignored() -> None:

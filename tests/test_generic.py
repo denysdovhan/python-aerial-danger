@@ -76,6 +76,7 @@ GENERIC_CASES: list[str] = [
     "Хвилина до заходу в Київ!",
     "🔴🚀Вишгород/Оболонь!",
     "Бровари підліт. Ви його не почуєте. Від вікон.",
+    "🛵 З Чернігівщини йде один БпЛА.",
 ]
 
 REGION_ONLY_INCOMING_WEAPON_CASES: list[tuple[str, str]] = [
@@ -170,6 +171,32 @@ def test_area_list_matches_each_selected_locality() -> None:
 
             assert detection.type == DangerType.GENERIC, locality_id
             assert detection.matched_danger == text, locality_id
+
+
+def test_direction_reports_match_selected_locality() -> None:
+    """Terse direction reports preserve the place name and complete alert."""
+    cases = [
+        ("kyiv_oblast_khotiv", "На Хотів - Лісники повернув.", "Хотів"),
+        ("kyiv_oblast_khotiv", "На Хотів - Лісники.", "Хотів"),
+        ("kyiv_oblast_khotiv", "На Хотів / Чабани", "Хотів"),
+        ("kyiv_oblast_khotiv", "На Хотів-Чабани", "Хотів"),
+        ("kyiv_oblast_khotiv", "До Хотів", "Хотів"),
+        ("kyiv_oblast_khotiv", "Повз Хотів", "Хотів"),
+        ("kyiv_oblast_khotiv", "На Хотів - Чабани - Гатне", "Хотів"),
+        ("kyiv_oblast_khotiv", "На Хотів - Феофанію", "Хотів"),
+    ]
+    region = LOCATION_PRESETS["kyiv_oblast"]
+    for locality_id, text, matched_area in cases:
+        localities = region.localities[locality_id].patterns
+        detection = DangerDetector([], localities).danger(text)
+
+        assert detection.type == DangerType.GENERIC, text
+        assert detection.message == text
+        assert detection.matched_area == matched_area, text
+        assert detection.matched_danger == text, text
+        assert not DangerDetector(region.patterns, []).danger(text).danger, text
+        unrelated = region.localities["kyiv_oblast_mriia"].patterns
+        assert not DangerDetector([], unrelated).danger(text).danger, text
 
 
 def test_station_attention_requires_selected_locality() -> None:

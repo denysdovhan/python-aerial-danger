@@ -54,6 +54,7 @@ DRONE_MESSAGE_CASES: list[str] = [
 
 REPORTED_DRONE_LOCALITY_CASES: list[tuple[str, str]] = [
     (r"\bлісовий\b", "Область чистоНад Києвом 1, на Лісовий йде"),
+    (r"\bлісовий\b", "Над Києвом 1, на Лісовий йде"),
     (
         r"\bбровар(и|ів|ах)?\b",
         "‼️🛵Залітають через Бровари на Київ.@operinform",
@@ -229,6 +230,34 @@ def test_preset_drone_messages_require_selected_locality() -> None:
             "БПЛА від Бердичева курс Старкон.",
             "Бердичева",
         ),
+        (
+            "kyiv_oblast",
+            "kyiv_oblast_khotiv",
+            "Лісники - Хотів уважно по можливому руху БПЛА з річки.",
+            "Хотів",
+        ),
+        ("kyiv_oblast", "kyiv_oblast_khotiv", "На Хотів йде", "Хотів"),
+        (
+            "kyiv_oblast",
+            "kyiv_oblast_mriia",
+            "🏍 Реактивний БпЛА на Мрію/Шпитькина Київщині  з півночі",
+            "Мрію",
+        ),
+        ("odesa_oblast", "odesa_oblast_odesa", "Через Одесу йде", "Одесу"),
+        (
+            "odesa_oblast",
+            "odesa_oblast_chornomorsk",
+            "На Одесу/Чорноморськ йде пара.",
+            "Чорноморськ",
+        ),
+        (
+            "odesa_oblast",
+            "odesa_oblast_chornomorsk",
+            "У бік Чорноморська йде один.",
+            "Чорноморська",
+        ),
+        ("kyiv", "kyiv_borshchahivka", "Соф борщага йде група!", "борщага"),
+        ("kyiv", "kyiv_shuliavka", "Через Шулявку йде", "Шулявку"),
     ]
     for region_id, locality_id, text, matched_area in cases:
         region = LOCATION_PRESETS[region_id]
@@ -259,6 +288,21 @@ def test_reported_drone_messages_do_not_match_region() -> None:
 
         assert detection.danger is False, text
         assert detection.type is None, text
+
+
+def test_movement_preserves_matched_danger() -> None:
+    """Movement evidence includes the direction prefix from the original alert."""
+    cases = [
+        ("odesa_oblast", "odesa_oblast_odesa", "Через Одесу йде"),
+        ("kyiv", "kyiv_shuliavka", "Через Шулявку йде"),
+        ("kyiv_oblast", "kyiv_oblast_khotiv", "На Хотів йде"),
+    ]
+    for region_id, locality_id, text in cases:
+        patterns = LOCATION_PRESETS[region_id].localities[locality_id].patterns
+        detection = DangerDetector([], patterns).danger(text)
+
+        assert detection.type is DangerType.DRONE, text
+        assert detection.matched_danger == text, text
 
 
 def test_drone_route_requires_selected_locality() -> None:

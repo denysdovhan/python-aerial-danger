@@ -63,6 +63,12 @@ IGNORED = [
 # Rocket markers already allow generic alerts; weapon-only markers stay separate.
 _URGENT_MARKER = r"^[🔴🟡🚀❗‼️ \t]*"
 
+# Try bare names first to preserve caller-supplied area pattern matches.
+_MOVING_PREFIX = (
+    r"(?:|^[^\w\n]*|\b"
+    r"(?:на|до|у|в|через|повз|поблизу|районі|курс|курсом)\s+)"
+)
+
 # Generic danger phrases that refine specific danger types.
 GENERIC_DANGER = [
     r"^у бік {area}!+$",
@@ -83,7 +89,8 @@ GENERIC_DANGER = [
     r"^[^\w\n]*{area}[^\n]{0,48}\bсховал\w*\b[^\n]*$",
     r"^[^\w\n]*{area}[^\n]{0,48}\bповторно\b[^\n]*$",
     r"{area}.{0,32}\b(?:ваш\w* вектор|вектор .{0,12}ваш\w*)",
-    r"{area}[^\w\n]+\b(?:йде|підліт|хвилин\w*)\b",
+    _MOVING_PREFIX + r"{area}[^\w\n]+йде\b",
+    r"{area}[^\w\n]+\b(?:підліт|хвилин\w*)\b",
     r"{area}\W+(?:(?:ще|є)\W+)?(?:(?:\d+|дві|три)\W+)?ціл[ьі]\b",
     r"(?:\b(?:\d+|дві|три)\W+)?ціл[ьі]\W+(?:на\W+)?{area}",
     r"\bціль\W+{area}",
@@ -100,8 +107,9 @@ GENERIC_DANGER = [
         r"[^\w\n]+{area}(?:[/,-]\w+)*[!.]*$"
     ),
     (
-        _URGENT_MARKER + r"\bна[^\w\n]+{area}"
-        r"(?:[/,-]\w+)*[!.]*$"
+        _URGENT_MARKER + r"\b(?:на|до|повз)[^\w\n]+{area}"
+        r"(?:[ \t]*[/,-][ \t]*[\w'’ʼ]+)*"
+        r"(?:[ \t]+повернув)?[!.]*$"
     ),
     r"^хвилин\w* до заходу (?:у|в) {area}[!.]*$",
     (_URGENT_MARKER + r"\bпролітає.{0,64}{area}.{0,48}[!.]*$"),
@@ -330,7 +338,7 @@ DRONE_DANGER = [
     r"{area}.{0,40}\bувага (?:по )?реактивн\w* (?:бпла|дрон)",
     r"\b(?:новий|наступний|група) реактивн\w* (?:бпла|дрон).{0,48}{area}",
     r"\bреактивн\w* бпла\b.{0,64}(?:на|до|(у|в) (?:напрямку|бік)) {area}",
-    r"{area} йде",
+    _MOVING_PREFIX + r"{area} йде",
     r"🔻[ \t]*зниження(?:\*\*)?[ \t]+{area}",
     r"^\d+х на зниження {area}[.!]*$",
     r"^{area}, падає[.!]*$",
