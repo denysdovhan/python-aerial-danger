@@ -2,7 +2,9 @@
 
 # ruff: noqa: S101
 
-from aerial_danger import DangerDetector, DangerType
+import pytest
+
+from aerial_danger import DangerDetector, DangerType, DetectionStatus
 from aerial_danger.location_presets import LOCATION_PRESETS
 
 from .common import LOCALITY_PATTERNS, REGION_PATTERNS
@@ -76,10 +78,10 @@ GENERIC_CASES: list[str] = [
     "Хвилина до заходу в Київ!",
     "🔴🚀Вишгород/Оболонь!",
     "Бровари підліт. Ви його не почуєте. Від вікон.",
-    "🛵 З Чернігівщини йде один БпЛА.",
 ]
 
 REGION_ONLY_INCOMING_WEAPON_CASES: list[tuple[str, str]] = [
+    (r"\bчернігівщин\w*\b", "🛵 З Чернігівщини йде один БпЛА."),
     (r"\bкиїв\b", "Шахед на Київ підлітає"),
     (r"\bки(ї|є)в(а|у|ом|е|і)?\b", "🟡💣 Київ!"),
     (r"\bхарків(а|у|ом|і)?\b", "🔴❗️ РСЗВ на Харків!"),
@@ -133,15 +135,23 @@ def test_generic_only() -> None:
         assert detector.danger(text).type == DangerType.GENERIC, text
 
 
-def test_weapon_messages_do_not_fall_through_to_generic() -> None:
+@pytest.mark.parametrize(
+    "localities", [(), LOCATION_PRESETS["kyiv"].localities["kyiv_nyvky"].patterns]
+)
+def test_weapon_messages_do_not_fall_through_to_generic(
+    localities: tuple[str, ...],
+) -> None:
     """Typed messages with only a region match should stay neutral."""
     for region_pattern, text in REGION_ONLY_INCOMING_WEAPON_CASES:
-        detector = DangerDetector([region_pattern], [])
+        detector = DangerDetector([region_pattern], localities)
 
-        detection = detector.danger(text)
+        for checker in (detector.generic_danger, detector.danger):
+            detection = checker(text)
 
-        assert detection.danger is False, text
-        assert detection.type is None, text
+            assert detection.status is DetectionStatus.IGNORED, text
+            assert detection.danger is False, text
+            assert detection.type is None, text
+            assert detection.message == text
 
 
 def test_terse_generic_matches_complete_message() -> None:
