@@ -547,7 +547,7 @@ PRESET_EXAMPLES = {
     "kyiv_rembaza": ("Рембаза",),
     "kyiv_respublika": ("Республіку",),
     "kyiv_retroville": ("Ретровіль", "Retroville"),
-    "kyiv_right_bank": ("правобережжі",),
+    "kyiv_right_bank": ("правобережжі", "центр правого"),
     "kyiv_rusanivka": ("Русанівка",),
     "kyiv_rusanivski_sady": ("Русанівські сади",),
     "kyiv_rybalskyi_ostriv": ("Рибальський острів", "Рибальський"),

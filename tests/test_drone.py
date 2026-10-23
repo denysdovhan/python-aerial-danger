@@ -294,6 +294,29 @@ def test_drone_attention_requires_selected_locality() -> None:
         assert detector.is_safe(text) is False
 
 
+def test_repeated_drone_route_requires_selected_locality() -> None:
+    """A repeated drone route must not become a city-wide generic alert."""
+    text = "Київ повторно через центр правого рух рБПЛА"
+    kyiv = LOCATION_PRESETS["kyiv"]
+    for locality_id, matched_area in (
+        (None, None),
+        ("kyiv_nyvky", None),
+        ("kyiv_left_bank", None),
+        ("kyiv_center", "центр"),
+        ("kyiv_right_bank", "центр правого"),
+    ):
+        localities = kyiv.localities[locality_id].patterns if locality_id else []
+        detector = DangerDetector(kyiv.patterns, localities)
+        detection = detector.danger(text)
+
+        assert detection.danger is (matched_area is not None), locality_id
+        assert detection.type == (DangerType.DRONE if matched_area else None)
+        assert detection.matched_area == matched_area
+        assert detection.message == text
+        assert detector.generic_danger(text).danger is False
+        assert detector.is_safe(text) is False
+
+
 def test_reactive_drone_danger() -> None:
     """Reactive-drone alerts should match their area-specific phrase."""
     for area_pattern, danger_template, text in REACTIVE_DRONE_CASES:
