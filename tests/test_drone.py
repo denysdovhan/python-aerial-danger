@@ -361,3 +361,20 @@ def test_reactive_drone_aftermath_does_not_match() -> None:
 
         assert detection.danger is False, text
         assert detection.type is None, text
+
+
+def test_turning_route_requires_selected_locality() -> None:
+    """Turning routes are drone alerts and must not fall through to generic."""
+    text = "На Хотів - Лісники повернув."
+    region = LOCATION_PRESETS["kyiv_oblast"]
+    localities = region.localities["kyiv_oblast_khotiv"].patterns
+    detector = DangerDetector(region.patterns, localities)
+    detection = detector.danger(text)
+
+    assert detection.type is DangerType.DRONE
+    assert detection.matched_area == "Хотів"
+    assert detection.matched_danger == text
+    assert not detector.generic_danger(text).danger
+    assert not DangerDetector(localities, []).danger(text).danger
+    unrelated = region.localities["kyiv_oblast_mriia"].patterns
+    assert not DangerDetector(region.patterns, unrelated).danger(text).danger

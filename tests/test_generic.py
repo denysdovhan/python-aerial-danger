@@ -186,7 +186,6 @@ def test_area_list_matches_each_selected_locality() -> None:
 def test_direction_reports_match_selected_locality() -> None:
     """Terse direction reports preserve the place name and complete alert."""
     cases = [
-        ("kyiv_oblast_khotiv", "На Хотів - Лісники повернув.", "Хотів"),
         ("kyiv_oblast_khotiv", "На Хотів - Лісники.", "Хотів"),
         ("kyiv_oblast_khotiv", "На Хотів / Чабани", "Хотів"),
         ("kyiv_oblast_khotiv", "На Хотів-Чабани", "Хотів"),
