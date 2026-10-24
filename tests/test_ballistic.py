@@ -3,6 +3,7 @@
 # ruff: noqa: S101
 
 from aerial_danger import DangerDetector, DangerType
+from aerial_danger.keywords import BALLISTIC_DANGER
 
 from .common import LOCALITY_PATTERNS, REGION_PATTERNS
 
@@ -145,14 +146,17 @@ def test_ballistic_only() -> None:
         assert detector.danger(text).type == DangerType.BALLISTIC, text
 
 
-def test_comet_messages_do_not_match_generic() -> None:
-    """Comet-marked messages should be reserved for ballistic danger."""
+def test_ballistic_emojis_require_area_and_do_not_match_generic() -> None:
+    """Ballistic emojis require an area and retain priority over generic danger."""
     detector = DangerDetector(REGION_PATTERNS, LOCALITY_PATTERNS)
-    for text in COMET_BALLISTIC_CASES:
-        detection = detector.generic_danger(text)
+    for text in [*COMET_BALLISTIC_CASES, "🔴🚛Ракета Київ!"]:
+        detection = detector.danger(text)
 
-        assert detection.danger is False, text
-        assert detection.type is None, text
+        assert detection.type is DangerType.BALLISTIC, text
+        assert detection.message == text
+        assert "☄" in detection.matched_danger or "🚛" in detection.matched_danger
+        assert detector.generic_danger(text).danger is False, text
+        assert not DangerDetector([], []).danger(text).danger, text
 
 
 def test_ballistic_does_not_match() -> None:
@@ -174,3 +178,12 @@ def test_zircon_is_ballistic() -> None:
         assert ballistic.danger is True, text
         assert ballistic.type == DangerType.BALLISTIC, text
         assert detector.danger(text).type == DangerType.BALLISTIC, text
+
+
+def test_ballistic_wording_accepts_comet_prefix() -> None:
+    """Explicit ballistic wording must accept comets without the emoji fallback."""
+    detector = DangerDetector(REGION_PATTERNS, [])
+    phrases = [pattern for pattern in BALLISTIC_DANGER if "балістик" in pattern]
+    patterns = detector.compile_patterns(detector.map_areas(phrases, REGION_PATTERNS))
+
+    assert detector.match_first(patterns, "☄Київ Балістика!") is not None
