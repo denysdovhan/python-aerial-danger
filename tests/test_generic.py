@@ -196,6 +196,22 @@ def test_station_attention_requires_selected_locality() -> None:
             assert any(pattern in detection.danger_pattern for pattern in localities)
 
 
+def test_bare_bank_alert_requires_selected_locality() -> None:
+    """A city-prefixed bank alert must stay scoped to the selected bank."""
+    text = "Київ правий південь"
+    region = LOCATION_PRESETS["kyiv"]
+    for locality_id in (None, "kyiv_right_bank", "kyiv_left_bank", "kyiv_center"):
+        localities = region.localities[locality_id].patterns if locality_id else []
+        detection = DangerDetector(region.patterns, localities).danger(text)
+
+        expected = DangerType.GENERIC if locality_id == "kyiv_right_bank" else None
+        assert detection.type is expected, locality_id
+        assert detection.danger is (expected is not None), locality_id
+        assert detection.message == text
+        if expected is not None:
+            assert detection.matched_danger == text
+
+
 def test_generic_does_not_match() -> None:
     """Non-alert explanations should not raise danger flags."""
     detector = DangerDetector([*REGION_PATTERNS, r"\bкурськ\w*\b"], LOCALITY_PATTERNS)

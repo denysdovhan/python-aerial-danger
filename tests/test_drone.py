@@ -212,6 +212,12 @@ def test_preset_drone_messages_require_selected_locality() -> None:
     """Observed alerts use the selected preset and preserve the matched text."""
     cases = [
         (
+            "kyiv",
+            "kyiv_right_bank",
+            "Київ правий північ наближення БПЛА",
+            "Київ правий північ",
+        ),
+        (
             "sumy_oblast",
             "sumy_oblast_duboviazivka",
             "Пара БПЛА Путивль, Дубовʼязівка.\n\nБПЛА на Білопілля.",
